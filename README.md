@@ -1,18 +1,23 @@
-# GhosTnever — official project hub
+# GhosTnever — официальный сайт проектов
 
-The personal portfolio for **GhosTnever**, collecting selected games and developer tools in one public, searchable place.
+Портфолио **GhosTnever**: браузерные игры, инструменты для авторов модов и утилиты для разработчиков. На странице есть ссылки на демонстрации, исходный код и опубликованные сборки.
 
-## Website
+## Сайт
 
-- Profile: <https://ghostnever-lkm.github.io/>
+- Портфолио: <https://ghostnever-lkm.github.io/>
 - GitHub: <https://github.com/GhosTnever-lkm>
+- План разработки: <https://github.com/users/GhosTnever-lkm/projects/2/views/1>
 
-## Search indexing
+## Обновление версии
 
-The site includes a canonical URL, descriptive page metadata, ProfilePage/Person structured data, `robots.txt`, and `sitemap.xml`. These help search engines understand and discover the page; they do not guarantee a particular ranking or immediate appearance in search results. Google Search Console can be used to verify the site and request indexing.
+Текущая версия указана в `VERSION`, история изменений — в `CHANGELOG.md`. GitHub Actions публикует содержимое ветки `main` в GitHub Pages.
 
-## Deployment
+Страница содержит canonical URL, метаданные на русском языке, ProfilePage/Person structured data, `robots.txt` и `sitemap.xml`. Эти сведения помогают поисковикам обнаружить и понять страницу, но не гарантируют сроки индексации или позицию в поиске.
 
-GitHub Actions deploys the repository root to GitHub Pages whenever a commit is pushed to `main`.
+Сайт статический, не собирает данные посетителей и не требует серверной части.
 
-The page is a static website. It does not collect visitor data or require a backend.
+## Превью VOIDFALL
+
+![Стартовый экран VOIDFALL: Последний сигнал](assets/voidfall-preview.png)
+
+Снимок сделан в опубликованной браузерной версии игры. Открыть игру: <https://ghostnever-lkm.github.io/voidfall/>.
