@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ghostnever-lkm.github.io/sitemap.xml
