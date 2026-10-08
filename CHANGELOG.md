@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3 - 2026-10-09
+
+- Update FrameForge release and Windows download links to v0.4.0.
+
 ## 1.0.2 — 2026-10-09
 
 - Добавлена карточка FrameForge со ссылками на GitHub Release v0.3.0 и Windows ZIP.
