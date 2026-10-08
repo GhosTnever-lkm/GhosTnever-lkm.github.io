@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5 - 2026-10-09
+
+- Update FrameForge release and Windows download links to v0.6.0.
+
 ## 1.0.4 - 2026-10-09
 
 - Update FrameForge release and Windows download links to v0.5.0.
