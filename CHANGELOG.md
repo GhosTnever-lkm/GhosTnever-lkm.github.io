@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.8 - 2026-10-09
+
+- Update FrameForge portfolio release and download links to v1.13.1 with selected-run accessibility details.
+
 ## 1.3.7 - 2026-10-09
 
 - Update the FrameForge portfolio card, tags and Windows download links to v1.13.0; describe explicit A/B role swapping.
