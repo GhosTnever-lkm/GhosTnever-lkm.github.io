@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.18 - 2026-10-10
+
+- Update Mod Conflict Map portfolio links to its v0.3.3 release and versioned ZIP asset.
+
 ## 1.3.17 - 2026-10-10
 
 - Update ModRelease Studio links and description to the v0.2.3 release, including direct release and ZIP links.
