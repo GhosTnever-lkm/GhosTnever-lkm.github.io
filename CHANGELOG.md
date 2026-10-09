@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.13 - 2026-10-09
+
+- Add ModPack Inspector with its live demo, v0.1.0 release, and Windows-aware ZIP path review description.
+
 ## 1.3.12 - 2026-10-09
 
 - Update FrameForge release and Windows download links to v1.16.1 and describe its red crosshair and optional startup console menu accurately.
