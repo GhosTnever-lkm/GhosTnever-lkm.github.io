@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 - 2026-10-09
+
+- Update FrameForge to verified v1.5.0, adding explicit search and assignment for Baseline/Variant benchmark runs.
+
 ## 1.0.9 - 2026-10-09
 
 - Update FrameForge portfolio card and download links to verified v1.4.0; describe searchable benchmark history.
