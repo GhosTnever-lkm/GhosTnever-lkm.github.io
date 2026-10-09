@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6 - 2026-10-09
+
+- Update FrameForge card and Windows download links to v0.9.0; describe the PresentMon benchmark journal and 12 game checklists.
+
 ## 1.0.5 - 2026-10-09
 
 - Update FrameForge release and Windows download links to v0.6.0.
