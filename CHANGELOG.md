@@ -1,5 +1,13 @@
 ## 1.3.25 - 2026-10-10
 
+## 1.3.26 - 2026-10-10
+
+- Add CaptionLint v1.0.0 with live app, source, and release links.
+
+# Changelog
+
+## 1.3.25 - 2026-10-10
+
 - Promote FrameForge v1.18.0, its direct Windows download, and timed PresentMon capture with an explicit ETW requirement.
 
 # Changelog
@@ -199,3 +207,6 @@
 ## 1.3.11 - 2026-10-09
 
 - Update FrameForge to v1.16.0 with detected CS:GO Legacy installation, in-app performance profiles and the generated in-game console menu.
+## 1.3.26 - 2026-10-10
+
+- Add CaptionLint v1.0.0 with live app, source, and release links.
