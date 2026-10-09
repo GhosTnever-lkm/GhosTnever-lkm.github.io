@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - 2026-10-09
+
+- Update FrameForge card, search tags and Windows download link to verified v1.6.0; describe the p99-minus-median frametime spread.
+
 ## 1.1.0 - 2026-10-09
 
 - Update FrameForge to verified v1.5.0, adding explicit search and assignment for Baseline/Variant benchmark runs.
