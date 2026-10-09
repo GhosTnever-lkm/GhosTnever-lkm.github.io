@@ -1,3 +1,9 @@
+# Changelog
+
+## 1.3.11 - 2026-10-09
+
+- Update FrameForge to v1.16.0 with detected CS:GO Legacy installation, in-app performance profiles and the generated in-game console menu.
+
 ## 1.3.10 - 2026-10-09
 
 - Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
@@ -98,3 +104,8 @@
 
 - Первая версия портфолио GhosTnever с GitHub Pages, SEO-метаданными, профилем Schema.org, robots.txt и sitemap.xml.
 
+# Changelog
+
+## 1.3.11 - 2026-10-09
+
+- Update FrameForge to v1.16.0 with detected CS:GO Legacy installation, in-app performance profiles and the generated in-game console menu.
