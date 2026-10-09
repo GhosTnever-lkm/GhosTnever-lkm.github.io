@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.14 - 2026-10-09
+
+- Point the ModPack Inspector portfolio card to release v0.1.1, which includes the runnable regression suite in its ZIP.
+
 ## 1.3.13 - 2026-10-09
 
 - Add ModPack Inspector with its live demo, v0.1.0 release, and Windows-aware ZIP path review description.
