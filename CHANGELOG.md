@@ -1,3 +1,7 @@
+## 1.3.25 - 2026-10-10
+
+- Promote FrameForge v1.18.0, its direct Windows download, and timed PresentMon capture with an explicit ETW requirement.
+
 # Changelog
 
 ## 1.3.24 - 2026-10-10
