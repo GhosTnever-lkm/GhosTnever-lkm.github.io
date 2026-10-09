@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.4 - 2026-10-09
+
+- Update the FrameForge portfolio card and Windows download links for v1.10.0; describe the exact-label, read-only benchmark history view.
+
 ## 1.3.3 - 2026-10-09
 
 - Update the FrameForge portfolio card and Windows download links for v1.9.1; describe the accessible, screen-aware probable-duplicate dialog.
