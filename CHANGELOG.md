@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.17 - 2026-10-10
+
+- Update ModRelease Studio links and description to the v0.2.3 release, including direct release and ZIP links.
+
 ## 1.3.16 - 2026-10-09
 
 - Add the MIT license and standard repository ignore rules.
