@@ -1,17 +1,20 @@
-## 1.3.25 - 2026-10-10
+# Changelog
+
+## 1.3.28 - 2026-10-10
+
+- Promote SaveHarbor v1.1.0 folder comparison with current release, ZIP, and announcement links.
+
+## 1.3.27 - 2026-10-10
+
+- Point the FrameForge card to its v1.18.0 announcement.
 
 ## 1.3.26 - 2026-10-10
 
 - Add CaptionLint v1.0.0 with live app, source, and release links.
-- Point the FrameForge card to its v1.18.0 announcement.
-
-# Changelog
 
 ## 1.3.25 - 2026-10-10
 
 - Promote FrameForge v1.18.0, its direct Windows download, and timed PresentMon capture with an explicit ETW requirement.
-
-# Changelog
 
 ## 1.3.24 - 2026-10-10
 
