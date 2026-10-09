@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8 - 2026-10-09
+
+- Update FrameForge to v1.3.0 with cross-game frame-budget analysis, batch benchmark CSV import and the verified Windows release link.
+
 ## 1.0.7 - 2026-10-09
 
 - Update FrameForge to v1.1.0 with optional local PresentMon CPU/GPU counter summaries and the verified Windows release download.
