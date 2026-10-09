@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.12 - 2026-10-09
+
+- Update FrameForge release and Windows download links to v1.16.1 and describe its red crosshair and optional startup console menu accurately.
+- Link the FrameForge profile row to the public v1.16.1 announcement.
+
 ## 1.3.11 - 2026-10-09
 
 - Update FrameForge to v1.16.0 with detected CS:GO Legacy installation, in-app performance profiles and the generated in-game console menu.
