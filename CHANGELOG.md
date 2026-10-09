@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1 - 2026-10-09
+
+- Update the FrameForge portfolio card, search tags and Windows download links for v1.8.0; describe the matching previous-run shortcut.
+
 ## 1.3.0 - 2026-10-09
 
 - Update FrameForge portfolio card, search tags and Windows download links for v1.7.0 pinned reference benchmarks.
