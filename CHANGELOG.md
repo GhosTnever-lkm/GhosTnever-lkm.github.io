@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2 - 2026-10-09
+
+- Update the FrameForge portfolio card, search tags and Windows download links for v1.9.0; describe the safe probable-duplicate CSV import prompt.
+
 ## 1.3.1 - 2026-10-09
 
 - Update the FrameForge portfolio card, search tags and Windows download links for v1.8.0; describe the matching previous-run shortcut.
