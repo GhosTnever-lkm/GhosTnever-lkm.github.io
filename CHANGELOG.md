@@ -3,6 +3,7 @@
 ## 1.3.26 - 2026-10-10
 
 - Add CaptionLint v1.0.0 with live app, source, and release links.
+- Point the FrameForge card to its v1.18.0 announcement.
 
 # Changelog
 
