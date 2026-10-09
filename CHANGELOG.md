@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.16 - 2026-10-09
+
+- Add the MIT license and standard repository ignore rules.
+- Document the portfolio support and Pro-version policy.
+
 ## 1.3.15 - 2026-10-09
 
 - Match the ModPack Inspector card's visible release label to its v0.1.1 link.

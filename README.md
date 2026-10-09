@@ -21,3 +21,9 @@
 ![Стартовый экран VOIDFALL: Последний сигнал](assets/voidfall-preview.png)
 
 Снимок сделан в опубликованной браузерной версии игры. Открыть игру: <https://ghostnever-lkm.github.io/voidfall/>.
+
+## ☕ Support / Pro Version
+
+Поддержать проекты GhosTnever можно на [Boosty](https://boosty.to/azizazimov), [Buy Me a Coffee](https://buymeacoffee.com/azizazimov8) или [Gumroad](https://azimovian22.gumroad.com/). Отдельной платной версии сайта нет; платные дополнения доступны на страницах проектов, где они опубликованы.
+
+Сайт распространяется по лицензии MIT. Условия для сторонних проектов и материалов указаны в их собственных репозиториях.
