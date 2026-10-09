@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.7 - 2026-10-09
+
+- Update the FrameForge portfolio card, tags and Windows download links to v1.13.0; describe explicit A/B role swapping.
+
 ## 1.3.6 - 2026-10-09
 
 - Update the FrameForge portfolio card and Windows download links for v1.12.0; describe the session-only recent A/B comparison list.
