@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.20 - 2026-10-10
+
+- Update the ModLocale card with the v1.0.2 release and downloadable ZIP.
+
 ## 1.3.19 - 2026-10-10
 
 - Update the ModLocale portfolio link to the v1.0.1 release.
@@ -43,6 +47,10 @@
 - Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
 
 # Changelog
+
+## 1.3.20 - 2026-10-10
+
+- Update the ModLocale card with the v1.0.2 release and downloadable ZIP.
 
 ## 1.3.19 - 2026-10-10
 
@@ -143,6 +151,10 @@
 - Первая версия портфолио GhosTnever с GitHub Pages, SEO-метаданными, профилем Schema.org, robots.txt и sitemap.xml.
 
 # Changelog
+
+## 1.3.20 - 2026-10-10
+
+- Update the ModLocale card with the v1.0.2 release and downloadable ZIP.
 
 ## 1.3.19 - 2026-10-10
 
