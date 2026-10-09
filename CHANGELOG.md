@@ -2,7 +2,7 @@
 
 ## 1.3.22 - 2026-10-10
 
-- Promote FrameForge v1.17.0 with the optional desktop panel for CS:GO Legacy and verified Windows download.
+- Promote FrameForge v1.17.0 with the optional desktop panel, verified Windows download, and published announcement.
 
 ## 1.3.21 - 2026-10-10
 
