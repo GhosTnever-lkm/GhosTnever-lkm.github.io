@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.24 - 2026-10-10
+
+- Add the Mod Conflict Map v0.4.0 public announcement link to its portfolio card.
+
 ## 1.3.23 - 2026-10-10
 
 - Promote Mod Conflict Map v0.4.0 with its live app, release, and direct ZIP links; describe searchable overlap results.
@@ -59,6 +63,10 @@
 - Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
 
 # Changelog
+
+## 1.3.24 - 2026-10-10
+
+- Add the Mod Conflict Map v0.4.0 public announcement link to its portfolio card.
 
 ## 1.3.23 - 2026-10-10
 
@@ -167,6 +175,10 @@
 - Первая версия портфолио GhosTnever с GitHub Pages, SEO-метаданными, профилем Schema.org, robots.txt и sitemap.xml.
 
 # Changelog
+
+## 1.3.24 - 2026-10-10
+
+- Add the Mod Conflict Map v0.4.0 public announcement link to its portfolio card.
 
 ## 1.3.23 - 2026-10-10
 
