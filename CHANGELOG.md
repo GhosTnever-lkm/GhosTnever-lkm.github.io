@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.19 - 2026-10-10
+
+- Update the ModLocale portfolio link to the v1.0.1 release.
+
 ## 1.3.18 - 2026-10-10
 
 - Update Mod Conflict Map portfolio links to its v0.3.3 release and versioned ZIP asset.
@@ -39,6 +43,10 @@
 - Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
 
 # Changelog
+
+## 1.3.19 - 2026-10-10
+
+- Update the ModLocale portfolio link to the v1.0.1 release.
 
 ## 1.3.9 - 2026-10-09
 
@@ -135,6 +143,10 @@
 - Первая версия портфолио GhosTnever с GitHub Pages, SEO-метаданными, профилем Schema.org, robots.txt и sitemap.xml.
 
 # Changelog
+
+## 1.3.19 - 2026-10-10
+
+- Update the ModLocale portfolio link to the v1.0.1 release.
 
 ## 1.3.11 - 2026-10-09
 
