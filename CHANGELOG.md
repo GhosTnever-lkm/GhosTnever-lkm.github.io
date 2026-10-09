@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0 - 2026-10-09
+
+- Update FrameForge portfolio card, search tags and Windows download links for v1.7.0 pinned reference benchmarks.
+
 ## 1.2.0 - 2026-10-09
 
 - Update FrameForge card, search tags and Windows download link to verified v1.6.0; describe the p99-minus-median frametime spread.
