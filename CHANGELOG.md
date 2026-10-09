@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.29 - 2026-10-10
+
+- Promote FrameForge v1.18.1, including its case-insensitive PresentMon FrameType fix, verified Windows release, and public announcement.
+
 ## 1.3.28 - 2026-10-10
 
 - Promote SaveHarbor v1.1.0 folder comparison with current release, ZIP, and announcement links.
