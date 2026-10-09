@@ -1,3 +1,7 @@
+## 1.3.10 - 2026-10-09
+
+- Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
+
 # Changelog
 
 ## 1.3.9 - 2026-10-09
