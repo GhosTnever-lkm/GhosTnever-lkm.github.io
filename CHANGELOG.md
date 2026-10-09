@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.9 - 2026-10-09
+
+- Update FrameForge release and Windows links to v1.14.0; describe one-click report copy and its included CSV run names and notes.
+
 ## 1.3.8 - 2026-10-09
 
 - Update FrameForge portfolio release and download links to v1.13.1 with selected-run accessibility details.
