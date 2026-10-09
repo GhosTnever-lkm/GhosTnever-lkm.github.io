@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.23 - 2026-10-10
+
+- Promote Mod Conflict Map v0.4.0 with its live app, release, and direct ZIP links; describe searchable overlap results.
+
 ## 1.3.22 - 2026-10-10
 
 - Promote FrameForge v1.17.0 with the optional desktop panel, verified Windows download, and published announcement.
@@ -55,6 +59,10 @@
 - Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
 
 # Changelog
+
+## 1.3.23 - 2026-10-10
+
+- Promote Mod Conflict Map v0.4.0 with its live app, release, and direct ZIP links; describe searchable overlap results.
 
 ## 1.3.20 - 2026-10-10
 
@@ -159,6 +167,10 @@
 - Первая версия портфолио GhosTnever с GitHub Pages, SEO-метаданными, профилем Schema.org, robots.txt и sitemap.xml.
 
 # Changelog
+
+## 1.3.23 - 2026-10-10
+
+- Promote Mod Conflict Map v0.4.0 with its live app, release, and direct ZIP links; describe searchable overlap results.
 
 ## 1.3.20 - 2026-10-10
 
