@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.9 - 2026-10-09
+
+- Update FrameForge portfolio card and download links to verified v1.4.0; describe searchable benchmark history.
+
 ## 1.0.8 - 2026-10-09
 
 - Update FrameForge to v1.3.0 with cross-game frame-budget analysis, batch benchmark CSV import and the verified Windows release link.
