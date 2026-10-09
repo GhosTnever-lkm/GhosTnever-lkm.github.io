@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.3 - 2026-10-09
+
+- Update the FrameForge portfolio card and Windows download links for v1.9.1; describe the accessible, screen-aware probable-duplicate dialog.
+
 ## 1.3.2 - 2026-10-09
 
 - Update the FrameForge portfolio card, search tags and Windows download links for v1.9.0; describe the safe probable-duplicate CSV import prompt.
