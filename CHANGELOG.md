@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.6 - 2026-10-09
+
+- Update the FrameForge portfolio card and Windows download links for v1.12.0; describe the session-only recent A/B comparison list.
+
 ## 1.3.5 - 2026-10-09
 
 - Update the FrameForge portfolio card and Windows download links for v1.11.0; describe the session-only active benchmark baseline shortcut.
