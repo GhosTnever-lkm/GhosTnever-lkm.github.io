@@ -1,4 +1,12 @@
-# Changelog`n`n## 1.3.33 - 2026-10-10`n`n- Promote Asset Sieve v0.1.3 with integrity validation and folder totals in Markdown reports.`n
+# Changelog
+
+## 1.3.34 - 2026-10-10
+
+- Add ShaderTriage v0.1.0 to the portfolio with live app, source, release, ZIP, and public announcement links.
+
+## 1.3.33 - 2026-10-10
+
+- Promote Asset Sieve v0.1.3 with integrity validation and folder totals in Markdown reports.
 ## 1.3.32 - 2026-10-10
 
 - Promote Asset Sieve v0.1.2 with a direct wheel download, release, and public announcement link.
