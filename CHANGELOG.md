@@ -1,3 +1,9 @@
+# Changelog
+
+## 1.3.48 - 2026-10-10
+
+- Add PantryPilot with its live demo, source, v0.1.0 release, and public announcement.
+
 ## 1.3.46 - 2026-10-10
 
 - Add CalWeave with its live demo, source, v0.1.0 release download, topics, and public announcement.
