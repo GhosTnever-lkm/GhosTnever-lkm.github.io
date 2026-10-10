@@ -1,3 +1,7 @@
+## 1.3.42 - 2026-10-10
+
+- Update CueGrid to v0.2.0 with portable backup, restore, and pack merge; link its paid Stream Starter Pack and public Boosty post.
+
 # Changelog
 
 ## 1.3.40 - 2026-10-10
