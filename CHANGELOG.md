@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.36 - 2026-10-10
+
+- Update GameText Gate portfolio links to v0.1.3.
+
 ## 1.3.35 - 2026-10-10
 
 - Add GameText Gate v0.1.2 with repository, release archive, and public announcement links.
