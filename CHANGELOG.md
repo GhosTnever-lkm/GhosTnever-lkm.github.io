@@ -296,3 +296,8 @@
 
 - Add CueGrid with links to its hosted app, source, and v0.1.0 release.
 
+
+## 1.3.44 - 2026-10-10
+
+- Add Subtitle Timing Studio v1.0.1 with screenshot, local demo, release ZIP, and public announcement.
+
