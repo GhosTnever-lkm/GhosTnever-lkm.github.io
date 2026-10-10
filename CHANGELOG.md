@@ -1,5 +1,4 @@
-# Changelog
-
+# Changelog`n`n## 1.3.33 - 2026-10-10`n`n- Promote Asset Sieve v0.1.3 with integrity validation and folder totals in Markdown reports.`n
 ## 1.3.32 - 2026-10-10
 
 - Promote Asset Sieve v0.1.2 with a direct wheel download, release, and public announcement link.
@@ -96,8 +95,7 @@
 
 - Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
 
-# Changelog
-
+# Changelog`n`n## 1.3.33 - 2026-10-10`n`n- Promote Asset Sieve v0.1.3 with integrity validation and folder totals in Markdown reports.`n
 ## 1.3.32 - 2026-10-10
 
 - Promote Asset Sieve v0.1.2 with a direct wheel download, release, and public announcement link.
@@ -218,8 +216,7 @@
 
 - Первая версия портфолио GhosTnever с GitHub Pages, SEO-метаданными, профилем Schema.org, robots.txt и sitemap.xml.
 
-# Changelog
-
+# Changelog`n`n## 1.3.33 - 2026-10-10`n`n- Promote Asset Sieve v0.1.3 with integrity validation and folder totals in Markdown reports.`n
 ## 1.3.32 - 2026-10-10
 
 - Promote Asset Sieve v0.1.2 with a direct wheel download, release, and public announcement link.
@@ -252,5 +249,3 @@
 ## 1.3.26 - 2026-10-10
 
 - Add CaptionLint v1.0.0 with live app, source, and release links.
-
-
