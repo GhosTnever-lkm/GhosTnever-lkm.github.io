@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.30 - 2026-10-10
+
+- Add PingScope v0.2.1 to the portfolio with source, Windows ZIP, release, and announcement links.
+
 ## 1.3.29 - 2026-10-10
 
 - Promote FrameForge v1.18.1, including its case-insensitive PresentMon FrameType fix, verified Windows release, and public announcement.
