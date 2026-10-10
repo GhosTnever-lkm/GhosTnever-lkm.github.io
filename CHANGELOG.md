@@ -1,3 +1,7 @@
+## 1.3.57 - 2026-10-10
+
+- Add CaptionBench with live demo, source, v0.1.0 release, and public announcement.
+
 # Changelog
 
 ## 1.3.53 - 2026-10-10
