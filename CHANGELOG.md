@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.3.50 - 2026-10-10
+## 1.3.51 - 2026-10-10
 
 - Link HomeLedger to its live demo, source, release, and public announcement.
 
