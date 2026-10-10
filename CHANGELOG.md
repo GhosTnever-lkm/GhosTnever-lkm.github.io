@@ -284,3 +284,7 @@
 
 
 
+# 1.3.41 — 2026-10-10
+
+- Add CueGrid with links to its hosted app, source, and v0.1.0 release.
+
