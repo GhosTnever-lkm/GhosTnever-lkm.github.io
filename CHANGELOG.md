@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.37 - 2026-10-10
+
+- Update GameText Gate links to v0.1.5 and list its Locale Matrix Pro add-on.
+
 ## 1.3.36 - 2026-10-10
 
 - Update GameText Gate portfolio links to v0.1.3.
