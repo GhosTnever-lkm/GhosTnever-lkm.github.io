@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.38 - 2026-10-10
+
+- Add Screenshot Diff Lab v0.1.0 with repository and release download links.
+
 ## 1.3.37 - 2026-10-10
 
 - Update GameText Gate links to v0.1.5 and list its Locale Matrix Pro add-on.
@@ -269,3 +273,4 @@
 ## 1.3.26 - 2026-10-10
 
 - Add CaptionLint v1.0.0 with live app, source, and release links.
+
