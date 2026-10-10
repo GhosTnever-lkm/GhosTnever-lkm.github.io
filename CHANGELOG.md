@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.32 - 2026-10-10
+
+- Promote Asset Sieve v0.1.2 with a direct wheel download, release, and public announcement link.
+
+
 ## 1.3.31 - 2026-10-10
 
 - Add Asset Sieve v0.1.1 with the public source, release, and announcement links.
@@ -92,6 +97,11 @@
 - Add a ModLocale project card with its live demo, source repository, and v1.0.0 release links.
 
 # Changelog
+
+## 1.3.32 - 2026-10-10
+
+- Promote Asset Sieve v0.1.2 with a direct wheel download, release, and public announcement link.
+
 
 ## 1.3.31 - 2026-10-10
 
@@ -210,6 +220,11 @@
 
 # Changelog
 
+## 1.3.32 - 2026-10-10
+
+- Promote Asset Sieve v0.1.2 with a direct wheel download, release, and public announcement link.
+
+
 ## 1.3.31 - 2026-10-10
 
 - Add Asset Sieve v0.1.1 with the public source, release, and announcement links.
@@ -237,4 +252,5 @@
 ## 1.3.26 - 2026-10-10
 
 - Add CaptionLint v1.0.0 with live app, source, and release links.
+
 
