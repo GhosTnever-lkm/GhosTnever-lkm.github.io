@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.39 - 2026-10-10
+
+- Add live Screenshot Diff Lab demo and link the verified v0.1.2 download.
+
 ## 1.3.38 - 2026-10-10
 
 - Add Screenshot Diff Lab v0.1.0 with repository and release download links.
@@ -273,4 +277,5 @@
 ## 1.3.26 - 2026-10-10
 
 - Add CaptionLint v1.0.0 with live app, source, and release links.
+
 
