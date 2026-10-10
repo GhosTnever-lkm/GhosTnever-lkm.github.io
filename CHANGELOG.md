@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.35 - 2026-10-10
+
+- Add GameText Gate v0.1.2 with repository, release archive, and public announcement links.
+
 ## 1.3.34 - 2026-10-10
 
 - Add ShaderTriage v0.1.0 to the portfolio with live app, source, release, ZIP, and public announcement links.
