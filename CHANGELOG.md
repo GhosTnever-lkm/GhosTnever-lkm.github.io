@@ -1,3 +1,7 @@
+## 1.3.46 - 2026-10-10
+
+- Add CalWeave with its live demo, source, v0.1.0 release download, topics, and public announcement.
+
 ## 1.3.45 - 2026-10-10
 
 - Add FontPair Studio with screenshot, live demo, v1.0.1 release download, topics, and Boosty announcement.
