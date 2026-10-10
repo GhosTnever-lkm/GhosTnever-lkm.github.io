@@ -1,3 +1,7 @@
+## 1.3.45 - 2026-10-10
+
+- Add FontPair Studio with screenshot, live demo, v1.0.1 release download, topics, and Boosty announcement.
+
 ## 1.3.42 - 2026-10-10
 
 - Update CueGrid to v0.2.0 with portable backup, restore, and pack merge; link its paid Stream Starter Pack and public Boosty post.
