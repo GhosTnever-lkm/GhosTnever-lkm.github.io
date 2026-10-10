@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.53 - 2026-10-10
+
+- Add HueDock with source, live demo, v0.1.0 release, and public Boosty announcement.
+
 ## 1.3.52 - 2026-10-10
 
 - Add TabHarbor with source, v0.1.0 release, and public announcement links.
