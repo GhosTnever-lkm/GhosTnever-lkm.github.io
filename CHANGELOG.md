@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.52 - 2026-10-10
+
+- Add TabHarbor with source, v0.1.0 release, and public announcement links.
+
 ## 1.3.51 - 2026-10-10
 
 - Link HomeLedger to its live demo, source, release, and public announcement.
