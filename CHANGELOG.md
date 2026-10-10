@@ -4,6 +4,10 @@
 
 # Changelog
 
+## 1.3.43 - 2026-10-10
+
+- Add Agent Run Lens with live app, source, v1.0.0 release, ZIP, and public Boosty announcement.
+
 ## 1.3.40 - 2026-10-10
 
 - Add Screenshot Diff Lab v0.1.2 announcement and update its verified ZIP link.
