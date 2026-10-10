@@ -309,3 +309,4 @@
 
 - Add Subtitle Timing Studio v1.0.1 with screenshot, local demo, release ZIP, and public announcement.
 
+
