@@ -1,3 +1,7 @@
+## 1.3.88 - 2026-10-11
+
+- Refresh BugBundle screenshot and offline ZIP links to v1.0.9, which fixes uploaded-log auto-detection.
+
 ## 1.3.87 - 2026-10-11
 
 - Refresh the BugBundle screenshot and offline ZIP links to v1.0.8, including visible control-character handling in report context.
