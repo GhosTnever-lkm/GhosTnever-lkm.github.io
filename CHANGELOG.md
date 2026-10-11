@@ -1,3 +1,7 @@
+## 1.3.117 - 2026-10-11
+
+- Add CSV Merge Review v0.1.0 project card, sample report, and verified release download.
+
 ## 1.3.116 - 2026-10-11
 
 - Add PixelClean Local v0.1.0 with a live browser demo, release and archive links.
