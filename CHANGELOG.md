@@ -1,3 +1,7 @@
+## 1.3.116 - 2026-10-11
+
+- Add PixelClean Local v0.1.0 with a live browser demo, release and archive links.
+
 ## 1.3.115 - 2026-10-11
 
 - Add CSV Key Diff with a sample report and verified v0.1.1 source archive.
