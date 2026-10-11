@@ -1,3 +1,7 @@
+## 1.3.79 - 2026-10-11
+
+- Refresh the flagship demo, release, and download links to v0.3.40; the release ZIP is 33,881 bytes and contains no Python bytecode.
+
 ## 1.3.78 - 2026-10-11
 
 - Refresh flagship demo/download to v0.3.39; retain verified 58-test / 91% coverage metrics.
