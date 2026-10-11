@@ -1,3 +1,7 @@
+## 1.3.96 - 2026-10-11
+
+- Refresh GameText Gate screenshots and release/ZIP links to v0.1.13; describe safe handling of invisible separators.
+
 ## 1.3.94 - 2026-10-11
 
 - Refresh Mod Threat Lens cards to v0.1.6 and describe visible handling of invisible Unicode in reports.
