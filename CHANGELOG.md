@@ -1,3 +1,7 @@
+## 1.3.97 - 2026-10-11
+
+- Update flagship ecosystem links to verified ModRelease Gate v1.0.32 and Paradox Mod Quality Gate v1.0.27.
+
 ## 1.3.96 - 2026-10-11
 
 - Refresh GameText Gate screenshots and release/ZIP links to v0.1.13; describe safe handling of invisible separators.
