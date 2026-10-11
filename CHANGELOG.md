@@ -1,3 +1,8 @@
+## 1.3.119 - 2026-10-12
+
+- Refresh the ModRelease Studio flagship card to v0.3.59, link its product page and Gate v1.0.43, and remove the duplicate stale card.
+- Update the sitemap modification date.
+
 ## 1.3.118 - 2026-10-11
 
 - Add Git Churn Map v0.1.0 with sample report, synthetic preview, and release archive.
