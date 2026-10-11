@@ -1,3 +1,7 @@
+## 1.3.60 - 2026-10-11
+
+- Refresh the ModRelease Studio flagship card and demo to v0.3.21; show 43 passing tests and 89% line coverage.
+
 ## 1.3.59 - 2026-10-11
 
 - Refresh the flagship card and demo to ModRelease Studio v0.3.20; display 36 passing tests, 84% line coverage, and the 80% CI floor.
