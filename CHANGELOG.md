@@ -1,3 +1,8 @@
+## 1.3.104 - 2026-10-11
+
+- Refresh flagship demo/download links to ModRelease Studio v0.3.50 and current 64-test/93% metrics.
+- Link ModRelease Gate v1.0.35 and Paradox Gate v1.0.30.
+
 ## 1.3.103 - 2026-10-11
 
 - Refresh flagship ecosystem links to current warning-policy releases v1.0.34 and v1.0.29.
@@ -186,6 +191,12 @@
 - Add Mod Threat Lens v0.1.4 with the synthetic report preview, exact ZIP, and heuristic safety note.
 
 # Changelog
+
+## 1.3.104 - 2026-10-11
+
+- Refresh flagship demo/download links to ModRelease Studio v0.3.50 and current 64-test/93% metrics.
+- Link ModRelease Gate v1.0.35 and Paradox Gate v1.0.30.
+
 
 ## 1.3.53 - 2026-10-10
 
