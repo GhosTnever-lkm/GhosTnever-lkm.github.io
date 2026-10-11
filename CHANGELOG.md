@@ -1,3 +1,7 @@
+## 1.3.72 - 2026-10-11
+
+- Refresh the flagship demo/download to v0.3.33 and show 57 passing tests with 91% line coverage.
+
 ## 1.3.71 - 2026-10-11
 
 - Refresh the flagship demo/download to v0.3.32; show 56 tests and 91% line coverage.
