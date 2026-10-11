@@ -1,6 +1,8 @@
 ## 1.3.57 - 2026-10-10
 
 - Add CaptionBench with live demo, source, v0.1.0 release, and public announcement.
+- Add LocaleLens portfolio links and refresh GameText Gate to v0.1.10 with its sample report preview.
+- Add Mod Threat Lens v0.1.4 with the synthetic report preview, exact ZIP, and heuristic safety note.
 
 # Changelog
 
