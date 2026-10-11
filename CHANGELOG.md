@@ -1,3 +1,7 @@
+## 1.3.81 - 2026-10-11
+
+- Correct the ShaderTriage release link to v0.1.0, the actual published release; keep its matching ZIP download link.
+
 ## 1.3.80 - 2026-10-11
 
 - Refresh GameText Gate sample, release, and download links to v0.1.11.
