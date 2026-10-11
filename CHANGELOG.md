@@ -1,3 +1,7 @@
+## 1.3.99 - 2026-10-11
+
+- Update the flagship demo/release to v0.3.46 and linked ModRelease/Paradox CI gates to v1.0.33/v1.0.28.
+
 ## 1.3.98 - 2026-10-11
 
 - Refresh the flagship release/demo links to v0.3.45 and current verified ZIP size.
