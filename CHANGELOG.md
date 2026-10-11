@@ -1,3 +1,7 @@
+## 1.3.120 - 2026-10-12
+
+- Sync Mod Conflict Map links to v0.4.1 and mention its Node.js regression CI.
+
 ## 1.3.119 - 2026-10-12
 
 - Refresh the ModRelease Studio flagship card to v0.3.59, link its product page and Gate v1.0.43, and remove the duplicate stale card.
