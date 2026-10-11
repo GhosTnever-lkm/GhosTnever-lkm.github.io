@@ -1,3 +1,7 @@
+## 1.3.91 - 2026-10-11
+
+- Refresh ModRelease Studio flagship demo, release, and download links to v0.3.44.
+
 ## 1.3.90 - 2026-10-11
 
 - Refresh the ModRelease Studio flagship card and release/download links to v0.3.43; show verified 60 tests and 92% line coverage.
