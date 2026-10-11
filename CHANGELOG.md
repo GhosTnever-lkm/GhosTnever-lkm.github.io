@@ -1,3 +1,7 @@
+## 1.3.112 - 2026-10-11
+
+- Refresh LocaleLens release and demo links to v0.1.2 and add its verified ZIP download.
+
 ## 1.3.111 - 2026-10-11
 
 - Refresh ModRelease Studio to v0.3.57 and link gate releases v1.0.41/v1.0.36.
