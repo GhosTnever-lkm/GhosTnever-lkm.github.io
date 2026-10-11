@@ -1,3 +1,7 @@
+## 1.3.58 - 2026-10-11
+
+- Refresh the flagship ModRelease Studio card to v0.3.19, with its release archive, sample screenshot, Python/CI matrix, and measured 75% line-coverage gate.
+
 ## 1.3.57 - 2026-10-10
 
 - Add CaptionBench with live demo, source, v0.1.0 release, and public announcement.
