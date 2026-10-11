@@ -1,3 +1,7 @@
+## 1.3.103 - 2026-10-11
+
+- Refresh flagship ecosystem links to current warning-policy releases v1.0.34 and v1.0.29.
+
 ## 1.3.102 - 2026-10-11
 
 - Update the flagship release and demo links to ModRelease Studio v0.3.49.
