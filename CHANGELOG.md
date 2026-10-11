@@ -1,3 +1,7 @@
+## 1.3.66 - 2026-10-11
+
+- Refresh the flagship demo/download to v0.3.27; show 51 tests and 90% line coverage.
+
 ## 1.3.65 - 2026-10-11
 
 - Refresh the flagship demo, release, and download links to ModRelease Studio v0.3.26.
