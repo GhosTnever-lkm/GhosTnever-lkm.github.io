@@ -1,3 +1,8 @@
+## 1.3.108 - 2026-10-11
+
+- Refresh ModRelease Studio demo, release/download links, and test count to v0.3.55 / 68 tests.
+- Consumer gates retain scanner runtime v0.3.53 because v0.3.55 is test-only.
+
 ## 1.3.107 - 2026-10-11
 
 - Refresh flagship links to ModRelease Studio v0.3.53 and 67-test metrics.
