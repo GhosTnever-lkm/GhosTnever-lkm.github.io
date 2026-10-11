@@ -1,3 +1,7 @@
+## 1.3.64 - 2026-10-11
+
+- Refresh flagship links to v0.3.25 and show the 50-test suite plus verified Ubuntu, Windows, and macOS support.
+
 ## 1.3.63 - 2026-10-11
 
 - Refresh ModRelease Studio links and demo to v0.3.24; show the verified 49-test suite and 89% line coverage.
