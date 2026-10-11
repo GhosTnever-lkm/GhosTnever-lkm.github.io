@@ -1,3 +1,8 @@
+## 1.3.86 - 2026-10-11
+
+- Put ModRelease Studio and its BugBundle, GameText Gate, and Mod Threat Lens companions at the top of the portfolio with current demos, reports, and releases.
+- Add the current BugBundle v1.0.7 preview, release, and offline download links.
+
 ## 1.3.85 - 2026-10-11
 
 - Refresh GameText Gate preview, release, and download links to v0.1.12.
