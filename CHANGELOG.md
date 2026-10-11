@@ -1,3 +1,7 @@
+## 1.3.78 - 2026-10-11
+
+- Refresh flagship demo/download to v0.3.39; retain verified 58-test / 91% coverage metrics.
+
 ## 1.3.77 - 2026-10-11
 
 - Refresh flagship demo/download links to v0.3.38; preserve verified 58-test and 91% coverage metrics.
