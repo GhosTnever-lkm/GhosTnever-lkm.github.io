@@ -1,3 +1,7 @@
+## 1.3.123 - 2026-10-12
+
+- Sync the flagship card, screenshot, and ZIP link to ModRelease Studio v0.3.61.
+
 ## 1.3.122 - 2026-10-12
 
 - Correct the FontPair Studio release label to match the linked v1.0.2 release.
