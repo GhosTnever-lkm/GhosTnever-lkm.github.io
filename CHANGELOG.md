@@ -1,3 +1,8 @@
+## 1.3.115 - 2026-10-11
+
+- Add CSV Key Diff with a sample report and verified v0.1.1 source archive.
+- Correct the LocaleLens release label to v0.1.3.
+
 ## 1.3.114 - 2026-10-11
 
 - Refresh LocaleLens release and ZIP links to v0.1.3.
