@@ -1,3 +1,7 @@
+## 1.3.93 - 2026-10-11
+
+- Add a direct link from the flagship card to Paradox Mod Quality Gate v1.0.25.
+
 ## 1.3.92 - 2026-10-11
 
 - Link the ModRelease Studio flagship card directly to ModRelease Gate v1.0.31 for CI-based release checks.
