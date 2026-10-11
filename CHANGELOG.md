@@ -1,3 +1,7 @@
+## 1.3.102 - 2026-10-11
+
+- Update the flagship release and demo links to ModRelease Studio v0.3.49.
+
 ## 1.3.101 - 2026-10-11
 
 - Refresh ModRelease Studio preview, release, and download links to v0.3.48.
