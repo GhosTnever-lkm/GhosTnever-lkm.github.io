@@ -1,3 +1,8 @@
+## 1.3.106 - 2026-10-11
+
+- Refresh flagship links and downloads to ModRelease Studio v0.3.52, plus 66 tests / 92% coverage.
+- Link ModRelease Gate v1.0.37 and Paradox Quality Gate v1.0.32 using scanner v0.3.52.
+
 ## 1.3.105 - 2026-10-11
 
 - Refresh ModRelease Studio links and downloads to v0.3.51; update the suite count to 65 tests.
