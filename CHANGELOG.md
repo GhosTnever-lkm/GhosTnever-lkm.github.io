@@ -1,3 +1,7 @@
+## 1.3.76 - 2026-10-11
+
+- Refresh the flagship card and download links to v0.3.37; keep the verified 58-test and 91% coverage metrics.
+
 ## 1.3.75 - 2026-10-11
 
 - Refresh the flagship card and download to v0.3.36; show 58 tests and 91% line coverage.
