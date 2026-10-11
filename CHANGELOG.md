@@ -1,3 +1,7 @@
+## 1.3.121 - 2026-10-12
+
+- Sync the flagship card with ModRelease Studio v0.3.60, ModRelease Gate v1.0.44, and Paradox Mod Quality Gate v1.0.41.
+
 ## 1.3.120 - 2026-10-12
 
 - Sync Mod Conflict Map links to v0.4.1 and mention its Node.js regression CI.
