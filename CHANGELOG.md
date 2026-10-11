@@ -1,3 +1,8 @@
+## 1.3.111 - 2026-10-11
+
+- Refresh ModRelease Studio to v0.3.57 and link gate releases v1.0.41/v1.0.36.
+- Update current download, demo, and integration links.
+
 ## 1.3.110 - 2026-10-11
 
 - Refresh the ModRelease Gate and Paradox Gate links to tested releases v1.0.40 and v1.0.35.
