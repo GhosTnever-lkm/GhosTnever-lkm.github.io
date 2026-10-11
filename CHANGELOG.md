@@ -1,3 +1,7 @@
+## 1.3.90 - 2026-10-11
+
+- Refresh the ModRelease Studio flagship card and release/download links to v0.3.43; show verified 60 tests and 92% line coverage.
+
 ## 1.3.89 - 2026-10-11
 
 - Refresh BugBundle image and ZIP links to v1.0.10 with visibly sanitized upload filenames.
