@@ -1,3 +1,8 @@
+## 1.3.105 - 2026-10-11
+
+- Refresh ModRelease Studio links and downloads to v0.3.51; update the suite count to 65 tests.
+- Consumer gates remain on v0.3.50 because the scanner release adds test/docs coverage only.
+
 ## 1.3.104 - 2026-10-11
 
 - Refresh flagship demo/download links to ModRelease Studio v0.3.50 and current 64-test/93% metrics.
