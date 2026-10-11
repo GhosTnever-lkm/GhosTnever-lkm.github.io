@@ -1,3 +1,7 @@
+## 1.3.62 - 2026-10-11
+
+- Refresh ModRelease Studio links and demo to v0.3.23; show the verified 46-test suite and 88% line coverage.
+
 ## 1.3.61 - 2026-10-11
 
 - Refresh the ModRelease Studio card, download, and demo to v0.3.22; show the verified Python 3.11/3.12/3.13 CI matrix.
