@@ -1,3 +1,7 @@
+## 1.3.92 - 2026-10-11
+
+- Link the ModRelease Studio flagship card directly to ModRelease Gate v1.0.31 for CI-based release checks.
+
 ## 1.3.91 - 2026-10-11
 
 - Refresh ModRelease Studio flagship demo, release, and download links to v0.3.44.
