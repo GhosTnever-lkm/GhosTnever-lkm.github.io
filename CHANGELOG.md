@@ -1,3 +1,7 @@
+## 1.3.101 - 2026-10-11
+
+- Refresh ModRelease Studio preview, release, and download links to v0.3.48.
+
 ## 1.3.100 - 2026-10-11
 
 - Refresh flagship demo/download links to v0.3.47; current consumer gate releases remain v1.0.33 and v1.0.28.
