@@ -1,3 +1,7 @@
+## 1.3.63 - 2026-10-11
+
+- Refresh ModRelease Studio links and demo to v0.3.24; show the verified 49-test suite and 89% line coverage.
+
 ## 1.3.62 - 2026-10-11
 
 - Refresh ModRelease Studio links and demo to v0.3.23; show the verified 46-test suite and 88% line coverage.
