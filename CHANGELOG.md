@@ -1,3 +1,7 @@
+## 1.3.84 - 2026-10-11
+
+- Refresh Mod Threat Lens preview, release, and ZIP links to v0.1.5.
+
 ## 1.3.83 - 2026-10-11
 
 - Refresh the flagship demo, release, and download links to ModRelease Studio v0.3.42.
