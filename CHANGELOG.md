@@ -1,3 +1,7 @@
+## 1.3.113 - 2026-10-11
+
+- Sync current release links and downloadable archives for seven project cards.
+
 ## 1.3.112 - 2026-10-11
 
 - Refresh LocaleLens release and demo links to v0.1.2 and add its verified ZIP download.
