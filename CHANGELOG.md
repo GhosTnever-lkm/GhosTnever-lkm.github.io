@@ -1,3 +1,7 @@
+## 1.3.83 - 2026-10-11
+
+- Refresh the flagship demo, release, and download links to ModRelease Studio v0.3.42.
+
 ## 1.3.82 - 2026-10-11
 
 - Refresh the flagship demo, release, and download links to ModRelease Studio v0.3.41.
