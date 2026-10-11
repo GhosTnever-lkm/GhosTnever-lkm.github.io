@@ -1,3 +1,7 @@
+## 1.3.65 - 2026-10-11
+
+- Refresh the flagship demo, release, and download links to ModRelease Studio v0.3.26.
+
 ## 1.3.64 - 2026-10-11
 
 - Refresh flagship links to v0.3.25 and show the 50-test suite plus verified Ubuntu, Windows, and macOS support.
