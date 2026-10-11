@@ -1,3 +1,7 @@
+## 1.3.87 - 2026-10-11
+
+- Refresh the BugBundle screenshot and offline ZIP links to v1.0.8, including visible control-character handling in report context.
+
 ## 1.3.86 - 2026-10-11
 
 - Put ModRelease Studio and its BugBundle, GameText Gate, and Mod Threat Lens companions at the top of the portfolio with current demos, reports, and releases.
