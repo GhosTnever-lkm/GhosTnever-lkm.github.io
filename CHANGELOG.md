@@ -1,3 +1,7 @@
+## 1.3.80 - 2026-10-11
+
+- Refresh GameText Gate sample, release, and download links to v0.1.11.
+
 ## 1.3.79 - 2026-10-11
 
 - Refresh the flagship demo, release, and download links to v0.3.40; the release ZIP is 33,881 bytes and contains no Python bytecode.
