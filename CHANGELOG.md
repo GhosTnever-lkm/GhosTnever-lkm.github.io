@@ -1,3 +1,7 @@
+## 1.3.85 - 2026-10-11
+
+- Refresh GameText Gate preview, release, and download links to v0.1.12.
+
 ## 1.3.84 - 2026-10-11
 
 - Refresh Mod Threat Lens preview, release, and ZIP links to v0.1.5.
