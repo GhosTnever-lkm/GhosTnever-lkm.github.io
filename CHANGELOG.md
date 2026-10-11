@@ -1,3 +1,7 @@
+## 1.3.82 - 2026-10-11
+
+- Refresh the flagship demo, release, and download links to ModRelease Studio v0.3.41.
+
 ## 1.3.81 - 2026-10-11
 
 - Correct the ShaderTriage release link to v0.1.0, the actual published release; keep its matching ZIP download link.
