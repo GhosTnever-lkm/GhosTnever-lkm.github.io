@@ -1,3 +1,7 @@
+## 1.3.98 - 2026-10-11
+
+- Refresh the flagship release/demo links to v0.3.45 and current verified ZIP size.
+
 ## 1.3.97 - 2026-10-11
 
 - Update flagship ecosystem links to verified ModRelease Gate v1.0.32 and Paradox Mod Quality Gate v1.0.27.
