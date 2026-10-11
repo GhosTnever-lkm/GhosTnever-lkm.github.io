@@ -1,3 +1,7 @@
+## 1.3.118 - 2026-10-11
+
+- Add Git Churn Map v0.1.0 with sample report, synthetic preview, and release archive.
+
 ## 1.3.117 - 2026-10-11
 
 - Add CSV Merge Review v0.1.0 project card, sample report, and verified release download.
