@@ -1,3 +1,7 @@
+## 1.3.94 - 2026-10-11
+
+- Refresh Mod Threat Lens cards to v0.1.6 and describe visible handling of invisible Unicode in reports.
+
 ## 1.3.93 - 2026-10-11
 
 - Add a direct link from the flagship card to Paradox Mod Quality Gate v1.0.25.
