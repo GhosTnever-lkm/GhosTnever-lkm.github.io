@@ -1,3 +1,7 @@
+## 1.3.110 - 2026-10-11
+
+- Refresh the ModRelease Gate and Paradox Gate links to tested releases v1.0.40 and v1.0.35.
+
 ## 1.3.109 - 2026-10-11
 
 - Refresh ModRelease Studio and both gate links to v0.3.56 / v1.0.39 / v1.0.34; document Windows junction safety and the 69-test suite.
