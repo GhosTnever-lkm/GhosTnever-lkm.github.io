@@ -1,3 +1,7 @@
+## 1.3.122 - 2026-10-12
+
+- Correct the FontPair Studio release label to match the linked v1.0.2 release.
+
 ## 1.3.121 - 2026-10-12
 
 - Sync the flagship card with ModRelease Studio v0.3.60, ModRelease Gate v1.0.44, and Paradox Mod Quality Gate v1.0.41.
