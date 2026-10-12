@@ -1,3 +1,7 @@
+# 1.3.161 - 2026-10-12
+
+- Add GhosTnever Codex Toolkit v1.1.4 with current plugin, release, and CI details.
+
 # 1.3.160 - 2026-10-12
 
 - Update the ModRelease Studio preview and download link to the verified v0.3.74 release.
