@@ -1,3 +1,7 @@
+## 1.3.147 - 2026-10-12
+
+- Refresh the ModRelease Studio, Gate Action, and Paradox Quality Gate links to v0.3.71, v1.0.57, and v1.0.55.
+
 ## 1.3.146 - 2026-10-12
 
 - Refresh the ModRelease Studio, Gate Action, and Paradox Quality Gate links to verified releases v0.3.70, v1.0.56, and v1.0.54.
