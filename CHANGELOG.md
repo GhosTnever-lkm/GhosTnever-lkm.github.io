@@ -1,3 +1,7 @@
+## 1.3.143 - 2026-10-12
+
+- Update the ModRelease Gate card to the verified v1.0.55 release.
+
 ## 1.3.142 - 2026-10-12
 
 - Refresh ModRelease Studio links and download to v0.3.69.
