@@ -1,3 +1,7 @@
+## 1.3.134 - 2026-10-12
+
+- Sync the ModRelease Studio flagship card, download, and related GitHub Action and Paradox Gate links to the latest verified releases.
+
 ## 1.3.130 - 2026-10-12
 
 - Update the flagship ecosystem links to Paradox Mod Quality Gate v1.0.44 and add Paradox Mod Workbench v0.2.4.
