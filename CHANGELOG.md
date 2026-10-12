@@ -303,6 +303,10 @@
 
 # Changelog
 
+## 1.3.131 - 2026-10-12
+
+- Refresh the ModRelease Studio flagship card and related GitHub Action and Paradox Gate links to the latest releases.
+
 ## 1.3.104 - 2026-10-11
 
 - Refresh flagship demo/download links to ModRelease Studio v0.3.50 and current 64-test/93% metrics.
