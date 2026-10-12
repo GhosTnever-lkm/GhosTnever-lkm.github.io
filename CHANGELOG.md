@@ -1,3 +1,7 @@
+## 1.3.153 - 2026-10-12
+
+- Sync Paradox Mod Quality Gate v1.0.57 and its Windows Pro v1.0.1 listing.
+
 ## 1.3.152 - 2026-10-12
 
 - Update the flagship ecosystem card to the verified Paradox Mod Quality Gate v1.0.56 release.
@@ -720,3 +724,4 @@
 ## 1.3.126 - 2026-10-12
 
 - Refresh Mod Threat Lens release, preview, and download links to verified v0.1.9.
+
