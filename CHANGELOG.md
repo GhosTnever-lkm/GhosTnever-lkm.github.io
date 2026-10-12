@@ -1,3 +1,7 @@
+## 1.3.128 - 2026-10-12
+
+- Update the flagship ecosystem card to ModRelease Gate Action v1.0.46.
+
 ## 1.3.127 - 2026-10-12
 
 - Add WorkflowGuard with direct links to the v1.0.4 release and installable wheel.
