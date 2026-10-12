@@ -1,3 +1,7 @@
+# 1.3.167 - 2026-10-13
+
+- Update CSV Merge Review preview and release links to v0.1.2, including the installable wheel and its checksum manifest.
+
 # 1.3.166 - 2026-10-13
 
 - Link the tracked-artifacts-check wheel asset from the v0.1.2 release.
