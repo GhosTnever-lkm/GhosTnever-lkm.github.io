@@ -303,6 +303,10 @@
 
 # Changelog
 
+## 1.3.133 - 2026-10-12
+
+- Clarify that ModRelease Studio detects fine-grained GitHub tokens and keeps their values out of reports.
+
 ## 1.3.132 - 2026-10-12
 
 - Point the ModRelease Gate link to the green v1.0.48 release.
