@@ -1,3 +1,7 @@
+# 1.3.160 - 2026-10-12
+
+- Update the ModRelease Studio preview and download link to the verified v0.3.74 release.
+
 # 1.3.159 - 2026-10-12
 
 - Add Mod Observatory v0.2.4 to the project catalog.
