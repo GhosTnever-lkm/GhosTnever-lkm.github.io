@@ -1,3 +1,7 @@
+## 1.3.154 - 2026-10-12
+
+- Update the TabHarbor card to the verified v0.1.2 release.
+
 ## 1.3.153 - 2026-10-12
 
 - Sync Paradox Mod Quality Gate v1.0.57 and its Windows Pro v1.0.1 listing.
