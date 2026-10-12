@@ -1,3 +1,7 @@
+## 1.3.142 - 2026-10-12
+
+- Refresh ModRelease Studio links and download to v0.3.69.
+
 ## 1.3.141 - 2026-10-12
 
 - Link the Subtitle Timing Studio card to release v1.0.2 and its archive.
