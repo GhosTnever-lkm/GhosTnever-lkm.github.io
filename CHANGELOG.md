@@ -1,3 +1,7 @@
+## 1.3.124 - 2026-10-12
+
+- Point the flagship ecosystem card to Paradox Mod Quality Gate v1.0.42.
+
 ## 1.3.123 - 2026-10-12
 
 - Sync the flagship card, screenshot, and ZIP link to ModRelease Studio v0.3.61.
