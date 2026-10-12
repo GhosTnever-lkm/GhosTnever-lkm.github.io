@@ -1,3 +1,7 @@
+# 1.3.164 - 2026-10-12
+
+- Add CommitCraft to the project catalog with verified v1.0.4 release and source archive links.
+
 # 1.3.163 - 2026-10-12
 
 - Update CSV Key Diff preview, release, and download links to verified v0.1.4.
