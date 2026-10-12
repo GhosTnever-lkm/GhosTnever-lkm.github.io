@@ -1,3 +1,7 @@
+# 1.3.170 - 2026-10-13
+
+- Update the Paradox Mod Workbench link to release v0.2.6.
+
 # 1.3.169 - 2026-10-13
 
 - Sync Paradox Mod Quality Gate v1.0.59 and its Windows Pro v1.0.3 listing.
