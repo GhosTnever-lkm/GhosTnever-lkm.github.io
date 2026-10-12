@@ -1,6 +1,7 @@
 # 1.3.167 - 2026-10-13
 
 - Update CSV Merge Review preview and release links to v0.1.2, including the installable wheel and its checksum manifest.
+- Update the ModRelease Studio flagship card, preview, release link, and ZIP download to v0.3.75; add a SHA-256 link (43,801-byte archive).
 
 # 1.3.166 - 2026-10-13
 
