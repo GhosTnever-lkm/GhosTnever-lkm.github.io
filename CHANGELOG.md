@@ -1,3 +1,7 @@
+## 1.3.141 - 2026-10-12
+
+- Link the Subtitle Timing Studio card to release v1.0.2 and its archive.
+
 ## 1.3.140 - 2026-10-12
 
 - Refresh the ModRelease Gate and Paradox Quality Gate release links to v1.0.54 and v1.0.51.
