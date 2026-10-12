@@ -1,3 +1,7 @@
+## 1.3.151 - 2026-10-12
+
+- Update ModRelease Studio preview and download links to the verified v0.3.72 release.
+
 ## 1.3.150 - 2026-10-12
 
 - Update Agent Run Lens links to release v1.0.1.
