@@ -1,3 +1,7 @@
+# 1.3.159 - 2026-10-12
+
+- Add Mod Observatory v0.2.4 to the project catalog.
+
 # 1.3.158 - 2026-10-12
 
 - Add DiffShield Action with current v1.0.4 release details.
