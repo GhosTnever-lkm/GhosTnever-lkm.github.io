@@ -1,3 +1,7 @@
+# 1.3.162 - 2026-10-12
+
+- Update Git Churn Map preview, sample, release, and download links to verified v0.1.3.
+
 # 1.3.161 - 2026-10-12
 
 - Add GhosTnever Codex Toolkit v1.1.4 with current plugin, release, and CI details.
