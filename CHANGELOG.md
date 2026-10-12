@@ -1,3 +1,7 @@
+# 1.3.169 - 2026-10-13
+
+- Sync Paradox Mod Quality Gate v1.0.59 and its Windows Pro v1.0.3 listing.
+
 # 1.3.168 - 2026-10-13
 
 - Point the ModRelease Gate link to the verified v1.0.59 release.
