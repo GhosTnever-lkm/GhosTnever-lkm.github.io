@@ -1,3 +1,7 @@
+## 1.3.144 - 2026-10-12
+
+- Update the Paradox Mod Quality Gate card to verified v1.0.52.
+
 ## 1.3.143 - 2026-10-12
 
 - Update the ModRelease Gate card to the verified v1.0.55 release.
