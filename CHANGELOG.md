@@ -303,6 +303,10 @@
 
 # Changelog
 
+## 1.3.132 - 2026-10-12
+
+- Point the ModRelease Gate link to the green v1.0.48 release.
+
 ## 1.3.131 - 2026-10-12
 
 - Refresh the ModRelease Studio flagship card and related GitHub Action and Paradox Gate links to the latest releases.
