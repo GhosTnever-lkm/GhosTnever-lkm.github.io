@@ -1,3 +1,7 @@
+## 1.3.149 - 2026-10-12
+
+- Update Asset Sieve links to the source-protection fix in v0.1.5.
+
 ## 1.3.148 - 2026-10-12
 
 - Add AudioScribe Studio to the project portfolio with its current v0.1.5 release and local-processing details.
