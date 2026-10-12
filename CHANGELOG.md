@@ -1,3 +1,7 @@
+## 1.3.129 - 2026-10-12
+
+- Update the flagship ecosystem card to Paradox Mod Quality Gate v1.0.43.
+
 ## 1.3.128 - 2026-10-12
 
 - Update the flagship ecosystem card to ModRelease Gate Action v1.0.46.
