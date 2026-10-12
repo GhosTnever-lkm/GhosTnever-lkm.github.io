@@ -1,3 +1,7 @@
+## 1.3.135 - 2026-10-12
+
+- Refresh the GameText Gate preview, release, and ZIP links to v0.1.15.
+
 ## 1.3.134 - 2026-10-12
 
 - Sync the ModRelease Studio flagship card, download, and related GitHub Action and Paradox Gate links to the latest verified releases.
