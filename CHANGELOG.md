@@ -1,3 +1,7 @@
+# 1.3.158 - 2026-10-12
+
+- Add DiffShield Action with current v1.0.4 release details.
+
 # 1.3.157 - 2026-10-12
 
 - Update the Subtitle Timing Studio links to the verified v1.0.3 release.
