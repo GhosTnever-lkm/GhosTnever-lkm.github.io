@@ -1,3 +1,7 @@
+## 1.3.148 - 2026-10-12
+
+- Add AudioScribe Studio to the project portfolio with its current v0.1.5 release and local-processing details.
+
 ## 1.3.147 - 2026-10-12
 
 - Refresh the ModRelease Studio, Gate Action, and Paradox Quality Gate links to v0.3.71, v1.0.57, and v1.0.55.
