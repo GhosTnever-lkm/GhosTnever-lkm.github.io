@@ -1,3 +1,7 @@
+## 1.3.145 - 2026-10-12
+
+- Update the Paradox Mod Quality Gate and Workbench cards to v1.0.53 and v0.2.5.
+
 ## 1.3.144 - 2026-10-12
 
 - Update the Paradox Mod Quality Gate card to verified v1.0.52.
