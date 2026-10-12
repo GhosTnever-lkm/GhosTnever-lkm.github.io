@@ -1,3 +1,7 @@
+## 1.3.138 - 2026-10-12
+
+- Refresh flagship release links to scanner v0.3.67, ModRelease Gate v1.0.53, and Paradox Gate v1.0.50.
+
 ## 1.3.137 - 2026-10-12
 
 - Refresh the ModRelease Studio, Gate Action, and Paradox Quality Gate links to v0.3.65, v1.0.51, and v1.0.48.
