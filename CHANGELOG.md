@@ -617,3 +617,7 @@
 - Add Subtitle Timing Studio v1.0.1 with screenshot, local demo, release ZIP, and public announcement.
 
 
+## 1.3.126 - 2026-10-12
+
+- Refresh Mod Threat Lens release, preview, and download links to verified v0.1.9.
+
