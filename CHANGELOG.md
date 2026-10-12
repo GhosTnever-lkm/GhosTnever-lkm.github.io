@@ -1,6 +1,6 @@
-## 1.3.135 - 2026-10-12
+## 1.3.136 - 2026-10-12
 
-- Refresh the GameText Gate preview, release, and ZIP links to v0.1.15.
+- Refresh the ModRelease Studio, Gate Action, and Paradox Quality Gate links to v0.3.64, v1.0.50, and v1.0.47.
 
 ## 1.3.134 - 2026-10-12
 
@@ -660,4 +660,3 @@
 ## 1.3.126 - 2026-10-12
 
 - Refresh Mod Threat Lens release, preview, and download links to verified v0.1.9.
-
