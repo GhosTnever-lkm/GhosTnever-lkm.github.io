@@ -1,3 +1,7 @@
+# 1.3.168 - 2026-10-13
+
+- Point the ModRelease Gate link to the verified v1.0.59 release.
+
 # 1.3.167 - 2026-10-13
 
 - Update CSV Merge Review preview and release links to v0.1.2, including the installable wheel and its checksum manifest.
