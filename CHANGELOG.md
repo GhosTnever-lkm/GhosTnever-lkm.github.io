@@ -1,3 +1,7 @@
+# 1.3.156 - 2026-10-12
+
+- Update AudioScribe Studio to the verified v0.1.6 release and describe content-checked upload resumption.
+
 ## 1.3.155 - 2026-10-12
 
 - Sync the ModRelease ecosystem to Studio v0.3.73 and Gate v1.0.58 while keeping the paid Pro download linked to Boosty.
