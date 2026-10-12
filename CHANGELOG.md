@@ -1,3 +1,7 @@
+## 1.3.139 - 2026-10-12
+
+- Refresh ModRelease Studio links and download to v0.3.68; keep the Action and Paradox Gate links on their current releases.
+
 ## 1.3.138 - 2026-10-12
 
 - Refresh flagship release links to scanner v0.3.67, ModRelease Gate v1.0.53, and Paradox Gate v1.0.50.
