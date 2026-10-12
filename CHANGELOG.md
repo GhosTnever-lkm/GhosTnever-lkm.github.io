@@ -1,3 +1,7 @@
+## 1.3.152 - 2026-10-12
+
+- Update the flagship ecosystem card to the verified Paradox Mod Quality Gate v1.0.56 release.
+
 ## 1.3.151 - 2026-10-12
 
 - Update ModRelease Studio preview and download links to the verified v0.3.72 release.
