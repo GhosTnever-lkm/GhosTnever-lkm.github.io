@@ -1,3 +1,7 @@
+# 1.3.163 - 2026-10-12
+
+- Update CSV Key Diff preview, release, and download links to verified v0.1.4.
+
 # 1.3.162 - 2026-10-12
 
 - Update Git Churn Map preview, sample, release, and download links to verified v0.1.3.
