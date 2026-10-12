@@ -1,3 +1,7 @@
+## 1.3.150 - 2026-10-12
+
+- Update Agent Run Lens links to release v1.0.1.
+
 ## 1.3.149 - 2026-10-12
 
 - Update Asset Sieve links to the source-protection fix in v0.1.5.
