@@ -1,3 +1,7 @@
+## 1.3.130 - 2026-10-12
+
+- Update the flagship ecosystem links to Paradox Mod Quality Gate v1.0.44 and add Paradox Mod Workbench v0.2.4.
+
 ## 1.3.129 - 2026-10-12
 
 - Update the flagship ecosystem card to Paradox Mod Quality Gate v1.0.43.
