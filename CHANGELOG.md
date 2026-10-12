@@ -1,3 +1,7 @@
+# 1.3.165 - 2026-10-13
+
+- Add tracked-artifacts-check with current v0.1.2 release and download links.
+
 # 1.3.164 - 2026-10-12
 
 - Add CommitCraft to the project catalog with verified v1.0.4 release and source archive links.
