@@ -1,3 +1,7 @@
+## 1.3.146 - 2026-10-12
+
+- Refresh the ModRelease Studio, Gate Action, and Paradox Quality Gate links to verified releases v0.3.70, v1.0.56, and v1.0.54.
+
 ## 1.3.145 - 2026-10-12
 
 - Update the Paradox Mod Quality Gate and Workbench cards to v1.0.53 and v0.2.5.
