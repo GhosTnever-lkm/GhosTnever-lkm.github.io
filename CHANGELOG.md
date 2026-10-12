@@ -724,4 +724,3 @@
 ## 1.3.126 - 2026-10-12
 
 - Refresh Mod Threat Lens release, preview, and download links to verified v0.1.9.
-
