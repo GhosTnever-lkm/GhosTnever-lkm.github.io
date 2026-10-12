@@ -1,3 +1,7 @@
+# 1.3.157 - 2026-10-12
+
+- Update the Subtitle Timing Studio links to the verified v1.0.3 release.
+
 # 1.3.156 - 2026-10-12
 
 - Update AudioScribe Studio to the verified v0.1.6 release and describe content-checked upload resumption.
