@@ -1,6 +1,10 @@
+# 1.3.166 - 2026-10-13
+
+- Link the tracked-artifacts-check wheel asset from the v0.1.2 release.
+
 # 1.3.165 - 2026-10-13
 
-- Add tracked-artifacts-check with current v0.1.2 release and download links.
+- Add tracked-artifacts-check with current v0.1.2 release and verified wheel download.
 
 # 1.3.164 - 2026-10-12
 
