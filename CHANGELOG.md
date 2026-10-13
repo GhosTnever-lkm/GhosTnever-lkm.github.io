@@ -1,3 +1,7 @@
+# 1.3.190 - 2026-10-13
+
+- Update CueGrid to v0.2.2, add its release ZIP, and summarize the cue card markup fix.
+
 # 1.3.189 - 2026-10-13
 
 - Update HomeLedger to v0.1.2 and add its verified release archive link.
