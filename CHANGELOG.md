@@ -1,3 +1,7 @@
+# 1.3.186 - 2026-10-13
+
+- Refresh the existing LocaleLens card to v0.1.5 and point its download button at the actual GitHub source archive.
+
 # 1.3.185 - 2026-10-13
 
 - Update the existing PantryPilot card to v0.1.3 with validated backup-import details and current release links.
