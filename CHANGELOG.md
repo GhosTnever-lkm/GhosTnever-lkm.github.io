@@ -1,3 +1,7 @@
+# 1.3.189 - 2026-10-13
+
+- Update HomeLedger to v0.1.2 and add its verified release archive link.
+
 # 1.3.188 - 2026-10-13
 
 - Update ModLocale to v1.0.3 with printf-format validation and current release archive links.
