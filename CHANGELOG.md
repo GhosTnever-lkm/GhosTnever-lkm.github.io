@@ -913,3 +913,6 @@
 ## 1.3.126 - 2026-10-12
 
 - Refresh Mod Threat Lens release, preview, and download links to verified v0.1.9.
+## 1.3.201 - 2026-10-13
+
+- Update the PingScope release and Windows ZIP links to v0.2.3.
