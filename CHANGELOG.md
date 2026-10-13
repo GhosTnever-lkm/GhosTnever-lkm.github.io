@@ -925,3 +925,7 @@
 ## 1.3.203 - 2026-10-13
 
 - Update the flagship ecosystem links to Quality Gate v1.0.64 and Windows Pro v1.0.8, including the verified bundle ZIP and Boosty offer.
+
+## 1.3.204 - 2026-10-13
+
+- Update the AegisScan AV portfolio card to v0.1.3 with file-replacement handling, stable ClamAV snapshots, release download, and SHA-256 links.
