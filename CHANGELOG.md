@@ -921,3 +921,7 @@
 ## 1.3.202 - 2026-10-13
 
 - Update HomeLedger release and ZIP links to v0.1.4.
+
+## 1.3.203 - 2026-10-13
+
+- Update the flagship ecosystem links to Quality Gate v1.0.64 and Windows Pro v1.0.8, including the verified bundle ZIP and Boosty offer.
