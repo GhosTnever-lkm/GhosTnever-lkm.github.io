@@ -1,3 +1,7 @@
+## 1.3.211 - 2026-10-13
+
+- Add a RiftUnpack project card with release, Windows builds, and CI links.
+
 ## 1.3.210 - 2026-10-13
 
 - Update PixelClean Local links, preview, and release download to v0.1.1.
