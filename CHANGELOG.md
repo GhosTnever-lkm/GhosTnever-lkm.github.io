@@ -1,3 +1,7 @@
+# 1.3.188 - 2026-10-13
+
+- Update ModLocale to v1.0.3 with printf-format validation and current release archive links.
+
 # 1.3.187 - 2026-10-13
 
 - Update the HueDock portfolio card to release v0.1.2 and retain the current demo and announcement links.
