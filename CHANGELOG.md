@@ -1,3 +1,7 @@
+# 1.3.192 - 2026-10-13
+
+- Sync the ModRelease flagship family to Gate v1.0.63, Studio Action v1.0.61, Workbench v0.2.7, and Pro v1.0.7.
+
 # 1.3.191 - 2026-10-13
 
 - Update CalWeave to v0.1.2 with the verified ZIP and early-year date fix summary.
