@@ -1,3 +1,7 @@
+# 1.3.183 - 2026-10-13
+
+- Add QuoteForge v0.1.2 app and release links to the project catalog.
+
 # 1.3.182 - 2026-10-13
 
 - Add RegexBench v0.1.3 demo and release links to the project catalog.
