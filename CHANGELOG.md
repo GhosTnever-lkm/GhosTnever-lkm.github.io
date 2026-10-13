@@ -1,3 +1,7 @@
+# 1.3.184 - 2026-10-13
+
+- Update the existing QuoteForge listing to v0.1.2 and remove its duplicate card.
+
 # 1.3.183 - 2026-10-13
 
 - Add QuoteForge v0.1.2 app and release links to the project catalog.
