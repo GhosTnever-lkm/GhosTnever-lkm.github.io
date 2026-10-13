@@ -1,3 +1,7 @@
+# 1.3.195 - 2026-10-13
+
+- Update FontPair Studio links and summary to v1.0.3.
+
 # 1.3.194 - 2026-10-13
 
 - Update the Screenshot Diff Lab card to v0.1.4 and its new fix summary.
