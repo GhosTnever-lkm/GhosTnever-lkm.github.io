@@ -596,6 +596,9 @@
 
 # Changelog
 
+## 1.3.213 - 2026-10-13
+
+- Update CaptionLint links and release ZIP to v1.0.2 after its published app fix.
 ## 1.3.133 - 2026-10-12
 
 - Clarify that ModRelease Studio detects fine-grained GitHub tokens and keeps their values out of reports.
@@ -644,6 +647,9 @@
 
 # Changelog
 
+## 1.3.213 - 2026-10-13
+
+- Update CaptionLint links and release ZIP to v1.0.2 after its published app fix.
 ## 1.3.43 - 2026-10-10
 
 - Add Agent Run Lens with live app, source, v1.0.0 release, ZIP, and public Boosty announcement.
