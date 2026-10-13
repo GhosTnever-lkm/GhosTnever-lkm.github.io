@@ -1,3 +1,7 @@
+## 1.3.208 - 2026-10-13
+
+- Sync ModRelease Studio links to v0.3.79 and route Windows Pro v1.0.9 purchases to Boosty.
+
 ## 1.3.207 - 2026-10-13
 
 - Update the Gamepad Lab download link to v1.0.2.
