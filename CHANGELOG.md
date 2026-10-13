@@ -1,3 +1,7 @@
+# 1.3.185 - 2026-10-13
+
+- Update the existing PantryPilot card to v0.1.3 with validated backup-import details and current release links.
+
 # 1.3.184 - 2026-10-13
 
 - Update the existing QuoteForge listing to v0.1.2 and remove its duplicate card.
