@@ -1,3 +1,7 @@
+## 1.3.198 - 2026-10-13
+
+- Add a searchable CSV Compass portfolio card with demo, source, v0.1.1 release and archive links.
+
 ## 1.3.197 - 2026-10-13
 
 - Add a searchable ContrastKit portfolio card with current demo, release, ZIP, checksum, and existing announcement links.
