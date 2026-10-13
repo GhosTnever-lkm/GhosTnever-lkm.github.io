@@ -1,3 +1,7 @@
+# 1.3.177 - 2026-10-13
+
+- Update ModRelease Studio to v0.3.76 and correct the Gate link to published v1.0.59.
+
 # 1.3.176 - 2026-10-13
 
 - Update SaveHarbor to v1.1.1 and describe case-collision protection during restore.
