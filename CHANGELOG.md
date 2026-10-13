@@ -1,3 +1,7 @@
+# 1.3.179 - 2026-10-13
+
+- Sync Paradox Mod Quality Gate v1.0.62 and Pro v1.0.6 on the flagship ecosystem card.
+
 # 1.3.178 - 2026-10-13
 
 - Update ModRelease Studio to v0.3.77 and Gate to v1.0.60.
