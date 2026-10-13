@@ -1,3 +1,7 @@
+# 1.3.194 - 2026-10-13
+
+- Update the Screenshot Diff Lab card to v0.1.4 and its new fix summary.
+
 # 1.3.193 - 2026-10-13
 
 - Update the HomeLedger description and release links to v0.1.3.
