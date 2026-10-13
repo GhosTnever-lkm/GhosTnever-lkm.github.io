@@ -1,3 +1,7 @@
+## 1.3.200 - 2026-10-13
+
+- Add a searchable LogSieve card with its demo, v0.1.1 release ZIP and SHA-256 links.
+
 ## 1.3.199 - 2026-10-13
 
 - Update the JSON Compass card with the v1.0.2 release, ZIP, checksum and clearer nesting-limit details.
