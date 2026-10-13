@@ -1,3 +1,7 @@
+## 1.3.215 - 2026-10-13
+
+- Add the Clausewitz Log Doctor v0.2.0 app, release, ZIP, checksum, and game discovery tags to the portfolio.
+
 ## 1.3.214 - 2026-10-13
 
 - Add a tagged Release Checklist card with v1.0.2 source, release, download, and Codex install links.
