@@ -1,3 +1,7 @@
+# 1.3.181 - 2026-10-13
+
+- Sync VOIDFALL v1.0.8 release and ZIP after adding save-failure feedback.
+
 # 1.3.180 - 2026-10-13
 
 - Sync VOIDFALL v1.0.7 release, offline ZIP, and corrected completed-wave reward details.
