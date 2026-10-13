@@ -1,3 +1,7 @@
+## 1.3.199 - 2026-10-13
+
+- Update the JSON Compass card with the v1.0.2 release, ZIP, checksum and clearer nesting-limit details.
+
 ## 1.3.198 - 2026-10-13
 
 - Add a searchable CSV Compass portfolio card with demo, source, v0.1.1 release and archive links.
