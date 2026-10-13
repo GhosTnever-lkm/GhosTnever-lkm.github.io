@@ -1,3 +1,7 @@
+## 1.3.209 - 2026-10-13
+
+- Update the ModRelease Studio flagship links and archive to v0.3.80.
+
 ## 1.3.208 - 2026-10-13
 
 - Sync ModRelease Studio links to v0.3.79 and route Windows Pro v1.0.9 purchases to Boosty.
