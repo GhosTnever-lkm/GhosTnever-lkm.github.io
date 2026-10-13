@@ -1,3 +1,7 @@
+## 1.3.212 - 2026-10-13
+
+- Add a tagged DSH GhostNever Toolkit card with v1.0.3 source, release, and download links.
+
 ## 1.3.211 - 2026-10-13
 
 - Add a RiftUnpack project card with release, Windows builds, and CI links.
