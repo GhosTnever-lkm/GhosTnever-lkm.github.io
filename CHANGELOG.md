@@ -1,3 +1,7 @@
+# 1.3.196 - 2026-10-13
+
+- Update ShiftLedger links and summary to v0.1.2.
+
 # 1.3.195 - 2026-10-13
 
 - Update FontPair Studio links and summary to v1.0.3.
