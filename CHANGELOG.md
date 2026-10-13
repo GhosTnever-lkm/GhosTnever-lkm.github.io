@@ -1,3 +1,7 @@
+# 1.3.191 - 2026-10-13
+
+- Update CalWeave to v0.1.2 with the verified ZIP and early-year date fix summary.
+
 # 1.3.190 - 2026-10-13
 
 - Update CueGrid to v0.2.2, add its release ZIP, and summarize the cue card markup fix.
