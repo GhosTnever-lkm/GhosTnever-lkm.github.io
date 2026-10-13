@@ -1,3 +1,7 @@
+# 1.3.174 - 2026-10-13
+
+- Add ModForge Studio v0.1.3 to the public portfolio with its live app, repository, release, and source archive.
+
 # 1.3.173 - 2026-10-13
 
 - Update the ModPack Inspector card to v0.1.2 and describe keyboard-accessible file selection.
