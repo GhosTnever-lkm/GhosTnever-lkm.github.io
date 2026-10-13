@@ -1,3 +1,7 @@
+## 1.3.206 - 2026-10-13
+
+- Update ShaderTriage release and download links to v0.1.1.
+
 ## 1.3.205 - 2026-10-13
 
 - Sync flagship Studio, Gate Action, Paradox Gate, and Windows Pro release and download links to v0.3.78, v1.0.62, v1.0.65, and v1.0.9.
