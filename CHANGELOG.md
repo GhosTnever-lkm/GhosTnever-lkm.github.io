@@ -1,3 +1,7 @@
+## 1.3.207 - 2026-10-13
+
+- Update the Gamepad Lab download link to v1.0.2.
+
 ## 1.3.206 - 2026-10-13
 
 - Update ShaderTriage release and download links to v0.1.1.
