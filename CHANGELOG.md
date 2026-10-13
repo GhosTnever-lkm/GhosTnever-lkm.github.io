@@ -1,3 +1,7 @@
+# 1.3.178 - 2026-10-13
+
+- Update ModRelease Studio to v0.3.77 and Gate to v1.0.60.
+
 # 1.3.177 - 2026-10-13
 
 - Update ModRelease Studio to v0.3.76 and correct the Gate link to published v1.0.59.
