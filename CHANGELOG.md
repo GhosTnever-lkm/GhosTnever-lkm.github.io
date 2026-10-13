@@ -1,3 +1,7 @@
+# 1.3.173 - 2026-10-13
+
+- Update the ModPack Inspector card to v0.1.2 and describe keyboard-accessible file selection.
+
 # 1.3.172 - 2026-10-13
 
 - Sync Paradox Mod Quality Gate v1.0.61 and its Windows Pro v1.0.5 listing.
