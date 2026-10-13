@@ -1,3 +1,7 @@
+# 1.3.180 - 2026-10-13
+
+- Sync VOIDFALL v1.0.7 release, offline ZIP, and corrected completed-wave reward details.
+
 # 1.3.179 - 2026-10-13
 
 - Sync Paradox Mod Quality Gate v1.0.62 and Pro v1.0.6 on the flagship ecosystem card.
