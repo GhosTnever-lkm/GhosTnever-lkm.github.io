@@ -1,3 +1,7 @@
+# 1.3.172 - 2026-10-13
+
+- Sync Paradox Mod Quality Gate v1.0.61 and its Windows Pro v1.0.5 listing.
+
 # 1.3.171 - 2026-10-13
 
 - Sync Paradox Mod Quality Gate v1.0.60 and its Windows Pro v1.0.4 listing.
