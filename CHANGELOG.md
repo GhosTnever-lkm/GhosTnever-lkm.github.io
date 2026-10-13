@@ -1,3 +1,7 @@
+# 1.3.175 - 2026-10-13
+
+- Update BugBundle links and describe preservation of distinct logs with repeated filenames.
+
 # 1.3.174 - 2026-10-13
 
 - Add ModForge Studio v0.1.3 to the public portfolio with its live app, repository, release, and source archive.
