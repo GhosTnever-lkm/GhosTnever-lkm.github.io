@@ -1,3 +1,7 @@
+# 1.3.182 - 2026-10-13
+
+- Add RegexBench v0.1.3 demo and release links to the project catalog.
+
 # 1.3.181 - 2026-10-13
 
 - Sync VOIDFALL v1.0.8 release and ZIP after adding save-failure feedback.
