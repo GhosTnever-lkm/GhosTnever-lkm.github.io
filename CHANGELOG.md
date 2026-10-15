@@ -1,3 +1,9 @@
+## 1.3.216 - 2026-10-16
+
+- Refocus the landing page on ModRelease Studio and three related mod QA tools, with the wider catalog collapsed by default.
+- Synchronize current releases and correct the project-specific CI and GameText Gate links.
+- Run automated content checks on pull requests and deploy Pages only after validation on the main branch.
+
 ## 1.3.215 - 2026-10-13
 
 - Add the Clausewitz Log Doctor v0.2.0 app, release, ZIP, checksum, and game discovery tags to the portfolio.
