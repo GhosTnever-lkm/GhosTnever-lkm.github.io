@@ -1,3 +1,7 @@
+## 1.3.217 - 2026-10-20
+
+- Sync the portfolio links and release-version checks to verified Paradox Mod Quality Gate v1.0.68 and Paradox Mod Workbench v0.2.8 releases.
+
 ## 1.3.216 - 2026-10-16
 
 - Refocus the landing page on ModRelease Studio and three related mod QA tools, with the wider catalog collapsed by default.
