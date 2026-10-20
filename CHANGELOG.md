@@ -1,3 +1,7 @@
+## 1.3.219 - 2026-10-20
+
+- Update the Mod Conflict Map release and download links to the verified v0.4.2 release.
+
 ## 1.3.218 - 2026-10-20
 
 - Update the flagship ModRelease Studio, ModRelease Gate Action, and Paradox Mod Quality Gate links to verified releases v0.3.88, v1.0.70, and v1.0.73.
