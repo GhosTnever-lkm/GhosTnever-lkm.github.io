@@ -68,7 +68,7 @@ class PortfolioContentTests(unittest.TestCase):
             "ModRelease Studio": "v0.3.89",
             "ModRelease Gate": "v1.0.71",
             "Paradox Mod Quality Gate": "v1.0.74",
-            "Paradox Mod Workbench": "v0.2.8",
+            "Paradox Mod Workbench": "v0.2.10",
         }
         for card in cards[:4]:
             name = str(card["name"])

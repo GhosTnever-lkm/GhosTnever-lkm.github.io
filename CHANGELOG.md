@@ -1,3 +1,7 @@
+## 1.3.222 - 2026-10-20
+
+- Update Paradox Mod Workbench release links to the verified v0.2.10 release.
+
 ## 1.3.221 - 2026-10-20
 
 - Update Mod Conflict Map release and download links to verified v0.4.3.
