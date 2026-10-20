@@ -109,11 +109,11 @@ class PortfolioContentTests(unittest.TestCase):
         links = card["links"]
         assert isinstance(links, list)
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/tag/v0.4.2",
+            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/tag/v0.4.3",
             {link["href"] for link in links},
         )
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/download/v0.4.2/Mod-Conflict-Map-v0.4.2.zip",
+            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/download/v0.4.3/Mod-Conflict-Map-v0.4.3.zip",
             {link["href"] for link in links},
         )
 
