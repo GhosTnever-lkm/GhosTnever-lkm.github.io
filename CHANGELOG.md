@@ -1,6 +1,6 @@
 ## 1.3.217 - 2026-10-20
 
-- Sync the portfolio links and release-version checks to verified Paradox Mod Quality Gate v1.0.68 and Paradox Mod Workbench v0.2.8 releases.
+- Update the flagship ModRelease Studio, ModRelease Gate Action, and Paradox Mod Quality Gate links to verified releases v0.3.87, v1.0.69, and v1.0.72.
 
 ## 1.3.216 - 2026-10-16
 
