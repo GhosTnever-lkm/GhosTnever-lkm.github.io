@@ -1,3 +1,7 @@
+## 1.3.218 - 2026-10-20
+
+- Update the flagship ModRelease Studio, ModRelease Gate Action, and Paradox Mod Quality Gate links to verified releases v0.3.88, v1.0.70, and v1.0.73.
+
 ## 1.3.217 - 2026-10-20
 
 - Update the flagship ModRelease Studio, ModRelease Gate Action, and Paradox Mod Quality Gate links to verified releases v0.3.87, v1.0.69, and v1.0.72.

@@ -65,9 +65,9 @@ class PortfolioContentTests(unittest.TestCase):
             ],
         )
         expected = {
-            "ModRelease Studio": "v0.3.87",
-            "ModRelease Gate": "v1.0.69",
-            "Paradox Mod Quality Gate": "v1.0.72",
+            "ModRelease Studio": "v0.3.88",
+            "ModRelease Gate": "v1.0.70",
+            "Paradox Mod Quality Gate": "v1.0.73",
             "Paradox Mod Workbench": "v0.2.8",
         }
         for card in cards[:4]:
