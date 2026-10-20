@@ -1,3 +1,7 @@
+## 1.3.220 - 2026-10-20
+
+- Update ModRelease Studio, ModRelease Gate, and Paradox Mod Quality Gate cards to verified releases v0.3.89, v1.0.71, and v1.0.74.
+
 ## 1.3.219 - 2026-10-20
 
 - Update the Mod Conflict Map release and download links to the verified v0.4.2 release.
