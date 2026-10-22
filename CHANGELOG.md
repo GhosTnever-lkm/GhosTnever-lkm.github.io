@@ -1,3 +1,7 @@
+## 1.3.223 - 2026-10-23
+
+- Refresh ModRelease Studio, ModRelease Gate, Paradox Mod Quality Gate, Workbench, and Mod Threat Lens release links to verified latest releases.
+
 ## 1.3.222 - 2026-10-20
 
 - Update Paradox Mod Workbench release links to the verified v0.2.10 release.
