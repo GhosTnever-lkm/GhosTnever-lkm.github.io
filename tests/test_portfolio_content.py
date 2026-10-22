@@ -99,6 +99,17 @@ class PortfolioContentTests(unittest.TestCase):
                     f"{card['name']} links its CI badge to a different repository: {workflow['href']}",
                 )
 
+    def test_mod_observatory_release_and_download_links_are_current(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "Mod Observatory")
+        links = card["links"]
+        release = next(link for link in links if "/mod-observatory/releases/tag/" in link["href"])
+        archive = next(link for link in links if "/mod-observatory/releases/download/" in link["href"])
+        self.assertEqual(release["href"], "https://github.com/GhosTnever-lkm/mod-observatory/releases/tag/v0.2.5")
+        self.assertIn("v0.2.5", release["text"])
+        self.assertEqual(archive["href"], "https://github.com/GhosTnever-lkm/mod-observatory/releases/download/v0.2.5/mod-observatory-0.2.5.zip")
+        self.assertNotIn("v0.2.4", release["href"] + archive["href"])
+
     def test_game_text_gate_uses_its_published_release(self) -> None:
         _, cards = read_cards()
         game_text = next(card for card in cards if card["name"] == "GameText Gate")

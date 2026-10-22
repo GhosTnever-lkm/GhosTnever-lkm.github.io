@@ -1,3 +1,7 @@
+## 1.3.227 - 2026-10-23
+
+- Update the Mod Observatory release and ZIP links to the published v0.2.5 release.
+
 ## 1.3.226 - 2026-10-23
 
 - Update Paradox Mod Quality Gate links to the verified v1.0.76 release.
