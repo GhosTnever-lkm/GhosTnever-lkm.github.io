@@ -68,7 +68,7 @@ class PortfolioContentTests(unittest.TestCase):
             "ModRelease Studio": "v0.3.90",
             "ModRelease Gate": "v1.0.72",
             "Paradox Mod Quality Gate": "v1.0.75",
-            "Paradox Mod Workbench": "v0.2.11",
+            "Paradox Mod Workbench": "v0.2.12",
         }
         for card in cards[:4]:
             name = str(card["name"])
@@ -77,6 +77,11 @@ class PortfolioContentTests(unittest.TestCase):
             release = next(link for link in links if link["text"].strip().startswith("Релиз v"))
             self.assertEqual(re.search(r"/releases/tag/(v[\d.]+)$", release["href"]).group(1), expected[name])
             self.assertIn(expected[name], release["text"])
+
+        studio_links = cards[0]["links"]
+        workbench = next(link for link in studio_links if "/paradox-mod-workbench/releases/tag/" in link["href"])
+        self.assertEqual(workbench["href"], "https://github.com/GhosTnever-lkm/paradox-mod-workbench/releases/tag/v0.2.12")
+        self.assertIn("Workbench v0.2.12", workbench["text"])
 
     def test_every_workflow_link_points_to_its_own_project(self) -> None:
         _, cards = read_cards()
