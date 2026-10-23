@@ -1,3 +1,7 @@
+## 1.3.229 - 2026-10-23
+
+- Update Paradox Mod Quality Gate links in the portfolio and test the published v1.0.77 release.
+
 ## 1.3.228 - 2026-10-23
 
 - Update both GameText Gate language cards, report previews, release links, and ZIP downloads to the published v0.1.17 release.
