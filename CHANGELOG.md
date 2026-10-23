@@ -1,3 +1,7 @@
+## 1.3.228 - 2026-10-23
+
+- Update both GameText Gate language cards, report previews, release links, and ZIP downloads to the published v0.1.17 release.
+
 ## 1.3.227 - 2026-10-23
 
 - Update the Mod Observatory release and ZIP links to the published v0.2.5 release.
