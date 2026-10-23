@@ -111,13 +111,19 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertNotIn("v0.2.4", release["href"] + archive["href"])
 
     def test_game_text_gate_uses_its_published_release(self) -> None:
-        _, cards = read_cards()
-        game_text = next(card for card in cards if card["name"] == "GameText Gate")
-        links = game_text["links"]
-        assert isinstance(links, list)
-        release = next(link for link in links if link["text"].strip().startswith("Релиз v"))
-        self.assertEqual(release["href"], "https://github.com/GhosTnever-lkm/game-text-gate/releases/tag/v0.1.16")
-        self.assertEqual(release["text"].strip(), "Релиз v0.1.16 ↗")
+        html, cards = read_cards()
+        game_text_cards = [card for card in cards if card["name"] == "GameText Gate"]
+        self.assertEqual(len(game_text_cards), 2)
+        self.assertEqual(html.count("game-text-gate/v0.1.17/docs/report-preview.png"), 2)
+        self.assertNotIn("game-text-gate/v0.1.16/", html)
+        for game_text in game_text_cards:
+            links = game_text["links"]
+            assert isinstance(links, list)
+            release = next(link for link in links if link["text"].strip().startswith("Релиз v"))
+            archive = next(link for link in links if "game-text-gate/releases/download/" in link["href"])
+            self.assertEqual(release["href"], "https://github.com/GhosTnever-lkm/game-text-gate/releases/tag/v0.1.17")
+            self.assertEqual(release["text"].strip(), "Релиз v0.1.17 ↗")
+            self.assertEqual(archive["href"], "https://github.com/GhosTnever-lkm/game-text-gate/releases/download/v0.1.17/GameText-Gate-v0.1.17.zip")
 
     def test_mod_conflict_map_links_to_its_published_release(self) -> None:
         _, cards = read_cards()
