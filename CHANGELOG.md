@@ -1,3 +1,7 @@
+## 1.3.230 - 2026-10-23
+
+- Update the portfolio's Quality Gate and Workbench release links, labels, and regression expectations to v1.0.78 and v0.2.14.
+
 ## 1.3.229 - 2026-10-23
 
 - Update Paradox Mod Quality Gate links in the portfolio and test the published v1.0.77 release.
