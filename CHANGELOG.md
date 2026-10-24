@@ -1,3 +1,7 @@
+## 1.3.244 - 2026-10-25
+
+- Update ModPack Inspector card to its verified v0.1.3 release and download.
+
 ## 1.3.243 - 2026-10-25
 
 - Update the DiffShield Action card to its verified v1.0.5 release.
