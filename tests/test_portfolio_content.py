@@ -282,6 +282,18 @@ class PortfolioContentTests(unittest.TestCase):
             workflow,
             r"(?m)^    if: github\.event_name != 'pull_request' && github\.ref == 'refs/heads/main'$")
 
+    def test_diffshield_action_card_links_to_current_release(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "DiffShield Action")
+        links = card["links"]
+        assert isinstance(links, list)
+        release = next(link for link in links if "/diffshield-action/releases/tag/" in link["href"])
+        self.assertEqual(
+            release["href"],
+            "https://github.com/GhosTnever-lkm/diffshield-action/releases/tag/v1.0.5",
+        )
+        self.assertEqual(release["text"].strip(), "Релиз v1.0.5 ↗")
+
 
 if __name__ == "__main__":
     unittest.main()
