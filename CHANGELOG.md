@@ -712,6 +712,10 @@
 
 ## Unreleased
 
+- Update SaveHarbor to v1.1.2 with direct archive and SHA-256 links.
+
+## Unreleased
+
 - Update the HarborTrace portfolio card to v0.1.3 with direct archive and SHA-256 links.
 
 ## 1.3.236 - 2026-10-24

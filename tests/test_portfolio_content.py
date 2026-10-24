@@ -233,6 +233,17 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertFalse(any("tabharbor/releases/tag/v0.1.2" in href for href in hrefs))
         self.assertIn("100", html)
 
+    def test_saveharbor_links_to_its_current_release_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "SaveHarbor")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/saveharbor/releases/tag/v1.1.2", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/saveharbor/releases/download/v1.1.2/SaveHarbor-v1.1.2.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/saveharbor/releases/download/v1.1.2/SaveHarbor-v1.1.2.sha256", hrefs)
+        self.assertFalse(any("saveharbor/releases/tag/v1.1.1" in href for href in hrefs))
+
     def test_pixelclean_links_to_its_current_release_assets_and_preview(self) -> None:
         html, cards = read_cards()
         card = next(card for card in cards if card["name"] == "PixelClean Local")
