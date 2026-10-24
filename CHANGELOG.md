@@ -686,6 +686,10 @@
 
 # Changelog
 
+## 1.3.236 - 2026-10-24
+
+- Update the JSON Compass card to its verified v1.0.3 release, archive, and checksum.
+
 ## 1.3.213 - 2026-10-13
 
 - Update CaptionLint links and release ZIP to v1.0.2 after its published app fix.
