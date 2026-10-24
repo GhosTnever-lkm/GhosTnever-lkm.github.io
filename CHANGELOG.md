@@ -1,3 +1,7 @@
+## 1.3.239 - 2026-10-24
+
+- Update ShiftLedger release and download links to verified v0.1.3; describe its 20 MiB round-trippable JSON backups.
+
 ## 1.3.238 - 2026-10-24
 
 - Update CaptionBench release and ZIP links to verified v0.1.5.

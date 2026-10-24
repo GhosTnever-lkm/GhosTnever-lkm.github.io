@@ -199,6 +199,17 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://github.com/GhosTnever-lkm/captionbench/releases/download/v0.1.5/CaptionBench-v0.1.5.zip", hrefs)
         self.assertFalse(any("captionbench/releases/tag/v0.1.2" in href for href in hrefs))
 
+    def test_shiftledger_links_to_its_current_release_and_archive(self) -> None:
+        html, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "ShiftLedger")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/shiftledger/releases/tag/v0.1.3", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/shiftledger/releases/download/v0.1.3/ShiftLedger-v0.1.3.zip", hrefs)
+        self.assertFalse(any("shiftledger/releases/tag/v0.1.2" in href for href in hrefs))
+        self.assertIn("20 МиБ", html)
+
     def test_commitcraft_links_to_its_published_release(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "CommitCraft")
