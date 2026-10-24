@@ -307,6 +307,23 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://github.com/GhosTnever-lkm/localelens/archive/refs/tags/v0.1.6.zip", hrefs)
         self.assertFalse(any("localelens/releases/tag/v0.1.5" in href for href in hrefs))
 
+    def test_aegisscan_links_to_current_v014_release_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "AegisScan AV")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/aegisscan-av/releases/tag/v0.1.4", hrefs)
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/aegisscan-av/releases/download/v0.1.4/aegisscan_av-0.1.4-py3-none-any.whl",
+            hrefs,
+        )
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/aegisscan-av/releases/download/v0.1.4/SHA256SUMS.txt",
+            hrefs,
+        )
+        self.assertFalse(any("aegisscan-av/releases/tag/v0.1.3" in href for href in hrefs))
+
     def test_pages_workflow_checks_pull_requests_without_deploying_them(self) -> None:
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
         self.assertRegex(workflow, r"(?m)^  pull_request:")
