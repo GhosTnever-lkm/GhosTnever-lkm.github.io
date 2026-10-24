@@ -1,3 +1,7 @@
+## 1.3.246 - 2026-10-25
+
+- Update LocaleLens release and source archive links to verified v0.1.6.
+
 ## 1.3.245 - 2026-10-25
 
 - Update both Mod Threat Lens cards to verified v0.1.11 preview, release, ZIP, and SHA-256 assets.

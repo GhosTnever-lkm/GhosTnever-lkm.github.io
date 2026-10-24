@@ -297,6 +297,16 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://github.com/GhosTnever-lkm/modpack-inspector/releases/latest/download/ModPack-Inspector-0.1.3.zip", hrefs)
         self.assertFalse(any("modpack-inspector/releases/tag/v0.1.2" in href for href in hrefs))
 
+    def test_localelens_links_to_current_v016_release_and_archive(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "LocaleLens")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/localelens/releases/tag/v0.1.6", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/localelens/archive/refs/tags/v0.1.6.zip", hrefs)
+        self.assertFalse(any("localelens/releases/tag/v0.1.5" in href for href in hrefs))
+
     def test_pages_workflow_checks_pull_requests_without_deploying_them(self) -> None:
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
         self.assertRegex(workflow, r"(?m)^  pull_request:")
