@@ -324,6 +324,20 @@ class PortfolioContentTests(unittest.TestCase):
         )
         self.assertFalse(any("aegisscan-av/releases/tag/v0.1.3" in href for href in hrefs))
 
+    def test_csv_key_diff_card_uses_current_v015_assets_and_preview(self) -> None:
+        html, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "CSV Key Diff")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/csv-key-diff/releases/tag/v0.1.5", hrefs)
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/csv-key-diff/releases/download/v0.1.5/csv-key-diff-v0.1.5.zip",
+            hrefs,
+        )
+        self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/csv-key-diff/v0.1.5/docs/demo.svg", html)
+        self.assertFalse(any("csv-key-diff/releases/tag/v0.1.4" in href for href in hrefs))
+
     def test_pages_workflow_checks_pull_requests_without_deploying_them(self) -> None:
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
         self.assertRegex(workflow, r"(?m)^  pull_request:")

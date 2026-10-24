@@ -1,3 +1,7 @@
+## 1.3.248 - 2026-10-25
+
+- Update CSV Key Diff release, ZIP, and preview links to the verified v0.1.5 artifacts.
+
 ## 1.3.247 - 2026-10-25
 
 - Update the AegisScan AV card to the verified v0.1.4 release, wheel, and checksum manifest; add a link regression test.
