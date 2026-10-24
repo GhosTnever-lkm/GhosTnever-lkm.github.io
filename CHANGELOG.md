@@ -1,3 +1,7 @@
+## 1.3.241 - 2026-10-24
+
+- Update PixelClean Local preview, release, ZIP, and checksum links to verified v0.1.3.
+
 ## 1.3.240 - 2026-10-24
 
 - Update TabHarbor links to verified v0.1.3 release assets and describe import behavior at the 100-session limit.
