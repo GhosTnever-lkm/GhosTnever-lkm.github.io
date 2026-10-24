@@ -1,3 +1,7 @@
+## 1.3.243 - 2026-10-25
+
+- Update the DiffShield Action card to its verified v1.0.5 release.
+
 ## 1.3.241 - 2026-10-24
 
 - Update PixelClean Local preview, release, ZIP, and checksum links to verified v0.1.3.
