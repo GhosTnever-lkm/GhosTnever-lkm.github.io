@@ -1,447 +1,91 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0a0d12">
-    <title>GhosTnever — инструменты проверки игровых модов</title>
-    <meta name="description" content="Открытые инструменты GhosTnever для проверки игровых модов перед выпуском: ModRelease Studio, GitHub Actions и диагностика Paradox.">
-    <meta name="author" content="GhosTnever">
-    <meta name="google-site-verification" content="tmDwvx0TIukDOavP3aS17h-rVnXLPq9JA9lWiwyj3No">
-    <meta name="robots" content="index,follow,max-image-preview:large">
-    <link rel="canonical" href="https://ghostnever-lkm.github.io/">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="GhosTnever — инструменты проверки игровых модов">
-    <meta property="og:description" content="ModRelease Studio и связанные инструменты для проверки модов перед выпуском.">
-    <meta property="og:url" content="https://ghostnever-lkm.github.io/">
-    <meta property="og:image" content="https://github.com/GhosTnever-lkm.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="GhosTnever — инструменты проверки игровых модов">
-    <meta name="twitter:description" content="ModRelease Studio и связанные инструменты для проверки модов перед выпуском.">
-    <meta name="twitter:image" content="https://github.com/GhosTnever-lkm.png">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <link rel="stylesheet" href="/styles.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfilePage",
-      "name": "GhosTnever — инструменты проверки игровых модов",
-      "url": "https://ghostnever-lkm.github.io/",
-      "mainEntity": {
-        "@type": "Person",
-        "name": "GhosTnever",
-        "alternateName": "GhosTnever-lkm",
-        "url": "https://ghostnever-lkm.github.io/",
-        "image": "https://github.com/GhosTnever-lkm.png",
-        "description": "Создаю открытые инструменты для проверки игровых модов перед выпуском.",
-        "sameAs": [
-          "https://github.com/GhosTnever-lkm"
-        ],
-        "knowsAbout": ["Game development", "Game modding", "Open-source software", "JavaScript", "Python", "Rust"]
-      }
-    }
-    </script>
-  </head>
-  <body>
-    <div class="grain" aria-hidden="true"></div>
-    <header class="topbar wrap">
-      <a class="brand" href="#top" aria-label="GhosTnever — начало страницы"><span class="brand-mark">G</span><span>GhosTnever<span class="brand-dot">.</span></span></a>
-      <nav aria-label="Основная навигация">
-        <a href="#projects">Проекты</a>
-        <a href="#about">Обо мне</a>
-        <a class="nav-cta" href="https://github.com/GhosTnever-lkm">GitHub <span aria-hidden="true">↗</span></a>
-      </nav>
-    </header>
+Y��x-���jם��i��+��j[h��ܢ���]��:-jZ.����)޳S�F�7G�R�F���ƇF����s�''R#�ƆVC���WF6�'6WC�'WFbӂ#���WF��S�'f�Ww�'B"6��FV�C�'v�GF��FWf�6R�v�GF����F���66�S�#���WF��S�'F�V�R�6���""6��FV�C�"3C"#��F�F�S�v��5F�WfW"(	B��-=�]�-���-]���=�-�R��M�#��F�F�S���WF��S�&FW67&�F���"6��FV�C�-	�-��-�R��-=�]�-�v��5F�WfW"M����-]���=�-�R��M�"�]]B-��=��â��E&V�V6R7GVF���v�D�V"7F���2�M�=��-��&F���#���WF��S�&WF��""6��FV�C�$v��5F�WfW"#���WF��S�&v��v�R�6�FR�fW&�f�6F���"6��FV�C�'F�Gwg�D�V�D�e63v��%f������v�w��4��#���WF��S�'&�&�G2"6��FV�C�&��FW��f����r���֖�vR�&Wf�Ws��&vR#��Ɩ�&V��&6���6�"�&Vc�&�GG3���v��7F�WfW"�ƶ��v�F�V"���#��Ɩ�&V��&�6��"�&Vc�"�ff�6���7fr"G�S�&��vR�7fr����#���WF&�W'G��&�s�G�R"6��FV�C�'&�f��R#���WF&�W'G��&�s�F�F�R"6��FV�C�$v��5F�WfW"(	B��-=�]�-���-]���=�-�R��M�"#���WF&�W'G��&�s�FW67&�F���"6��FV�C�$��E&V�V6R7GVF���-�}���R��-=�]�-�M����-]����M�"�]]B-��=����#���WF&�W'G��&�s�W&�"6��FV�C�&�GG3���v��7F�WfW"�ƶ��v�F�V"���#���WF&�W'G��&�s���vR"6��FV�C�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ���r#���WF��S�'Gv�GFW#�6&B"6��FV�C�'7V��'�#���WF��S�'Gv�GFW#�F�F�R"6��FV�C�$v��5F�WfW"(	B��-=�]�-���-]���=�-�R��M�"#���WF��S�'Gv�GFW#�FW67&�F���"6��FV�C�$��E&V�V6R7GVF���-�}���R��-=�]�-�M����-]����M�"�]]B-��=����#���WF��S�'Gv�GFW#���vR"6��FV�C�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ���r#��Ɩ�&V��'6�FV�"G�S�&Ɩ6F�������"�&Vc�"�6�FV����#��Ɩ�&V��'7G��W6�VWB"�&Vc�"�7G��W2�772#��67&�BG�S�&Ɩ6F�����B��6��#���$6��FW�B#�&�GG3���66�V���&r"��$G�R#�%&�f��UvR"��&��R#�$v��5F�WfW"(	B��-=�]�-���-]���=�-�R��M�""��'W&�#�&�GG3���v��7F�WfW"�ƶ��v�F�V"���"��&���V�F�G�#���$G�R#�%W'6��"��&��R#�$v��5F�WfW""��&�FW&�FT��R#�$v��5F�WfW"�ƶ�"��'W&�#�&�GG3���v��7F�WfW"�ƶ��v�F�V"���"��&��vR#�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ���r"��&FW67&�F���#�-
+�}M��-��-�R��-=�]�-�M����-]���=�-�R��M�"�]]B-��=����"��'6�T2#���&�GG3���v�F�V"�6���v��5F�WfW"�ƶ� ����&���w4&�WB#��$v�RFWfV���V�B"�$v�R��FF��r"�$�V��6�W&6R6�gGv&R"�$�f67&�B"�%�F���"�%'W7B%ТТТ��67&�C����VC��&�G���F�b6�73�&w&��"&�ֆ�FFV��'G'VR#���F�c�ƆVFW"6�73�'F�&"w&#��6�73�&'&�B"�&Vc�"7F�"&���&V��$v��5F�WfW"(	B�}��-��m�#��7�6�73�&'&�B��&�#�s��7���7��v��5F�WfW#�7�6�73�&'&�B�F�B#����7����7�������b&���&V��-	���-���-�=m��#���&Vc�"7&��V7G2#�	��]�-������&Vc�"6&�WB#�	����S����6�73�&�b�7F"�&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ�#�v�D�V"�7�&�ֆ�FFV��'G'VR#�(is��7��������c����VFW#ࠢ�����C�'F�"6�73�'w&#��6V7F���6�73�&�W&�"&���&V��VF'��&�W&��F�F�R#��F�b6�73�&�W&��6��#��6�73�&W�V'&�r#��7�6�73�&ƗfR�F�B#���7��	�	]	}		-	�
+	�	�
+�	�
+		}
+			�
+-
+}	�	�+r�T�4�U$4S���ƃ�C�&�W&��F�F�R#�	��-]"���7��v��5F�WfW#��7���7�6�73�'vfR#�(is��7�������6�73�&�VB#�
+}-�-��-��-�R��-=�]�-�M����-]���=�-�R��M�"�]]B-��=���(	B�"��������M�=��-���M�--��-�}]��R4����-]�������F�b6�73�&�W&��7F���2#��6�73�&'WGF��'WGF���&��'�"�&Vc�"7&��V7G2#�
+��-]-���]�-��7��(i3��7������6�73�&'WGF��'WGF���V�WB"�&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ�#�	�-��-�v�D�V"�7��(is��7�������F�c��F�b6�73�&�W&���WF#��7��	��-]���M�#��7��Ɠ������7��v�D�V"7F���3��7��Ɠ������7��&F���6�W6Wv�G���7����F�c���F�c��F�b6�73�&�W&��f�7V�"&���&V��-	--v��5F�WfW"#��F�b6�73�&�&&�B�&&�B���R#���F�c��F�b6�73�&�&&�B�&&�B�Gv�#���F�c��F�b6�73�&fF"�g&�R#�Ɩ�r7&3�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ���r"�C�-	--v��5F�WfW""v�GF��#sb"�V�v�C�#sb#���F�c��F�b6�73�&�&&�B��&V��&V��F�#�����rU4TeT�D���u3��F�c��F�b6�73�&�&&�B��&V��&V��&�GF��#��7�6�73�&ƗfR�F�B#���7��%T��B+rDU5B+r$T�T4S��F�c��7�6�73�'7&�7&��#�)�3��7���7�6�73�'7&�7&��"#�)�c��7����F�c���6V7F���ࠢ�6V7F���6�73�'6V7F���&��V7G2"�C�'&��V7G2"&���&V��VF'��'&��V7G2�F�F�R#��F�b6�73�'6V7F���ֆVF��r#��F�c��6�73�&W�V'&�r#�	�	r	�	
+
+-	]
 
-    <main id="top" class="wrap">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="live-dot"></span> НЕЗАВИСИМЫЙ РАЗРАБОТЧИК · OPEN SOURCE</p>
-          <h1 id="hero-title">Привет, я <span>GhosTnever</span><span class="wave">↗</span></h1>
-          <p class="lead">Разрабатываю открытые инструменты для проверки игровых модов перед выпуском — от локальной диагностики до автоматических CI-проверок.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Смотреть проекты <span>↓</span></a>
-            <a class="button button-quiet" href="https://github.com/GhosTnever-lkm">Открыть GitHub <span>↗</span></a>
-          </div>
-          <div class="hero-meta"><span>Проверка модов</span><i></i><span>GitHub Actions</span><i></i><span>Paradox и Clausewitz</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Аватар GhosTnever">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="avatar-frame"><img src="https://github.com/GhosTnever-lkm.png" alt="Аватар GhosTnever" width="176" height="176"></div>
-          <div class="orbit-label label-top">MAKING USEFUL THINGS</div>
-          <div class="orbit-label label-bottom"><span class="live-dot"></span> BUILD · TEST · RELEASE</div>
-          <span class="spark spark-a">✳</span><span class="spark spark-b">✦</span>
-        </div>
-      </section>
+	�	�	����ƃ"�C�'&��V7G2�F�F�R#�	��]�-��7�6�73�&'&�B�F�B#����7�����#���F�c��6�73�'FW�B�Ɩ�"�&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��F#�&W�6�F�&�W2#�	-R]��}�-����7��(is��7�������F�c��F�b6�73�'&��V7B�w&�B#��'F�6�R6�73�'&��V7B�6&BfVGW&VB#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6�����B#�)�3��7���7�6�73�'&��V7B�G�R#�
+M	�		=	�		�+r	�
+	�	-	]
+	�	
+	]	�	�	}	�	"	�	�	M	�	#��7����F�c�ƃ3���E&V�V6R7GVF�����3���	��-]����2������=�-�=���M�]]B�=���m�]��	��M����]��=���-���]�]-��-���}��V�b�M����f��R�w&��VBv�D�V"B��������]-M���R������}m���-��-]������=}�����-����-}"�	}�}]���]�]-�"�R���M�""�-}#�����-��R-������]-�������������6�73�'&��V7B�&Wf�Wr"�&Vc�&�GG3���v��7F�WfW"�ƶ��v�F�V"�����G&V�V6R�7GVF���"&���&V��-	�-��-�-��m2��E&V�V6R7GVF��#�Ɩ�r7&3�&�GG3���&r�v�F�V'W6W&6��FV�B�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���c�2��F�72�FV����r"�C�-	���]�-}-��E&V�V6R7GVF����M]��������]�����M"��F��s�&���"v�GF��#��""�V�v�C�#c�#��7��	����-]-���M=�"(is��7������F�b6�73�'&��V7B�Fw2#��7���F�����7���7��v�R��G3��7���7��&V�V6R��7���7��4$�c��7���7����6��f�'7C��7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v��7F�WfW"�ƶ��v�F�V"�����G&V�V6R�7GVF���#�
+-��m��M=�-�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF��#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���&V�V6W2�Fr�c�2�#�
+]��rc�2��#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���&V�V6W2�F�v���B�c�2����E&V�V6R�7GVF���c�2�禗#�
+�}-����#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���&V�V6W2�F�v���B�c�2����E&V�V6R�7GVF���c�2�禗�6�#Sb#�4��#Sb�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���7F����&V�V6W2�Fr�c��s"#�v�D�V"7F���c��s"�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�VƗG��vFR�&V�V6W2�Fr�c��s�#�&F��vFRc��s��#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�v�&�&V�6��&V�V6W2�Fr�c�"�B#�v�&�&V�6�c�"�B�#�(is��#������F�c���'F�6�S��'F�6�R6�73�'&��V7B�6&B6�&R�F���#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6���F���2#�(is��7���7�6�73�'&��V7B�G�R#�
+	-
+�	}		�	�
+�	�	�	�
+
+-
 
-      <section class="section projects" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">ИЗ МАСТЕРСКОЙ</p><h2 id="projects-title">Проекты<span class="brand-dot">.</span></h2></div>
-          <a class="text-link" href="https://github.com/GhosTnever-lkm?tab=repositories">Все репозитории <span>↗</span></a>
-        </div>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-top"><span class="project-icon icon-mod">✓</span><span class="project-type">ФЛАГМАН · ПРОВЕРКА РЕЛИЗОВ МОДОВ</span></div>
-            <h3>ModRelease Studio</h3>
-            <p>Проверь папку или ZIP игрового мода перед публикацией. Найди проблемы упаковки, секреты (включая .env-файлы и fine-grained GitHub PAT), ошибки метаданных и локализации; сравни версии и получи понятный отчёт. Значения секретов не попадают в отчёт; сканирование выполняется локально.</p>
-            <a class="project-preview" href="https://ghostnever-lkm.github.io/modrelease-studio/" aria-label="Открыть страницу ModRelease Studio"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/modrelease-studio/v0.3.90/docs/demo.png" alt="Пример отчёта ModRelease Studio с найденными проблемами мода" loading="lazy" width="882" height="680"><span>Посмотреть продукт ↗</span></a>
-            <div class="project-tags"><span>Python</span><span>Game mods</span><span>Release QA</span><span>SARIF</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/modrelease-studio/">Страница продукта <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modrelease-studio">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modrelease-studio/releases/tag/v0.3.90">Релиз v0.3.90 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modrelease-studio/releases/download/v0.3.90/ModRelease-Studio-v0.3.90.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modrelease-studio/releases/download/v0.3.90/ModRelease-Studio-v0.3.90.zip.sha256">SHA-256 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modrelease-studio-action/releases/tag/v1.0.72">GitHub Action v1.0.72 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-quality-gate/releases/tag/v1.0.78">Paradox Gate v1.0.78 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-workbench/releases/tag/v0.2.14">Workbench v0.2.14 <b>↗</b></a></div>
-          </article>          <article class="project-card core-tool">
-            <div class="project-top"><span class="project-icon icon-tools">↗</span><span class="project-type">СВЯЗАННЫЙ ИНСТРУМЕНТ · GITHUB ACTIONS</span></div>
-            <h3>ModRelease Gate</h3>
-            <p>Подключи проверку ModRelease Studio к pull request и push. Action показывает ошибки и предупреждения в GitHub Actions, добавляет сводку и сохраняет отчёты как артефакт.</p>
-            <div class="project-tags"><span>GitHub Actions</span><span>Release QA</span><span>JSON · Markdown · SARIF</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/modrelease-studio-action">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modrelease-studio-action/releases/tag/v1.0.72">Релиз v1.0.72 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modrelease-studio-action/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card core-tool">
-            <div class="project-top"><span class="project-icon icon-tools">✓</span><span class="project-type">СВЯЗАННЫЙ ИНСТРУМЕНТ · PARADOX</span></div>
-            <h3>Paradox Mod Quality Gate</h3>
-            <p>Объединяет ModRelease Studio и Paradox Mod Workbench в один preflight для модов Paradox: находки, сводка и машиночитаемые отчёты в GitHub Actions.</p>
-            <div class="project-tags"><span>Paradox</span><span>GitHub Actions</span><span>Release QA</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/paradox-mod-quality-gate">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-quality-gate/releases/tag/v1.0.78">Релиз v1.0.78 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-quality-gate/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card core-tool">
-            <div class="project-top"><span class="project-icon icon-mod">⌘</span><span class="project-type">СВЯЗАННЫЙ ИНСТРУМЕНТ · ЛОКАЛЬНАЯ ДИАГНОСТИКА</span></div>
-            <h3>Paradox Mod Workbench</h3>
-            <p>Локальный CLI для исследования пересечений файлов, зависимостей, локализации и Clausewitz-скриптов; формирует текстовые, JSON и SARIF-отчёты.</p>
-            <div class="project-tags"><span>Paradox</span><span>Python</span><span>CLI</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/paradox-mod-workbench">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-workbench/releases/tag/v0.2.14">Релиз v0.2.14 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-workbench/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <div class="project-divider"><p class="eyebrow">ЕЩЁ ПРОЕКТЫ И ЭКСПЕРИМЕНТЫ</p><p>Другие инструменты и игры — в репозиториях GitHub.</p></div>
-        </div>
-        <details class="project-archive">
-          <summary>Показать остальные проекты и эксперименты</summary>
-          <div class="project-grid">
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌘</span><span class="project-type">CODEX · РАБОЧИЕ ПРОЦЕССЫ</span></div>
-            <h3>GhosTnever Codex Toolkit</h3>
-            <p>Устанавливай плагины для знакомства с кодовой базой, ревью изменений, CI, документации и подготовки релиза. Mega Toolkit объединяет 41 рабочий навык; каждый модуль можно включать и выключать, а настройки хранятся локально. CI проверяет навыки и переключатели на Windows и Linux.</p>
-            <div class="project-tags"><span>Codex Plugins</span><span>Code Review</span><span>CI Triage</span><span>Python</span><span>Windows · Linux</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/ghosTnever-codex-toolkit">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/ghosTnever-codex-toolkit/tree/main/plugins/ghostnever-mega-toolkit">Mega Toolkit <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/ghosTnever-codex-toolkit/releases/tag/v1.1.4">Релиз v1.1.4 <b>↗</b></a></div>
-          </article>
-                    <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">✓</span><span class="project-type">CODEX · RELEASE QA</span></div>
-            <h3>Release Checklist</h3>
-            <p>Подготавливает релиз плагина к выпуску и проверяет согласованность версии, манифеста marketplace, README и файлов skills. Поставляется с пятью регрессионными тестами и CI для pull request и main; установка привязана к опубликованной версии.</p>
-            <div class="project-tags"><span>Codex Plugin</span><span>Release Readiness</span><span>Node.js</span><span>GitHub Actions</span><span>MIT</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/release-checklist">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/release-checklist/releases/tag/v1.0.2">Релиз v1.0.2 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/release-checklist/releases/download/v1.0.2/release-checklist-v1.0.2.zip">Скачать ZIP <b>↗</b></a><a href="https://developers.openai.com/plugins/build/plugins">Установка в Codex <b>↗</b></a></div>
-          </article><article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">◈</span><span class="project-type">DEEPSEEK HARNESS · ПЛАГИНЫ</span></div>
-            <h3>DSH GhostNever Toolkit</h3>
-            <p>21 отдельно устанавливаемый плагин для DeepSeek Harness / Cordis: проверка JSON и CSV, сравнение текста, обработка URL, размеров и Git-данных. Устанавливай только нужные инструменты и включай или отключай их в конкретном профиле. CSV Profiler сообщает об ошибках в кавычках вместо тихого искажения таблицы.</p>
-            <div class="project-tags"><span>DeepSeek Harness</span><span>21 plugins</span><span>CSV · JSON</span><span>Developer Tools</span><span>MIT</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/dsh-ghostnever-toolkit">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/dsh-ghostnever-toolkit/releases/tag/v1.0.3">Релиз v1.0.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/dsh-ghostnever-toolkit/releases/download/v1.0.3/GhosTnever-DSH-Toolkit-v1.0.3.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">♫</span><span class="project-type">АУДИО · LOCAL-FIRST</span></div>
-            <h3>AudioScribe Studio</h3>
-            <p>Расшифровывай длинные аудиозаписи локальной моделью faster-whisper. Файл до 5 ГБ загружается частями с проверкой содержимого перед продолжением; готовый текст можно скачать с таймкодами в TXT, SRT, VTT или JSON. Само аудио остаётся на компьютере.</p>
-            <div class="project-tags"><span>Audio transcription</span><span>faster-whisper</span><span>Python</span><span>Local-first</span><span>5 GB uploads</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/audioscribe-studio">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/audioscribe-studio/releases/tag/v0.1.8">Релиз v0.1.8 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/audioscribe-studio/releases/download/v0.1.8/AudioScribe-Studio-v0.1.8.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/audioscribe-studio/releases/download/v0.1.8/AudioScribe-Studio-v0.1.8.zip.sha256">SHA-256 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">▧</span><span class="project-type">ЭКОСИСТЕМА · BUG REPORTS</span></div>
-            <h3>BugBundle</h3>
-            <p>Собирай crash-report и очищенные игровые логи в браузере. BugBundle маскирует типовые секреты, показывает предпросмотр и формирует Markdown или ZIP, не загружая файлы на сервер; невидимые control/bidi-символы в именах отображаются явно; разные логи с одинаковым именем сохраняются отдельно.</p>
-            <a class="project-preview" href="https://ghostnever-lkm.github.io/bugbundle/"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/bugbundle/v1.0.11/docs/bugbundle-preview.png" alt="BugBundle local report builder and privacy preview" loading="lazy" width="1320" height="990"><span>Открыть демо ↗</span></a>
-            <div class="project-tags"><span>Game QA</span><span>Privacy</span><span>Markdown</span><span>Browser</span><span>Offline</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/bugbundle/">Демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/bugbundle">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/bugbundle/releases/download/v1.0.11/BugBundle-v1.0.11.zip">ZIP v1.0.11 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">ЛОГИ · LOCAL-FIRST</span></div>
-            <h3>LogSieve</h3>
-            <p>Подготовь игровые и системные логи для поддержки: LogSieve находит типовые токены, ключи и личные данные, показывает замены и скачивает очищенные файлы или ZIP. Обработка остаётся в браузере; предпросмотр длинных файлов ограничен.</p>
-            <div class="project-tags"><span>Log redaction</span><span>Privacy</span><span>Secrets</span><span>JavaScript</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/logsieve/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/logsieve">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/logsieve/releases/tag/v0.1.1">Релиз v0.1.1 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/logsieve/releases/download/v0.1.1/LogSieve-v0.1.1.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/logsieve/releases/download/v0.1.1/LogSieve-v0.1.1.zip.sha256">SHA-256 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">文</span><span class="project-type">ЭКОСИСТЕМА · LOCALIZATION QA</span></div>
-            <h3>GameText Gate</h3>
-            <p>Сравнивай игровые локализации Unity, Godot, Unreal PO и JSON до сборки: инструмент ищет пропуски, дубликаты, пустые строки и несовпадения плейсхолдеров; невидимые разделители строк в отчётах экранируются явно.</p>
-            <a class="project-preview" href="https://github.com/GhosTnever-lkm/game-text-gate"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/game-text-gate/v0.1.17/docs/report-preview.png" alt="GameText Gate sample localization QA report" loading="lazy" width="1320" height="790"><span>Пример отчёта ↗</span></a>
-            <div class="project-tags"><span>Localization</span><span>Unity</span><span>Godot</span><span>Python</span><span>GitHub Actions</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/game-text-gate">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/game-text-gate/releases/tag/v0.1.17">Релиз v0.1.17 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/game-text-gate/releases/download/v0.1.17/GameText-Gate-v0.1.17.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/game-text-gate/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⚒</span><span class="project-type">МОДЫ · COLLECTION QA</span></div>
-            <h3>ModForge Studio</h3>
-            <p>Собирай локальную библиотеку модов для Paradox, Factorio, RimWorld, Minecraft и Stardew Valley. Проверяй зависимости и пересечения, создавай профили коллекций и выпускай ZIP с JSON-отчётом и SHA-256. Исходники остаются в браузере.</p>
-            <div class="project-tags"><span>Game mods</span><span>Dependency graph</span><span>ZIP release</span><span>Local-first</span><span>Browser</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/modforge-studio/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modforge-studio">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modforge-studio/releases/tag/v0.1.3">Релиз v0.1.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modforge-studio/archive/refs/tags/v0.1.3.zip">Скачать исходный ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">🛡</span><span class="project-type">ЭКОСИСТЕМА · MOD TRIAGE</span></div>
-            <h3>Mod Threat Lens</h3>
-            <p>Локально показывает эвристические признаки для ручной проверки игровых модов и ZIP-архивов. Отчёты явно экранируют невидимые Unicode; сканер не запускает содержимое и не выдаёт вердикт о вредоносности.</p>
-            <a class="project-preview" href="https://github.com/GhosTnever-lkm/mod-threat-lens"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/mod-threat-lens/v0.1.10/docs/report-preview.png" alt="Mod Threat Lens synthetic heuristic scan report" loading="lazy" width="1320" height="790"><span>Пример отчёта ↗</span></a>
-            <div class="project-tags"><span>Game mods</span><span>Security triage</span><span>Static analysis</span><span>Python</span><span>Offline</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/mod-threat-lens">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-threat-lens/releases/tag/v0.1.10">Релиз v0.1.10 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-threat-lens/releases/download/v0.1.10/mod-threat-lens-v0.1.10.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-threat-lens/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">✓</span><span class="project-type">GITHUB ACTIONS · WORKFLOW QA</span></div>
-            <h3>WorkflowGuard</h3>
-            <p>Проверяй GitHub Actions workflow до слияния: WorkflowGuard находит рискованные разрешения, небезопасные выражения и изменяемые ссылки на actions. Локальный Python CLI выдаёт текстовый или JSON-отчёт и помогает заметить проблемы до запуска workflow.</p>
-            <div class="project-tags"><span>GitHub Actions</span><span>Workflow lint</span><span>Python</span><span>CLI</span><span>JSON</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/workflowguard">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/workflowguard/releases/tag/v1.0.4">Релиз v1.0.4 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/workflowguard/releases/download/v1.0.4/workflowguard-1.0.4-py3-none-any.whl">Скачать wheel <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">▤</span><span class="project-type">СУБТИТРЫ · LOCAL-FIRST</span></div>
-            <h3>CaptionBench</h3>
-            <p>Проверяй и редактируй SRT прямо в браузере. Инструмент отмечает длинные строки, быстрые реплики, пустые субтитры и пересекающиеся тайминги, а затем сохраняет исправленную копию.</p>
-            <div class="project-tags"><span>SRT</span><span>Subtitle editor</span><span>Readability</span><span>Local-first</span><span>Accessibility</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/captionbench/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/captionbench">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/captionbench/releases/tag/v0.1.5">Релиз v0.1.5 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/captionbench/releases/download/v0.1.5/CaptionBench-v0.1.5.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">WEB PERFORMANCE · DEVTOOLS</span></div>
-            <h3>HarborTrace</h3>
-            <p>Разбирай HAR-трассы в браузере: смотри waterfall, находи медленные и ошибочные запросы, сравнивай два запуска и выгружай CSV или очищенный HAR. Файлы остаются в текущей вкладке.</p>
-            <a class="project-preview" href="https://ghostnever-lkm.github.io/harbortrace/"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/harbortrace/main/assets/harbortrace-preview.png" alt="HarborTrace: waterfall сетевых запросов, ошибки и разбивка по доменам" loading="lazy" width="1440" height="1395"><span>Открыть демо ↗</span></a>
-            <div class="project-tags"><span>HAR</span><span>Web performance</span><span>DevTools</span><span>Network analysis</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/harbortrace/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/harbortrace">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/harbortrace/releases/tag/v0.1.0">Релиз v0.1.0 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">◷</span><span class="project-type">ТАБЕЛЬ СМЕН · LOCAL-FIRST</span></div>
-            <h3>ShiftLedger</h3>
-            <p>Записывай смены, перерывы и ставку, включая работу через полночь. ShiftLedger считает оплачиваемые часы и начисления, показывает сводки по неделям и месяцам, экспортирует CSV и JSON-резервные копии до 20 МиБ, которые можно импортировать обратно. Данные хранятся в этом браузере.</p>
-            <div class="project-tags"><span>Shift tracker</span><span>Time tracking</span><span>Pay calculator</span><span>CSV</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/shiftledger/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/shiftledger">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/shiftledger/releases/tag/v0.1.3">Релиз v0.1.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/shiftledger/releases/download/v0.1.3/ShiftLedger-v0.1.3.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">↗</span><span class="project-type">БРАУЗЕР · PRODUCTIVITY</span></div>
-            <h3>TabHarbor</h3>
-            <p>Сохраняй рабочие наборы вкладок, ищи по заголовкам и URL и восстанавливай сессии отдельными окнами Chrome или Edge. Сессии и JSON-архивы остаются локально. В библиотеке помещается до 100 сессий; импорт не обрезает записи молча, а при нехватке места сообщает об этом и сохраняет текущую библиотеку.</p>
-            <div class="project-tags"><span>Browser extension</span><span>Tab sessions</span><span>Manifest V3</span><span>Local-first</span><span>Chrome · Edge</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/tabharbor">Исходный код <b>&#8599;</b></a><a href="https://github.com/GhosTnever-lkm/tabharbor/releases/tag/v0.1.3">Релиз v0.1.3 <b>&#8599;</b></a><a href="https://github.com/GhosTnever-lkm/tabharbor/releases/download/v0.1.3/TabHarbor-v0.1.3.zip">Скачать ZIP <b>&#8599;</b></a><a href="https://github.com/GhosTnever-lkm/tabharbor/releases/download/v0.1.3/TabHarbor-v0.1.3.sha256">SHA-256 <b>&#8599;</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">◉</span><span class="project-type">ЦВЕТ · ACCESSIBILITY</span></div>
-            <h3>HueDock</h3>
-            <p>Создавай палитры из четырёх цветовых гармоний, проверяй текст и фон по WCAG AA/AAA и экспортируй CSS-токены. Сохранённые наборы остаются в браузере и переносятся через JSON.</p>
-            <div class="project-tags"><span>Color palette</span><span>WCAG</span><span>CSS tokens</span><span>Accessibility</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/huedock/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/huedock">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/huedock/releases/tag/v0.1.2">Релиз v0.1.2 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">◐</span><span class="project-type">ДОСТУПНОСТЬ · WCAG</span></div>
-            <h3>ContrastKit</h3>
-            <p>Проверяй контраст текста и фона по WCAG AA/AAA, оценивай каждый цвет палитры и выгружай CSS-переменные. Отметки палитры учитывают выбранный размер текста, а неверный цвет сразу сбрасывает старый результат.</p>
-            <div class="project-tags"><span>WCAG 2.2</span><span>Color contrast</span><span>Accessibility</span><span>CSS tokens</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/contrastkit/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/contrastkit">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/contrastkit/releases/tag/v1.0.2">Релиз v1.0.2 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/contrastkit/releases/download/v1.0.2/ContrastKit-v1.0.2.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/contrastkit/releases/download/v1.0.2/ContrastKit-v1.0.2.zip.sha256">SHA-256 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌂</span><span class="project-type">ДОМ · LOCAL-FIRST</span></div>
-            <h3>HomeLedger</h3>
-            <p>Собирай домашний каталог вещей, записывай цену, комнату и срок гарантии. HomeLedger показывает стоимость по валютам, ищет записи и хранит базу только в этом браузере. Резервные копии с повторяющимися ID отклоняются; локальные данные восстанавливаются после сбоя IndexedDB.</p>
-            <div class="project-tags"><span>Home inventory</span><span>Warranty tracker</span><span>IndexedDB</span><span>Local-first</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/homeledger/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/homeledger">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/homeledger/releases/tag/v0.1.4">Релиз v0.1.4 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/homeledger/releases/download/v0.1.4/HomeLedger-v0.1.4.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">🥕</span><span class="project-type">ПЛАНИРОВАНИЕ ЕДЫ · LOCAL-FIRST</span></div>
-            <h3>PantryPilot</h3>
-            <p>Собирай меню на неделю из рецептов и порций, а PantryPilot объединит ингредиенты в список покупок и вычтет то, что уже есть дома. Импорт проверяет запасы и позиции списка и совместим с прежними резервными копиями. Данные остаются на устройстве.</p>
-            <div class="project-tags"><span>Meal planning</span><span>Grocery list</span><span>Recipes</span><span>Pantry</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/pantrypilot/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/pantrypilot">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/pantrypilot/releases/tag/v0.1.3">Релиз v0.1.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/pantrypilot/releases/download/v0.1.3/PantryPilot-v0.1.3.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">₣</span><span class="project-type">ФРИЛАНС · LOCAL-FIRST</span></div>
-            <h3>QuoteForge</h3>
-            <p>Создавай счета и коммерческие предложения с позициями, дробным количеством, скидками и налогом. Точность центов сохраняется и при очень больших суммах; предпросмотр готов к печати или PDF, черновики остаются в браузере.</p>
-            <div class="project-tags"><span>Invoice</span><span>Freelance</span><span>Quote builder</span><span>Local-first</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/quote-forge/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/quote-forge">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/quote-forge/releases/tag/v0.1.2">Релиз v0.1.2 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">▦</span><span class="project-type">КАЛЕНДАРЬ · LOCAL-FIRST</span></div>
-            <h3>CalWeave</h3>
-            <p>Импортируй календарь ICS, найди пересекающиеся события и свободные интервалы нужной длительности, затем экспортируй календарь. Данные обрабатываются только в браузере. Исправлена обработка дат ранних лет. RRULE и расширенные часовые пояса пока не разворачиваются.</p>
-            <div class="project-tags"><span>Calendar</span><span>ICS</span><span>Scheduling</span><span>Local-first</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/calweave/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/calweave">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/calweave/releases/tag/v0.1.2">Релиз v0.1.2 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/calweave/releases/download/v0.1.2/CalWeave-v0.1.2.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">Aa</span><span class="project-type">ТИПОГРАФИКА · LOCAL-FIRST</span></div>
-            <h3>FontPair Studio</h3>
-            <p>Сравнивай до шести локальных шрифтов в одном контексте, настрой пару для заголовка и основного текста и экспортируй CSS-переменные с локальными @font-face. Исправлены коллизии CSS-токенов и переполнение полки при параллельной загрузке шрифтов. Шрифты не отправляются на сервер.</p>
-            <a class="project-preview" href="https://ghostnever-lkm.github.io/fontpair-studio/"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/fontpair-studio/main/assets/screenshot.png" alt="FontPair Studio: сравнение шрифтов и экспорт CSS-темы" loading="lazy" width="1440" height="1100"><span>Открыть демо ↗</span></a>
-            <div class="project-tags"><span>Typography</span><span>Fonts</span><span>CSS</span><span>Local-first</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/fontpair-studio/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/fontpair-studio">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/fontpair-studio/releases/tag/v1.0.3">Релиз v1.0.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/fontpair-studio/releases/download/v1.0.3/fontpair-studio-v1.0.3.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">CC</span><span class="project-type">ПРИЛОЖЕНИЕ · СУБТИТРЫ</span></div>
-            <h3>Subtitle Timing Studio</h3>
-            <p>Локальный редактор SRT/WebVTT с видео-превью. Правьте текст и тайминг с точностью до миллисекунд, задавайте начало и конец по текущей позиции, сдвигайте реплики на таймлайне и проверяйте пересечения. Файлы не отправляются на сервер.</p>
-            <a class="project-preview" href="https://ghostnever-lkm.github.io/subtitle-timing-studio/"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/subtitle-timing-studio/main/assets/screenshot.png" alt="Интерфейс Subtitle Timing Studio: видео-превью, таймлайн и редактор субтитров" loading="lazy" width="1280" height="960"><span>Открыть демо ↗</span></a>
-            <div class="project-tags"><span>SRT</span><span>WebVTT</span><span>Video preview</span><span>Local-first</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/subtitle-timing-studio/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/subtitle-timing-studio">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.5">Релиз v1.0.5 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.5/Subtitle-Timing-Studio-1.0.5.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">TRACE ANALYSIS · LOCAL-FIRST</span></div>
-            <h3>Agent Run Lens</h3>
-            <p>Просматривает JSONL-журналы запусков AI-агентов: события, сбои, задержки, токены и указанную в трассе стоимость. Сравнивает разные запуски, ищет события и экспортирует отчёты в CSV или Markdown. Данные обрабатываются в браузере и не отправляются на сервер.</p>
-            <div class="project-tags"><span>AI agents</span><span>JSONL</span><span>Observability</span><span>Developer tools</span><span>Offline</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/agent-run-lens/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/agent-run-lens">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/agent-run-lens/releases/tag/v1.0.1">Релиз v1.0.1 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/agent-run-lens/releases/download/v1.0.1/Agent-Run-Lens-v1.0.1.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">▦</span><span class="project-type">БРАУЗЕРНОЕ ПРИЛОЖЕНИЕ · LIVE AUDIO</span></div>
-            <h3>CueGrid</h3>
-            <p>Локальная cue-панель для стримов, настольных игр и выступлений. Загружай свои звуки, назначай клавиши и громкость, сохраняй и восстанавливай всю библиотеку с аудио, либо добавляй готовые панели без замены текущих. Данные остаются в браузере; клавиши работают, пока вкладка активна. v0.2.2 исправляет структуру кнопок на звуковых карточках.</p>
-            <div class="project-tags"><span>Soundboard</span><span>Audio</span><span>Live production</span><span>PWA</span><span>Offline</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/cuegrid/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/cuegrid">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/cuegrid/releases/tag/v0.2.2">Релиз v0.2.2 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/cuegrid/releases/download/v0.2.2/CueGrid-v0.2.2.zip">ZIP v0.2.2 <b>↗</b></a></div>
-          </article>
-                    <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">◫</span><span class="project-type">VISUAL QA · OFFLINE</span></div>
-            <h3>Screenshot Diff Lab</h3>
-            <p>Сравнивает скриншоты игр и приложений локально: рядом, наложением или тепловой картой различий. Показывает число изменённых пикселей, процент площади, среднюю ошибку и границы изменений; экспортирует PNG, JSON и Markdown. При быстрой смене файлов побеждает последнее выбранное изображение. Не определяет автоматически, является ли изменение ошибкой.</p>
-            <div class="project-tags"><span>Visual QA</span><span>Screenshots</span><span>Game testing</span><span>JavaScript</span><span>Offline</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/screenshot-diff-lab/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/screenshot-diff-lab">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/screenshot-diff-lab/releases/tag/v0.1.4">Релиз v0.1.4 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/screenshot-diff-lab/releases/download/v0.1.4/Screenshot-Diff-Lab-v0.1.4.zip">Скачать ZIP <b>↗</b></a></div>
-          </article><article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">文</span><span class="project-type">CLI · LOCALIZATION QA</span></div>
-            <h3>GameText Gate</h3>
-            <p>Локально сравнивает игровые локализации в Unity/Godot CSV, gettext PO и вложенном JSON. Находит пропущенные и лишние ключи, дубликаты, пустые переводы и несовпадения поддерживаемых плейсхолдеров. Есть CLI и composite GitHub Action с annotations для pull request; отчёты Markdown, JSON и SARIF. Не переводит и не переписывает файлы; ICU и другие сложные форматы разметки не проверяет полностью.</p>
-            <a class="project-preview" href="https://github.com/GhosTnever-lkm/game-text-gate"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/game-text-gate/v0.1.17/docs/report-preview.png" alt="GameText Gate report preview showing sample localization errors and warnings" loading="lazy" width="1320" height="790"><span>Пример отчёта ↗</span></a>
-            <div class="project-tags"><span>Localization</span><span>Unity</span><span>Godot</span><span>Unreal PO</span><span>Python</span><span>GitHub Actions</span><span>Offline</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/game-text-gate">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/game-text-gate/releases/tag/v0.1.17">Релиз v0.1.17 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/game-text-gate/releases/download/v0.1.17/GameText-Gate-v0.1.17.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">🛡️</span><span class="project-type">CLI · MOD SECURITY TRIAGE</span></div>
-            <h3>Mod Threat Lens</h3>
-            <p>Локально проверяет папки, отдельные файлы и ZIP-моды на эвристические признаки исполнения команд, динамической оценки кода, бинарных payloads и небезопасных архивных путей. Архивы не распаковываются; сканер не выполняет содержимое и не выносит вердикт о вредоносности.</p>
-            <a class="project-preview" href="https://github.com/GhosTnever-lkm/mod-threat-lens"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/mod-threat-lens/v0.1.10/docs/report-preview.png" alt="Mod Threat Lens synthetic heuristic scan preview; test strings are never executed" loading="lazy" width="1320" height="790"><span>Пример отчёта ↗</span></a>
-            <div class="project-tags"><span>Game mods</span><span>Static analysis</span><span>Security triage</span><span>Python</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/mod-threat-lens">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-threat-lens/releases/tag/v0.1.10">Релиз v0.1.10 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-threat-lens/releases/download/v0.1.10/mod-threat-lens-v0.1.10.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-threat-lens/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">◈</span><span class="project-type">ПРИЛОЖЕНИЕ · SHADER LOGS</span></div>
-            <h3>ShaderTriage</h3>
-            <p>Локально разбирает текстовые логи компиляции шейдеров Unity, Unreal Engine и Godot: группирует повторяющиеся диагностики, показывает строки исходного лога, поддерживает поиск и экспорт Markdown/JSON. Файлы остаются в браузере; неизвестные форматы не интерпретируются как причины.</p>
-            <div class="project-tags"><span>Unity</span><span>Unreal Engine</span><span>Godot</span><span>Shaders</span><span>Offline</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/shader-triage/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/shader-triage">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/shader-triage/releases/tag/v0.1.1">Релиз v0.1.1 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/shader-triage/releases/download/v0.1.1/ShaderTriage-v0.1.1.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">CLI · GAME ASSETS</span></div>
-            <h3>Asset Sieve</h3>
-            <p>Локально проверяет графические ресурсы Unity, Unreal, Godot и других проектов: находит точные дубликаты, большие и повреждённые изображения, показывает объёмы по папкам. Сохраняет отчёт в Markdown или JSON; исходники не меняет.</p>
-            <div class="project-tags"><span>Python</span><span>Unity</span><span>Unreal</span><span>Godot</span><span>Texture audit</span><span>CLI</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/asset-sieve">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/asset-sieve/releases/tag/v0.1.6">Релиз v0.1.6 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/asset-sieve/releases/download/v0.1.6/asset_sieve-0.1.6-py3-none-any.whl">Скачать wheel <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">ПРИЛОЖЕНИЕ · WINDOWS</span></div>
-            <h3>PingScope</h3>
-            <p>Измеряет задержку, джиттер и потерю пакетов до выбранного узла, показывает живой график и сохраняет сессию в CSV. Готовая Windows-сборка запускается без отдельной установки Python; измерения остаются на компьютере.</p>
-            <div class="project-tags"><span>Python</span><span>Windows</span><span>Network diagnostics</span><span>Latency</span><span>CSV</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/ping-scope">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/ping-scope/releases/tag/v0.2.3">Релиз v0.2.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/ping-scope/releases/download/v0.2.3/PingScope-v0.2.3-windows-x64.zip">Скачать для Windows <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">CC</span><span class="project-type">ПРИЛОЖЕНИЕ · СУБТИТРЫ</span></div>
-            <h3>CaptionLint</h3>          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">PARADOX · LOG QA</span></div>
-            <h3>Clausewitz Log Doctor</h3>
-            <p>Разбирает error.log из Hearts of Iron IV, Crusader Kings III, Europa Universalis IV, Stellaris и Victoria 3. Группирует повторные ошибки, сохраняет номера исходных строк, фильтрует по типам и выгружает Markdown/JSON. Анализ проходит локально; до 50 МБ и 500&nbsp;000 строк, результаты выводятся страницами по 100 групп.</p>
-            <div class="project-tags"><span>HOI4</span><span>CK3</span><span>EU4</span><span>Stellaris</span><span>Victoria 3</span><span>Log Analyzer</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/clausewitz-log-doctor/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-log-doctor">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-log-doctor/releases/tag/v0.2.0">Релиз v0.2.0 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-log-doctor/releases/download/v0.2.0/clausewitz-log-doctor-0.2.0.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-log-doctor/releases/download/v0.2.0/clausewitz-log-doctor-0.2.0.zip.sha256">SHA-256 <b>↗</b></a></div>
-          </article>
-            <p>Проверяет SRT и WebVTT перед выпуском: тайминги, перекрытия, скорость чтения и длину строк. Сравнивает две языковые дорожки по числу реплик и дрейфу таймингов. Файлы обрабатываются локально в браузере.</p>
-            <div class="project-tags"><span>SRT</span><span>WebVTT</span><span>Subtitle QA</span><span>Offline</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/subtitle-release-gate/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/subtitle-release-gate">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/tag/v1.0.2">Релиз v1.0.2 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/download/v1.0.2/CaptionLint-v1.0.2.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">ПРИЛОЖЕНИЕ · WINDOWS</span></div>
-            <h3>FrameForge</h3>
-            <p>Windows-приложение для игровых профилей и измерения frametime: обратимые настройки Skyrim, A/B-бенчмарки и локальная история. Для CS:GO Legacy автоматически находит установленную игру в Steam, создаёт резервную копию конфигурации, собирает профиль FPS и по выбору загружает текстовое меню через игровую консоль. Версия 1.17.0 добавляет отдельную панель поверх окна игры в оконном режиме без рамки; это desktop overlay, а не встроенный интерфейс игры. Версия 1.18.0 умеет по запросу записывать frametime через выбранный PresentMon для указанного процесса на 30–300 секунд и автоматически добавлять CSV в локальную A/B-историю. В 1.18.1 исправлено распознавание `FrameType=Application` без учёта регистра для CPU-presented CSV. Захват требует системного доступа к ETW; прирост FPS не гарантируется. Приложение не обещает фиксированный прирост FPS.</p>
-            <div class="project-tags"><span>Python</span><span>PySide6</span><span>PresentMon</span><span>CS:GO Legacy</span><span>Game Profiles</span><span>FPS Benchmark</span><span>Frametime</span><span>Steam</span><span>Windows 10/11</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/frameforge">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/frameforge/releases/tag/v1.18.1">Релиз v1.18.1 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/frameforge/releases/download/v1.18.1/FrameForge-1.18.1-windows-x64.zip">Скачать для Windows <b>↗</b></a></div>
-          </article>          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">文</span><span class="project-type">УТИЛИТА · CLAUSEWITZ</span></div>
-            <h3>ModLocale</h3>
-            <p>Проверяет файлы локализации модов: отсутствующие и лишние ключи, дубли, повреждённые строки, BOM, языковой заголовок, игровые маркеры и printf-форматы с позициями, шириной и точностью. Файлы обрабатываются локально в браузере.</p>
-            <div class="project-tags"><span>Paradox Mods</span><span>Clausewitz</span><span>Локализация</span><span>Без загрузки</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/clausewitz-loc-guard/?demo">Демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-loc-guard">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-loc-guard/releases/tag/v1.0.3">Релиз v1.0.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-loc-guard/releases/download/v1.0.3/ModLocale-v1.0.3.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/clausewitz-loc-guard/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⬡</span><span class="project-type">УТИЛИТА · PARADOX MODS</span></div>
-            <h3>ModPack Inspector</h3>
-            <p>Проверяет ZIP-архив мода до распаковки: структуру, descriptor.mod, дубли и пути выхода из корня. ZIP остаётся локально; выбор файла поддерживает клавиши Enter и Пробел.</p>
-            <a class="project-preview" href="https://ghostnever-lkm.github.io/modpack-inspector/?demo" aria-label="Открыть демо ModPack Inspector"><img src="https://raw.githubusercontent.com/GhosTnever-lkm/modpack-inspector/main/docs/screenshot.png" alt="Демо ModPack Inspector с отчётом по структуре архива" loading="lazy" width="1280" height="960"><span>Открыть демо ↗</span></a>
-            <div class="project-tags"><span>ZIP</span><span>Paradox</span><span>Моды</span><span>Локально</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/modpack-inspector/?demo">Демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modpack-inspector">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modpack-inspector/releases/tag/v0.1.2">Релиз v0.1.2 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modpack-inspector/releases/latest/download/ModPack-Inspector-0.1.2.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/modpack-inspector/actions/workflows/ci.yml">CI Node 22/24 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">.*</span><span class="project-type">ИНСТРУМЕНТ · JAVASCRIPT</span></div>
-            <h3>RegexBench</h3>
-            <p>Локальная мастерская регулярных выражений JavaScript: находит совпадения и группы, показывает замену, а устаревшие вычисления отменяет при изменении или очистке полей.</p>
-            <div class="project-tags"><span>JavaScript RegExp</span><span>Web Worker</span><span>Local-first</span><span>Privacy</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/regexbench/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/regexbench">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/regexbench/releases/tag/v0.1.3">Релиз v0.1.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/regexbench/actions">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card featured">
-            <div class="project-top"><span class="project-icon icon-game">✳</span><span class="project-type">ИГРА · BROWSER</span></div>
-            <h3>VOIDFALL: Last Signal</h3>
-            <p>Космическая игра на выживание с волнами врагов, боссами, улучшениями корабля и тактическими способностями.</p>
-            <a class="project-preview" href="https://ghostnever-lkm.github.io/voidfall/" aria-label="Открыть VOIDFALL: Last Signal"><img src="/assets/voidfall-preview.png" alt="Скриншот стартового экрана VOIDFALL: Последний сигнал" loading="lazy" width="1376" height="879"><span>Открыть игру ↗</span></a>
-            <div class="project-tags"><span>JavaScript</span><span>Canvas</span><span>PWA</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/voidfall/">Играть <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/voidfall">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/voidfall/releases/tag/v1.0.8">Релиз v1.0.8 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/voidfall/releases/download/v1.0.8/VOIDFALL-v1.0.8.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/voidfall/releases/download/v1.0.8/SHA256SUMS">SHA-256 <b>↗</b></a></div>
-          </article>
+=	�	]	�
+"+rt�D�T"5D���3��7����F�c�ƃ3���E&V�V6RvFS���3���	��M���}���-]�2��E&V�V6R7GVF���V��&WVW7B�W6��7F������}�-]"�������]M=�]mM]���"v�D�V"7F���2�M�-��]"-�M�2��]��]"�-}-���-]M�"�����F�b6�73�'&��V7B�Fw2#��7��v�D�V"7F���3��7���7��&V�V6R��7���7��4��+r�&�F�v�+r4$�c��7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���7F���#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���7F����&V�V6W2�Fr�c��s"#�
+]��rc��s"�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ����G&V�V6R�7GVF���7F����7F���2�v�&�f��w2�6����#�4��#�(is��#������F�c���'F�6�S��'F�6�R6�73�'&��V7B�6&B6�&R�F���#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6���F���2#�)�3��7���7�6�73�'&��V7B�G�R#�
+	-
+�	}		�	�
+�	�	�	�
+
+-
 
+=	�	]	�
+"+r$D����7����F�c�ƃ3�&F����BVƗG�vFS���3���	��]M���]"��E&V�V6R7GVF���&F����Bv�&�&V�6�"�M��&VfƖv�BM����M�"&F����]�M���-�M�������}�-]��R�-}-�"v�D�V"7F���2�����F�b6�73�'&��V7B�Fw2#��7��&F����7���7��v�D�V"7F���3��7���7��&V�V6R��7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�VƗG��vFR#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�VƗG��vFR�&V�V6W2�Fr�c��s�#�
+]��rc��s��#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�VƗG��vFR�7F���2�v�&�f��w2�6����#�4��#�(is��#������F�c���'F�6�S��'F�6�R6�73�'&��V7B�6&B6�&R�F���#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6�����B#�(Ƀ��7���7�6�73�'&��V7B�G�R#�
+	-
+�	}		�	�
+�	�	�	�
+
+-
 
-
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌘</span><span class="project-type">АНАЛИЗ МОДОВ · PARADOX</span></div>
-            <h3>Mod Observatory</h3>
-            <p>Строй карту коллекции модов из папок и ZIP: связи зависимостей, порядок загрузки, общие пути и совпадения по SHA-256. Экспортируй снимок и сравнивай его с другой версией коллекции. Файлы обрабатываются локально.</p>
-            <div class="project-tags"><span>Paradox Mods</span><span>Dependency graph</span><span>ZIP</span><span>Snapshot diff</span><span>Local-first</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/mod-observatory/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-observatory">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-observatory/releases/tag/v0.2.5">Релиз v0.2.5 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-observatory/releases/download/v0.2.5/mod-observatory-0.2.5.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/mod-observatory/actions/workflows/ci.yml">CI <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-map">⌘</span><span class="project-type">ИНСТРУМЕНТ · PARADOX</span></div>
-            <h3>Mod Conflict Map</h3>
-            <p>Сравнивает моды по файловым путям, показывает пересечения и помогает быстро находить нужные строки по пути, имени мода или ZIP.</p>
-            <div class="project-tags"><span>JavaScript</span><span>Моды</span><span>Локально</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/paradox-mod-conflict-map">Исходный код <b>↗</b></a><a href="https://ghostnever-lkm.github.io/paradox-mod-conflict-map/">Открыть приложение <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/tag/v0.4.4">Релиз v0.4.4 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/download/v0.4.4/Mod-Conflict-Map-v0.4.4.zip">Скачать v0.4.4 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⌁</span><span class="project-type">ИНСТРУМЕНТ · PC</span></div>
-            <h3>SaveHarbor</h3>
-            <p>Локальные резервные копии игровых сохранений с проверкой целостности и восстановлением. Можно заранее сравнить две папки по SHA-256 и увидеть добавленные, удалённые и изменённые файлы. Перед восстановлением архивы с путями, различающимися только регистром, отклоняются, чтобы не перезаписать файлы в Windows.</p>
-            <div class="project-tags"><span>Python</span><span>Backup</span><span>Windows</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/saveharbor">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/saveharbor/releases/tag/v1.1.1">Релиз v1.1.1 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/saveharbor/releases/download/v1.1.1/SaveHarbor-v1.1.1.zip">Скачать ZIP <b>↗</b></a></div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-pad">⌗</span><span class="project-type">УТИЛИТА · GAMEPAD</span></div>
-            <h3>Gamepad Lab</h3>
-            <p>Проверка геймпадов в браузере: кнопки, стики, триггеры и дрейф. Данные остаются на устройстве.</p>
-            <div class="project-tags"><span>JavaScript</span><span>Gamepad API</span><span>Offline</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/gamepad-lab/">Открыть <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/gamepad-lab">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/gamepad-lab/releases/tag/v1.0.2">Релиз v1.0.2 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/gamepad-lab/archive/refs/tags/v1.0.2.zip">Скачать исходный ZIP <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">⬡</span><span class="project-type">GITHUB ACTION · QA</span></div>
-            <h3>DiffShield Action</h3>
-            <p>Проверяет изменения pull request на частые риски GitHub Actions: секреты, опасные настройки workflow, чувствительные файлы и изменения lock-файлов зависимостей. Работает локально в CI и формирует отчёт.</p>
-            <div class="project-tags"><span>GitHub Actions</span><span>Pull request</span><span>Secret scanning</span><span>DevSecOps</span><span>JavaScript</span></div>
-            <div class="project-links"><a href="https://github.com/GhosTnever-lkm/diffshield-action">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/diffshield-action/releases/tag/v1.0.4">Релиз v1.0.4 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-map">⌖</span><span class="project-type">ИНСТРУМЕНТ · GITHUB</span></div>
-            <h3>RepoSignal</h3>
-            <p>Проверяет README, лицензию, темы, CI, релизы и документы сообщества в публичном репозитории.</p>
-            <div class="project-tags"><span>GitHub</span><span>Аудит репозитория</span><span>Локально</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/repo-signal/">Открыть <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/repo-signal">Исходный код <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-tools">{ }</span><span class="project-type">УТИЛИТА · ДАННЫЕ</span></div>
-            <h3>JSON Compass</h3>
-            <p>Форматирует, исследует и сравнивает JSON локально. Показывает точные пути и понятное ограничение для чрезмерно вложенных документов.</p>
-            <div class="project-tags"><span>JSON</span><span>JavaScript</span><span>Приватно</span><span>Офлайн-файлы</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/json-compass/">Открыть <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/json-compass">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/json-compass/releases/tag/v1.0.3">Релиз v1.0.3 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/json-compass/releases/download/v1.0.3/JSON-Compass-v1.0.3.zip">Скачать ZIP <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/json-compass/releases/download/v1.0.3/JSON-Compass-v1.0.3.zip.sha256">SHA-256 <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-icon icon-pad">▧</span><span class="project-type">РЕДАКТОР · WASM</span></div>
-            <h3>PixelCraft Studio</h3>
-            <p>Редактор изображений в браузере на Rust и WebAssembly. Обработка выполняется на стороне пользователя.</p>
-            <div class="project-tags"><span>Rust</span><span>WebAssembly</span><span>Изображения</span></div>
-            <div class="project-links"><a href="https://ghostnever-lkm.github.io/pixelcraft-studio/">Открыть <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/pixelcraft-studio">Исходный код <b>↗</b></a></div>
-          </article>
-          <article class="project-card">
-  <div class="project-top"><span class="project-icon icon-tools">文</span><span class="project-type">LOCALIZATION · LOCAL-FIRST</span></div>
-  <h3>LocaleLens</h3>
-  <p>Сравнивай JSON и ARB-каталоги переводов: находи пропущенные ключи, пустые значения, несовпадения типов и плейсхолдеров. Экспортируй отчёт в JSON или CSV.</p>
+=	�	]	�
+"+r	�	�	�		�
+�	�	
+�	M	�		=	�	�
+
+-	�	�	��7����F�c�ƃ3�&F����Bv�&�&V�6����3���	��������4ĒM����]M�-����]]]}]���M���"�}-����-]�������}m���6�W6Wv�G�����-�#�M���=]"-]�-�-�R��4���4$�b��-}-������F�b6�73�'&��V7B�Fw2#��7��&F����7���7���F�����7���7��4ē��7���7����6��f�'7C��7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�v�&�&V�6�#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�v�&�&V�6��&V�V6W2�Fr�c�"�B#�
+]��rc�"�B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&F�����B�v�&�&V�6��7F���2�v�&�f��w2�6����#�4��#�(is��#������F�c���'F�6�S��F�b6�73�'&��V7B�F�f�FW"#��6�73�&W�V'&�r#�	]
+�	�
+	�	]	�
+-
+�	�
+�	�
+	�	]
+	�	�	]	�
+-
+������	M==�R��-=�]�-���=�(	B"]��}�-���Rv�D�V"������F�c���F�c��FWF��26�73�'&��V7B�&6��fR#��7V��'��	���}-��-����R��]�-�����]��]�-���7V��'���F�b6�73�'&��V7B�w&�B#��'F�6�R6�73�'&��V7B�6&B#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6���F���2#�(Ƀ��7���7�6�73�'&��V7B�G�R#�4�DU�+r
+			�
+}	�	R	�
+	�
+m	]
+
+
+���7����F�c�ƃ3�v��5F�WfW"6�FW�F��ƶ�C���3���
+=-�-��-���=���M��}����--��M�-��}���]-���}�]�]����4��M��=�]�-m�����M=�-�-��]��}��VvF��ƶ�B��]M���]"C�}���-����mM����M=����m��-���}-��-����}-���-����]��-���������4���-]�]"�-�����]]���}-]���v��F�w2�Ɩ�W������F�b6�73�'&��V7B�Fw2#��7��6�FW��Vv��3��7���7��6�FR&Wf�Ws��7���7��4�G&�vS��7���7���F�����7���7��v��F�w2+rƖ�W���7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��v��5F�WfW"�6�FW��F��ƶ�B#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��v��5F�WfW"�6�FW��F��ƶ�B�G&VR������Vv��2�v��7F�WfW"��Vv�F��ƶ�B#��VvF��ƶ�B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��v��5F�WfW"�6�FW��F��ƶ�B�&V�V6W2�Fr�c��B#�
+]��rc��B�#�(is��#������F�c���'F�6�S��'F�6�R6�73�'&��V7B�6&B#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6���F���2#�)�3��7���7�6�73�'&��V7B�G�R#�4�DU�+r$T�T4R��7����F�c�ƃ3�&V�V6R6�V6�Ɨ7C���3���	��M=�--��-]"]��r��=���-��=�2���-]�]"�=��-���-�-]������M]-�&�WG�6R�$TD�R�M���"6����2�	��--��]-���-��]=]�������-]-���4�M��V��&WVW7B����=-��-���-�}����=����-����-]�������F�b6�73�'&��V7B�Fw2#��7��6�FW��Vv����7���7��&V�V6R&VF��W73��7���7����FR�3��7���7��v�D�V"7F���3��7���7��ԕC��7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&V�V6R�6�V6�Ɨ7B#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&V�V6R�6�V6�Ɨ7B�&V�V6W2�Fr�c��"#�
+]��rc��"�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��&V�V6R�6�V6�Ɨ7B�&V�V6W2�F�v���B�c��"�&V�V6R�6�V6�Ɨ7B�c��"禗#�
+�}-����#�(is��#������&Vc�&�GG3���FWfV��W'2��V���6����Vv��2�'V��B��Vv��2#�
+=-��-�"6�FW��#�(is��#������F�c���'F�6�S��'F�6�R6�73�'&��V7B�6&B#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6���F���2#�)x���7���7�6�73�'&��V7B�G�R#�DTU4TT��$�U52+r	�	�		=	�	�
+���7����F�c�ƃ3�E4�v��7D�WfW"F��ƶ�C���3���#�-M]����=-�-��-]�����=��M��FVW6VV��&�W72�6�&F�3���-]��4���55b�-�]��R-]�-���-�U$��}�]�"�v�B�M���R�
+=-�-��-�-������=m��R��-=�]�-��-���}�����-���}��R"����]-�����M��R�55b&�f��W"���]"�����R"�-�}�R-�]-�-�]�=���m]���-��m������F�b6�73�'&��V7B�Fw2#��7��FVW6VV��&�W73��7���7��#�Vv��3��7���7��55b+r�4����7���7��FWfV��W"F���3��7���7��ԕC��7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��G6��v��7F�WfW"�F��ƶ�B#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��G6��v��7F�WfW"�F��ƶ�B�&V�V6W2�Fr�c��2#�
+]��rc��2�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��G6��v��7F�WfW"�F��ƶ�B�&V�V6W2�F�v���B�c��2�v��5F�WfW"�E4��F��ƶ�B�c��2禗#�
+�}-����#�(is��#������F�c���'F�6�S��'F�6�R6�73�'&��V7B�6&B#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6���F���2#�)����7���7�6�73�'&��V7B�G�R#�	
+=	M	�	�+r��4��d�%5C��7����F�c�ƃ3�VF��67&�&R7GVF�����3���
+��M�-�-�M�����R=M��}�������������M]���f7FW"�v��7W"�
+M��M�R	=	}==m]-�}-�����-]����M]m���=��]]B��M��m]��]ò=�-�-��-]�"��m���}-�-����M��"E�B�5%B�eEB����4���
+��=M���--��������-]R�����F�b6�73�'&��V7B�Fw2#��7��VF��G&�67&�F�����7���7��f7FW"�v��7W#��7���7���F�����7���7����6��f�'7C��7���7��Rt"W��G3��7����F�c��F�b6�73�'&��V7B�Ɩ�2#���&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��VF��67&�&R�7GVF��#�	�]�M�����B�#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��VF��67&�&R�7GVF���&V�V6W2�Fr�c��#�
+]��rc���#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��VF��67&�&R�7GVF���&V�V6W2�F�v���B�c���VF��67&�&R�7GVF���c��禗#�
+�}-����#�(is��#������&Vc�&�GG3���v�F�V"�6���v��5F�WfW"�ƶ��VF��67&�&R�7GVF���&V�V6W2�F�v���B�c���VF��67&�&R�7GVF���c��禗�6�#Sb#�4��#Sb�#�(is��#������F�c���'F�6�S��'F�6�R6�73�'&��V7B�6&B#��F�b6�73�'&��V7B�F�#��7�6�73�'&��V7B֖6���6���F���2#�)js��7���7�6�73�'&��V7B�G�R#�
+�	�	�
+	�
+
+-	]	�	+r%Tr$U�%E3��7����F�c�ƃ3�'Vt'V�F�S���3���
+���7&6��&W�'B��}��]���R�=�-�R��=�"=}]R�'Vt'V�F�R���=]"-���-�R]�]-�����}�-]"�]M����-�M���=]"�&�F�v��������R}==m�M����]-]��]-�M���R6��G&���&�F����-���"��]�R�-�m�-��-��}��R��=��M����-����]�]��]���-��-M]���������6�73�'&��V7B�&Wf�Wr"�&Vc�&�GG3���v��7F�WfW"�ƶ��v�F�V"���'Vv'V�F�R�#�Ɩ�r7&3�&�GG3���&r�v�F�V'W6W&6��FV�B�6���v��5F�}�nm�G����ƭy�SV.</p>
   <div class="project-tags"><span>JSON</span><span>ARB</span><span>i18n</span><span>Placeholder check</span><span>Local-first</span></div>
   <div class="project-links"><a href="https://ghostnever-lkm.github.io/localelens/">Открыть демо <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/localelens">Исходный код <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/localelens/releases/tag/v0.1.5">Релиз v0.1.5 <b>↗</b></a><a href="https://github.com/GhosTnever-lkm/localelens/archive/refs/tags/v0.1.5.zip">Скачать ZIP <b>↗</b></a></div>
 </article>
