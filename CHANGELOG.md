@@ -710,6 +710,10 @@
 
 # Changelog
 
+## Unreleased
+
+- Update the HarborTrace portfolio card to v0.1.3 with direct archive and SHA-256 links.
+
 ## 1.3.236 - 2026-10-24
 
 - Update the JSON Compass card to its verified v1.0.3 release, archive, and checksum.
