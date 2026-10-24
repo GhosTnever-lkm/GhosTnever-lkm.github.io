@@ -210,6 +210,18 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertFalse(any("shiftledger/releases/tag/v0.1.2" in href for href in hrefs))
         self.assertIn("20 МиБ", html)
 
+    def test_tabharbor_links_to_its_current_release_assets(self) -> None:
+        html, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "TabHarbor")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/tabharbor/releases/tag/v0.1.3", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/tabharbor/releases/download/v0.1.3/TabHarbor-v0.1.3.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/tabharbor/releases/download/v0.1.3/TabHarbor-v0.1.3.sha256", hrefs)
+        self.assertFalse(any("tabharbor/releases/tag/v0.1.2" in href for href in hrefs))
+        self.assertIn("100", html)
+
     def test_commitcraft_links_to_its_published_release(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "CommitCraft")
