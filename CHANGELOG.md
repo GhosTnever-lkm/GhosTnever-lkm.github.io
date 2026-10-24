@@ -1,3 +1,7 @@
+## 1.3.234 - 2026-10-24
+
+- Sync CommitCraft release and source archive links to verified v1.0.5.
+
 ## 1.3.233 - 2026-10-24
 
 - Update Subtitle Timing Studio release and ZIP links to verified v1.0.4.
