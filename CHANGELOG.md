@@ -1,3 +1,7 @@
+## 1.3.232 - 2026-10-24
+
+- Update Asset Sieve release and wheel links to verified v0.1.6.
+
 ## 1.3.231 - 2026-10-24
 
 - Update Mod Conflict Map release and download links to verified v0.4.4.
