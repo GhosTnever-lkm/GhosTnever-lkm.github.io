@@ -222,6 +222,21 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertFalse(any("tabharbor/releases/tag/v0.1.2" in href for href in hrefs))
         self.assertIn("100", html)
 
+    def test_pixelclean_links_to_its_current_release_assets_and_preview(self) -> None:
+        html, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "PixelClean Local")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/pixelclean-local/releases/tag/v0.1.3", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/pixelclean-local/releases/download/v0.1.3/pixelclean-local-v0.1.3.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/pixelclean-local/releases/download/v0.1.3/pixelclean-local-v0.1.3.zip.sha256", hrefs)
+        start = html.index("<h3>PixelClean Local</h3>")
+        end = html.index("</article>", start)
+        card_html = html[start:end]
+        self.assertIn("pixelclean-local/v0.1.3/docs/demo.svg", card_html)
+        self.assertNotIn("v0.1.1", card_html)
+
     def test_commitcraft_links_to_its_published_release(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "CommitCraft")
