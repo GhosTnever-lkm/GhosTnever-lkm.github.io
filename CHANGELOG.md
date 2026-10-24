@@ -1,3 +1,7 @@
+## 1.3.247 - 2026-10-25
+
+- Update the AegisScan AV card to the verified v0.1.4 release, wheel, and checksum manifest; add a link regression test.
+
 ## 1.3.246 - 2026-10-25
 
 - Update LocaleLens release and source archive links to verified v0.1.6.
