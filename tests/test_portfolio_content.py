@@ -189,6 +189,16 @@ class PortfolioContentTests(unittest.TestCase):
             {link["href"] for link in links},
         )
 
+    def test_captionbench_links_to_its_current_release_and_archive(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "CaptionBench")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/captionbench/releases/tag/v0.1.5", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/captionbench/releases/download/v0.1.5/CaptionBench-v0.1.5.zip", hrefs)
+        self.assertFalse(any("captionbench/releases/tag/v0.1.2" in href for href in hrefs))
+
     def test_commitcraft_links_to_its_published_release(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "CommitCraft")
