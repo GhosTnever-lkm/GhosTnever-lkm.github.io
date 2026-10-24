@@ -139,6 +139,20 @@ class PortfolioContentTests(unittest.TestCase):
             {link["href"] for link in links},
         )
 
+    def test_asset_sieve_links_to_its_published_release(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "Asset Sieve")
+        links = card["links"]
+        assert isinstance(links, list)
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/asset-sieve/releases/tag/v0.1.6",
+            {link["href"] for link in links},
+        )
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/asset-sieve/releases/download/v0.1.6/asset_sieve-0.1.6-py3-none-any.whl",
+            {link["href"] for link in links},
+        )
+
     def test_pages_workflow_checks_pull_requests_without_deploying_them(self) -> None:
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
         self.assertRegex(workflow, r"(?m)^  pull_request:")
