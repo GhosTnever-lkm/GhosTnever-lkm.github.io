@@ -1,3 +1,7 @@
+## 1.3.235 - 2026-10-24
+
+- Update AudioScribe Studio release, ZIP, and SHA-256 links to verified v0.1.8.
+
 ## 1.3.234 - 2026-10-24
 
 - Sync CommitCraft release and source archive links to verified v1.0.5.
