@@ -1,3 +1,7 @@
+## 1.3.233 - 2026-10-24
+
+- Update Subtitle Timing Studio release and ZIP links to verified v1.0.4.
+
 ## 1.3.232 - 2026-10-24
 
 - Update Asset Sieve release and wheel links to verified v0.1.6.
