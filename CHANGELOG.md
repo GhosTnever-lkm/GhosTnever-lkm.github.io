@@ -1,3 +1,11 @@
+## 1.3.237 - 2026-10-24
+
+- Update Subtitle Timing Studio release and ZIP links to verified v1.0.5.
+
+## 1.3.236 - 2026-10-24
+
+- Update JSON Compass release and download links to verified v1.0.3.
+
 ## 1.3.235 - 2026-10-24
 
 - Update AudioScribe Studio release, ZIP, and SHA-256 links to verified v0.1.8.

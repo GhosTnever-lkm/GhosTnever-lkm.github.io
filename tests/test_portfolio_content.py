@@ -181,11 +181,11 @@ class PortfolioContentTests(unittest.TestCase):
         links = card["links"]
         assert isinstance(links, list)
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.4",
+            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.5",
             {link["href"] for link in links},
         )
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.4/Subtitle-Timing-Studio-1.0.4.zip",
+            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.5/Subtitle-Timing-Studio-1.0.5.zip",
             {link["href"] for link in links},
         )
 
