@@ -1,3 +1,7 @@
+## 1.3.231 - 2026-10-24
+
+- Update Mod Conflict Map release and download links to verified v0.4.4.
+
 ## 1.3.230 - 2026-10-23
 
 - Update the portfolio's Quality Gate and Workbench release links, labels, and regression expectations to v1.0.78 and v0.2.14.
