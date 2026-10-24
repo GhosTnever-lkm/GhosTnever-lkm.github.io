@@ -1,3 +1,7 @@
+## 1.3.240 - 2026-10-24
+
+- Update TabHarbor links to verified v0.1.3 release assets and describe import behavior at the 100-session limit.
+
 ## 1.3.239 - 2026-10-24
 
 - Update ShiftLedger release and download links to verified v0.1.3; describe its 20 MiB round-trippable JSON backups.
