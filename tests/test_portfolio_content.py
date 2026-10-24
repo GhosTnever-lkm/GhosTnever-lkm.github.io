@@ -153,6 +153,20 @@ class PortfolioContentTests(unittest.TestCase):
             {link["href"] for link in links},
         )
 
+    def test_subtitle_timing_studio_links_to_its_published_release(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "Subtitle Timing Studio")
+        links = card["links"]
+        assert isinstance(links, list)
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.4",
+            {link["href"] for link in links},
+        )
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.4/Subtitle-Timing-Studio-1.0.4.zip",
+            {link["href"] for link in links},
+        )
+
     def test_pages_workflow_checks_pull_requests_without_deploying_them(self) -> None:
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
         self.assertRegex(workflow, r"(?m)^  pull_request:")
