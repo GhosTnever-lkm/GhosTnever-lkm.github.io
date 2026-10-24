@@ -1,3 +1,8 @@
+## 1.3.245 - 2026-10-25
+
+- Update both Mod Threat Lens cards to verified v0.1.11 preview, release, ZIP, and SHA-256 assets.
+- Add a regression ensuring portfolio links track the current release.
+
 ## 1.3.244 - 2026-10-25
 
 - Update ModPack Inspector card to its verified v0.1.3 release and download.

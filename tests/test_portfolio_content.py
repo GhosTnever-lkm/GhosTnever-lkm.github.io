@@ -53,6 +53,20 @@ def read_cards() -> tuple[str, list[dict[str, object]]]:
 
 
 class PortfolioContentTests(unittest.TestCase):
+    def test_mod_threat_lens_cards_link_to_verified_v0111_release(self) -> None:
+        html, cards = read_cards()
+        matches = [card for card in cards if card["name"] == "Mod Threat Lens"]
+        self.assertEqual(len(matches), 2)
+        for card in matches:
+            links = card["links"]
+            assert isinstance(links, list)
+            hrefs = {link["href"] for link in links}
+            self.assertIn("https://github.com/GhosTnever-lkm/mod-threat-lens/releases/tag/v0.1.11", hrefs)
+            self.assertIn("https://github.com/GhosTnever-lkm/mod-threat-lens/releases/download/v0.1.11/mod-threat-lens-v0.1.11.zip", hrefs)
+            self.assertIn("https://github.com/GhosTnever-lkm/mod-threat-lens/releases/download/v0.1.11/mod-threat-lens-v0.1.11.zip.sha256", hrefs)
+            self.assertFalse(any("mod-threat-lens/releases/tag/v0.1.10" in href for href in hrefs))
+        self.assertNotIn("mod-threat-lens/v0.1.10/docs/report-preview.png", html)
+
     def test_featured_mod_release_ecosystem_is_current_and_ordered(self) -> None:
         _, cards = read_cards()
         self.assertEqual(
