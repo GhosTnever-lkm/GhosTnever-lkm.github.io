@@ -56,8 +56,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.265")
-        self.assertTrue(changelog.startswith("## 1.3.265 - 2026-10-25"))
+        self.assertEqual(version, "1.3.266")
+        self.assertTrue(changelog.startswith("## 1.3.266 - 2026-10-25"))
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
@@ -491,6 +491,17 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertRegex(
             workflow,
             r"(?m)^    if: github\.event_name != 'pull_request' && github\.ref == 'refs/heads/main'$")
+
+    def test_clausewitz_log_doctor_links_to_verified_v021_release_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "Clausewitz Log Doctor")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/clausewitz-log-doctor/releases/tag/v0.2.1", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/clausewitz-log-doctor/releases/download/v0.2.1/clausewitz-log-doctor-0.2.1.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/clausewitz-log-doctor/releases/download/v0.2.1/clausewitz-log-doctor-0.2.1.zip.sha256", hrefs)
+        self.assertFalse(any("clausewitz-log-doctor/releases/tag/v0.2.0" in href for href in hrefs))
 
     def test_diffshield_action_card_links_to_current_release(self) -> None:
         _, cards = read_cards()
