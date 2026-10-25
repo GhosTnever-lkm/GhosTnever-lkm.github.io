@@ -1,3 +1,7 @@
+## 1.3.272 - 2026-10-25
+
+- Sync the QuoteForge card to verified v0.1.3 release, ZIP, and SHA-256 assets; add regression coverage for the current links.
+
 ## 1.3.271 - 2026-10-25
 
 - Repair the CaptionLint and Clausewitz project card markup so both cards are parsed and displayed independently.
