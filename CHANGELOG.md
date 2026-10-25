@@ -1,3 +1,7 @@
+## 1.3.259 - 2026-10-25
+
+- Refresh ContrastKit, CaptionLint, and Mod Conflict Map links to published releases and expose available checksum files.
+
 ## 1.3.258 - 2026-10-25
 
 - Update the BugBundle card preview and offline ZIP link to the verified v1.0.12 release.

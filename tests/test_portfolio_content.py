@@ -56,9 +56,10 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.258")
-        self.assertTrue(changelog.startswith("## 1.3.258 - 2026-10-25"))
-        self.assertIn("BugBundle", changelog.split("\n## ", 1)[0])
+        self.assertEqual(version, "1.3.259")
+        self.assertTrue(changelog.startswith("## 1.3.259 - 2026-10-25"))
+        self.assertIn("ContrastKit", changelog.split("\n## ", 1)[0])
+        self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
         self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/bugbundle/v1.0.12/docs/bugbundle-preview.png", html)
         self.assertIn("https://github.com/GhosTnever-lkm/bugbundle/releases/download/v1.0.12/BugBundle-v1.0.12.zip", html)
@@ -197,13 +198,32 @@ class PortfolioContentTests(unittest.TestCase):
         links = card["links"]
         assert isinstance(links, list)
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/tag/v0.4.4",
+            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/tag/v0.4.5",
             {link["href"] for link in links},
         )
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/download/v0.4.4/Mod-Conflict-Map-v0.4.4.zip",
+            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/download/v0.4.5/Mod-Conflict-Map-v0.4.5.zip",
             {link["href"] for link in links},
         )
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/paradox-mod-conflict-map/releases/download/v0.4.5/Mod-Conflict-Map-v0.4.5.zip.sha256",
+            {link["href"] for link in links},
+        )
+
+    def test_contrastkit_links_to_current_published_release_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "ContrastKit")
+        hrefs = {link["href"] for link in card["links"]}
+        self.assertIn("https://github.com/GhosTnever-lkm/contrastkit/releases/tag/v1.0.3", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/contrastkit/releases/download/v1.0.3/ContrastKit-v1.0.3.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/contrastkit/releases/download/v1.0.3/ContrastKit-v1.0.3.zip.sha256", hrefs)
+
+    def test_captionlint_links_to_current_published_release_assets(self) -> None:
+        html, _ = read_cards()
+        hrefs = set(re.findall(r'https://github\.com/GhosTnever-lkm/subtitle-release-gate/[^" ]+', html))
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/tag/v1.0.4", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/download/v1.0.4/CaptionLint-v1.0.4.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/download/v1.0.4/CaptionLint-v1.0.4.zip.sha256", hrefs)
 
     def test_asset_sieve_links_to_its_published_release(self) -> None:
         _, cards = read_cards()
