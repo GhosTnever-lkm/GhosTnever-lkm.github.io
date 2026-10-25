@@ -1,3 +1,7 @@
+## 1.3.261 - 2026-10-25
+
+- Sync ModRelease Studio v0.3.91 and ModRelease Gate v1.0.73 after verified releases; update featured-link assertions.
+
 ## 1.3.260 - 2026-10-25
 
 - Update Subtitle Timing Studio links to the verified v1.0.7 release, ZIP, and SHA-256 sidecar.
