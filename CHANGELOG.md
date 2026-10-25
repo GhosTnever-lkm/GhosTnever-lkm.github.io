@@ -1,3 +1,7 @@
+## 1.3.279 - 2026-10-25
+
+- Update the ModRelease Studio flagship preview, release, ZIP, and checksum links to verified v0.3.92; keep the featured-release regression current.
+
 ## 1.3.278 - 2026-10-25
 
 - Sync tracked-artifacts-check to verified v0.1.5 wheel and checksum; include OpenSSH private-key detection in its portfolio description.
@@ -854,6 +858,10 @@
 - Add Mod Threat Lens v0.1.4 with the synthetic report preview, exact ZIP, and heuristic safety note.
 
 # Changelog
+
+## 1.3.279 - 2026-10-25
+
+- Update the ModRelease Studio flagship preview, release, ZIP, and checksum links to verified v0.3.92; keep the featured-release regression current.
 
 ## Unreleased
 
