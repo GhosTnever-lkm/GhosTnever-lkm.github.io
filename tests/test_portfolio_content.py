@@ -53,6 +53,24 @@ def read_cards() -> tuple[str, list[dict[str, object]]]:
 
 
 class PortfolioContentTests(unittest.TestCase):
+    def test_workshop_page_studio_links_to_verified_app_and_release_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "Workshop Page Studio")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://ghostnever-lkm.github.io/workshop-page-studio/", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/workshop-page-studio", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/workshop-page-studio/releases/tag/v0.2.2", hrefs)
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/workshop-page-studio/releases/download/v0.2.2/Workshop-Page-Studio-v0.2.2.zip",
+            hrefs,
+        )
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/workshop-page-studio/releases/download/v0.2.2/Workshop-Page-Studio-v0.2.2-SHA256SUMS.txt",
+            hrefs,
+        )
+
     def test_frameforge_links_to_current_release_archive_and_checksum(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "FrameForge")
