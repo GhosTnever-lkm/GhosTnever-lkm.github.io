@@ -56,9 +56,12 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.257")
-        self.assertTrue(changelog.startswith("## 1.3.257 - 2026-10-25"))
-        self.assertIn("RiftUnpack", changelog.split("\n## ", 1)[0])
+        self.assertEqual(version, "1.3.258")
+        self.assertTrue(changelog.startswith("## 1.3.258 - 2026-10-25"))
+        self.assertIn("BugBundle", changelog.split("\n## ", 1)[0])
+        html, _ = read_cards()
+        self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/bugbundle/v1.0.12/docs/bugbundle-preview.png", html)
+        self.assertIn("https://github.com/GhosTnever-lkm/bugbundle/releases/download/v1.0.12/BugBundle-v1.0.12.zip", html)
 
     def test_workshop_page_studio_links_to_verified_app_and_release_assets(self) -> None:
         _, cards = read_cards()
