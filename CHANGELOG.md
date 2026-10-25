@@ -1,3 +1,7 @@
+## 1.3.260 - 2026-10-25
+
+- Update Subtitle Timing Studio links to the verified v1.0.7 release, ZIP, and SHA-256 sidecar.
+
 ## 1.3.259 - 2026-10-25
 
 - Refresh ContrastKit, CaptionLint, and Mod Conflict Map links to published releases and expose available checksum files.
