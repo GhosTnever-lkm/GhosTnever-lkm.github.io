@@ -1,3 +1,7 @@
+## 1.3.266 - 2026-10-25
+
+- Sync Clausewitz Log Doctor release, ZIP, and SHA-256 links to verified v0.2.1 assets.
+
 ## 1.3.265 - 2026-10-25
 
 - Update PantryPilot release and ZIP links to verified v0.1.4 and add a stale-link regression check.
