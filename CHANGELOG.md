@@ -1,3 +1,7 @@
+## 1.3.255 - 2026-10-25
+
+- Feature Workshop Page Studio with verified live app, source, v0.2.2 release, ZIP, and SHA-256 manifest links.
+
 ## 1.3.253 - 2026-10-25
 
 - Update RegexBench to the verified v0.1.4 release and add direct ZIP and SHA-256 links with regression coverage.

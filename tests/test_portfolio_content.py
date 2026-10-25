@@ -53,6 +53,13 @@ def read_cards() -> tuple[str, list[dict[str, object]]]:
 
 
 class PortfolioContentTests(unittest.TestCase):
+    def test_version_and_changelog_record_workshop_page_studio_feature(self) -> None:
+        version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
+        changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+        self.assertEqual(version, "1.3.255")
+        self.assertTrue(changelog.startswith("## 1.3.255 - 2026-10-25"))
+        self.assertIn("Feature Workshop Page Studio", changelog.split("\n## ", 1)[0])
+
     def test_workshop_page_studio_links_to_verified_app_and_release_assets(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "Workshop Page Studio")
