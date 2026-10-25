@@ -184,9 +184,10 @@ class PortfolioContentTests(unittest.TestCase):
         links = card["links"]
         assert isinstance(links, list)
         hrefs = {link["href"] for link in links}
-        self.assertIn("https://github.com/GhosTnever-lkm/audioscribe-studio/releases/tag/v0.1.8", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/audioscribe-studio/releases/download/v0.1.8/AudioScribe-Studio-v0.1.8.zip", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/audioscribe-studio/releases/download/v0.1.8/AudioScribe-Studio-v0.1.8.zip.sha256", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/audioscribe-studio/releases/tag/v0.1.9", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/audioscribe-studio/releases/download/v0.1.9/AudioScribe-Studio-v0.1.9.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/audioscribe-studio/releases/download/v0.1.9/AudioScribe-Studio-v0.1.9.zip.sha256", hrefs)
+        self.assertNotIn("v0.1.8", " ".join(hrefs))
         self.assertNotIn("v0.1.6", " ".join(hrefs))
 
     def test_json_compass_links_to_its_published_release_assets(self) -> None:
