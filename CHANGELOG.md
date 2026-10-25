@@ -1,3 +1,7 @@
+## 1.3.274 - 2026-10-25
+
+- Sync Subtitle Timing Studio release, ZIP, and SHA-256 links to the verified v1.0.8 release; update regression coverage.
+
 ## 1.3.273 - 2026-10-25
 
 - Sync the ShaderTriage and VOIDFALL portfolio cards to their verified current releases, archives, and checksum files.
