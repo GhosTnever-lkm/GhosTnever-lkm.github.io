@@ -1,3 +1,7 @@
+## 1.3.277 - 2026-10-25
+
+- Sync GhosTnever Codex Toolkit card to verified latest release v1.1.5; add a regression test for the current tag.
+
 ## 1.3.276 - 2026-10-25
 
 - Sync CSV Compass release and source archive links to verified v0.1.3; describe preserved wide-row values and add regression coverage.

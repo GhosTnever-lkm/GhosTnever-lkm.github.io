@@ -53,11 +53,20 @@ def read_cards() -> tuple[str, list[dict[str, object]]]:
 
 
 class PortfolioContentTests(unittest.TestCase):
+    def test_codex_toolkit_card_links_to_latest_verified_release(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "GhosTnever Codex Toolkit")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/ghosTnever-codex-toolkit/releases/tag/v1.1.5", hrefs)
+        self.assertFalse(any("ghosTnever-codex-toolkit/releases/tag/v1.1.4" in href for href in hrefs))
+
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.276")
-        self.assertTrue(changelog.startswith("## 1.3.276 - 2026-10-25"))
+        self.assertEqual(version, "1.3.277")
+        self.assertTrue(changelog.startswith("## 1.3.277 - 2026-10-25"))
         self.assertIn("ShaderTriage", changelog)
         self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
