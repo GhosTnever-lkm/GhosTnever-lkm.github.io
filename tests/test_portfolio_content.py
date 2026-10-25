@@ -56,8 +56,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.260")
-        self.assertTrue(changelog.startswith("## 1.3.260 - 2026-10-25"))
+        self.assertEqual(version, "1.3.261")
+        self.assertTrue(changelog.startswith("## 1.3.261 - 2026-10-25"))
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
@@ -130,8 +130,8 @@ class PortfolioContentTests(unittest.TestCase):
             ],
         )
         expected = {
-            "ModRelease Studio": "v0.3.90",
-            "ModRelease Gate": "v1.0.72",
+            "ModRelease Studio": "v0.3.91",
+            "ModRelease Gate": "v1.0.73",
             "Paradox Mod Quality Gate": "v1.0.78",
             "Paradox Mod Workbench": "v0.2.14",
         }
