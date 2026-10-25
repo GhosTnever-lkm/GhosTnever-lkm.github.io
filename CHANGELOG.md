@@ -1,3 +1,7 @@
+## 1.3.252 - 2026-10-25
+
+- Update Subtitle Timing Studio to the verified v1.0.6 release, ZIP, and SHA-256 sidecar; add regression coverage.
+
 ## 1.3.251 - 2026-10-25
 
 - Update AudioScribe Studio to the verified v0.1.9 release, ZIP, and SHA-256 sidecar; add a regression check.

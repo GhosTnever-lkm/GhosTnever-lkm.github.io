@@ -206,15 +206,11 @@ class PortfolioContentTests(unittest.TestCase):
         card = next(card for card in cards if card["name"] == "Subtitle Timing Studio")
         links = card["links"]
         assert isinstance(links, list)
-        self.assertIn(
-            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.5",
-            {link["href"] for link in links},
-        )
-        self.assertIn(
-            "https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.5/Subtitle-Timing-Studio-1.0.5.zip",
-            {link["href"] for link in links},
-        )
-
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.6", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.6/Subtitle-Timing-Studio-1.0.6.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.6/Subtitle-Timing-Studio-1.0.6.zip.sha256", hrefs)
+        self.assertFalse(any("subtitle-timing-studio/releases/tag/v1.0.5" in href for href in hrefs))
     def test_captionbench_links_to_its_current_release_and_archive(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "CaptionBench")
