@@ -1,3 +1,8 @@
+## 1.3.249 - 2026-10-25
+
+- Refresh RiftUnpack, Gamepad Lab, PingScope, and tracked-artifacts-check cards to their verified current releases and downloadable assets.
+- Add regression tests for the four project cards.
+
 ## 1.3.248 - 2026-10-25
 
 - Update CSV Key Diff release, ZIP, and preview links to the verified v0.1.5 artifacts.
