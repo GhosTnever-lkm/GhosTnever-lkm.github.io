@@ -1,3 +1,8 @@
+## 1.3.273 - 2026-10-25
+
+- Sync the ShaderTriage and VOIDFALL portfolio cards to their verified current releases, archives, and checksum files.
+- Add regression checks for both cards so older release links are caught.
+
 ## 1.3.272 - 2026-10-25
 
 - Sync the QuoteForge card to verified v0.1.3 release, ZIP, and SHA-256 assets; add regression coverage for the current links.

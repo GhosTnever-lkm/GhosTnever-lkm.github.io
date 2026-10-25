@@ -56,8 +56,10 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.272")
-        self.assertTrue(changelog.startswith("## 1.3.272 - 2026-10-25"))
+        self.assertEqual(version, "1.3.273")
+        self.assertTrue(changelog.startswith("## 1.3.273 - 2026-10-25"))
+        self.assertIn("ShaderTriage", changelog)
+        self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
@@ -121,6 +123,28 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://github.com/GhosTnever-lkm/regexbench/releases/download/v0.1.4/RegexBench-v0.1.4.zip", hrefs)
         self.assertIn("https://github.com/GhosTnever-lkm/regexbench/releases/download/v0.1.4/RegexBench-v0.1.4.zip.sha256", hrefs)
         self.assertFalse(any("regexbench/releases/tag/v0.1.3" in href for href in hrefs))
+
+    def test_shader_triage_card_links_to_current_release_archive_and_checksum(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "ShaderTriage")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/shader-triage/releases/tag/v0.1.2", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/shader-triage/releases/download/v0.1.2/ShaderTriage-v0.1.2.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/shader-triage/releases/download/v0.1.2/ShaderTriage-v0.1.2.zip.sha256", hrefs)
+        self.assertFalse(any("shader-triage/releases/" in href and "v0.1.1" in href for href in hrefs))
+
+    def test_voidfall_card_links_to_current_release_archive_and_checksum(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "VOIDFALL: Last Signal")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/voidfall/releases/tag/v1.0.9", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/voidfall/releases/download/v1.0.9/VOIDFALL-v1.0.9.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/voidfall/releases/download/v1.0.9/SHA256SUMS", hrefs)
+        self.assertFalse(any("voidfall/releases/" in href and "v1.0.8" in href for href in hrefs))
 
     def test_mod_threat_lens_cards_link_to_verified_v0111_release(self) -> None:
         html, cards = read_cards()
