@@ -56,8 +56,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.270")
-        self.assertTrue(changelog.startswith("## 1.3.270 - 2026-10-25"))
+        self.assertEqual(version, "1.3.271")
+        self.assertTrue(changelog.startswith("## 1.3.271 - 2026-10-25"))
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
@@ -237,12 +237,17 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://github.com/GhosTnever-lkm/contrastkit/releases/download/v1.0.3/ContrastKit-v1.0.3.zip.sha256", hrefs)
 
     def test_captionlint_links_to_current_published_release_assets(self) -> None:
-        html, _ = read_cards()
+        html, cards = read_cards()
+        project_card_count = len(re.findall(r'<article\b[^>]*class="[^"]*\bproject-card\b', html))
+        self.assertEqual(len(cards), project_card_count)
+        card = next(card for card in cards if card["name"] == "CaptionLint")
+        self.assertTrue(any(link["href"].endswith("/releases/tag/v1.0.6") for link in card["links"]))
+        self.assertIn("Clausewitz Log Doctor", {str(card["name"]) for card in cards})
         hrefs = set(re.findall(r'https://github\.com/GhosTnever-lkm/subtitle-release-gate/[^" ]+', html))
-        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/tag/v1.0.5", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/download/v1.0.5/CaptionLint-v1.0.5.zip", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/download/v1.0.5/CaptionLint-v1.0.5.zip.sha256", hrefs)
-        self.assertFalse(any("subtitle-release-gate/releases/" in href and "v1.0.4" in href for href in hrefs))
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/tag/v1.0.6", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/download/v1.0.6/CaptionLint-v1.0.6.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-release-gate/releases/download/v1.0.6/CaptionLint-v1.0.6.zip.sha256", hrefs)
+        self.assertFalse(any("subtitle-release-gate/releases/" in href and ("v1.0.5" in href or "v1.0.4" in href) for href in hrefs))
 
     def test_asset_sieve_links_to_its_published_release(self) -> None:
         _, cards = read_cards()

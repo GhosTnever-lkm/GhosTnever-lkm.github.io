@@ -1,3 +1,8 @@
+## 1.3.271 - 2026-10-25
+
+- Repair the CaptionLint and Clausewitz project card markup so both cards are parsed and displayed independently.
+- Sync CaptionLint release, ZIP, and SHA-256 links to verified v1.0.6 assets; add regression coverage for the current release and separate card parsing.
+
 ## 1.3.270 - 2026-10-25
 
 - Update the TabHarbor card and verified release links to v0.1.4.
