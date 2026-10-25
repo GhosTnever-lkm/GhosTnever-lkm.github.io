@@ -1,3 +1,8 @@
+## 1.3.270 - 2026-10-25
+
+- Update the TabHarbor card and verified release links to v0.1.4.
+- Extend the portfolio link test to require the current release, ZIP, and SHA-256 sidecar.
+
 ## 1.3.269 - 2026-10-25
 
 - Sync HomeLedger release, ZIP, and SHA-256 links to verified v0.1.5 assets.
