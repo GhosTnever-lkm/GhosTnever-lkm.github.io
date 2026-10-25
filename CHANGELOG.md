@@ -1,4 +1,4 @@
-﻿## 1.3.253 - 2026-10-25
+## 1.3.253 - 2026-10-25
 
 - Update RegexBench to the verified v0.1.4 release and add direct ZIP and SHA-256 links with regression coverage.
 
@@ -1139,3 +1139,6 @@
 ## 1.3.204 - 2026-10-13
 
 - Update the AegisScan AV portfolio card to v0.1.3 with file-replacement handling, stable ClamAV snapshots, release download, and SHA-256 links.
+## 1.3.254 - 2026-10-25
+
+- Add a direct SHA-256 checksum link to the CSV Key Diff v0.1.5 release card.

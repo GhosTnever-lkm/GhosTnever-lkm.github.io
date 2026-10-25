@@ -354,6 +354,10 @@ class PortfolioContentTests(unittest.TestCase):
             "https://github.com/GhosTnever-lkm/csv-key-diff/releases/download/v0.1.5/csv-key-diff-v0.1.5.zip",
             hrefs,
         )
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/csv-key-diff/releases/download/v0.1.5/csv-key-diff-v0.1.5.zip.sha256",
+            hrefs,
+        )
         self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/csv-key-diff/v0.1.5/docs/demo.svg", html)
         self.assertFalse(any("csv-key-diff/releases/tag/v0.1.4" in href for href in hrefs))
 
