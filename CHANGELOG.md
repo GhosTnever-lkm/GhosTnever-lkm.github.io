@@ -1,3 +1,7 @@
+## 1.3.256 - 2026-10-25
+
+- Add the verified Mod Observatory v0.2.5 SHA-256 manifest beside the release ZIP.
+
 ## 1.3.255 - 2026-10-25
 
 - Feature Workshop Page Studio with verified live app, source, v0.2.2 release, ZIP, and SHA-256 manifest links.
