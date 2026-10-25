@@ -1,3 +1,7 @@
+## 1.3.257 - 2026-10-25
+
+- Update the RiftUnpack card to the verified v1.0.6 release and add its SHA-256 manifest link.
+
 ## 1.3.256 - 2026-10-25
 
 - Add the verified Mod Observatory v0.2.5 SHA-256 manifest beside the release ZIP.
