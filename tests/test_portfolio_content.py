@@ -53,12 +53,12 @@ def read_cards() -> tuple[str, list[dict[str, object]]]:
 
 
 class PortfolioContentTests(unittest.TestCase):
-    def test_version_and_changelog_record_workshop_page_studio_feature(self) -> None:
+    def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.255")
-        self.assertTrue(changelog.startswith("## 1.3.255 - 2026-10-25"))
-        self.assertIn("Feature Workshop Page Studio", changelog.split("\n## ", 1)[0])
+        self.assertEqual(version, "1.3.256")
+        self.assertTrue(changelog.startswith("## 1.3.256 - 2026-10-25"))
+        self.assertIn("Mod Observatory", changelog.split("\n## ", 1)[0])
 
     def test_workshop_page_studio_links_to_verified_app_and_release_assets(self) -> None:
         _, cards = read_cards()
@@ -165,11 +165,13 @@ class PortfolioContentTests(unittest.TestCase):
         card = next(card for card in cards if card["name"] == "Mod Observatory")
         links = card["links"]
         release = next(link for link in links if "/mod-observatory/releases/tag/" in link["href"])
-        archive = next(link for link in links if "/mod-observatory/releases/download/" in link["href"])
+        archive = next(link for link in links if link["href"].endswith("/mod-observatory-0.2.5.zip"))
+        checksum = next(link for link in links if link["href"].endswith("/SHA256SUMS.txt"))
         self.assertEqual(release["href"], "https://github.com/GhosTnever-lkm/mod-observatory/releases/tag/v0.2.5")
         self.assertIn("v0.2.5", release["text"])
         self.assertEqual(archive["href"], "https://github.com/GhosTnever-lkm/mod-observatory/releases/download/v0.2.5/mod-observatory-0.2.5.zip")
-        self.assertNotIn("v0.2.4", release["href"] + archive["href"])
+        self.assertEqual(checksum["href"], "https://github.com/GhosTnever-lkm/mod-observatory/releases/download/v0.2.5/SHA256SUMS.txt")
+        self.assertNotIn("v0.2.4", release["href"] + archive["href"] + checksum["href"])
 
     def test_game_text_gate_uses_its_published_release(self) -> None:
         html, cards = read_cards()
