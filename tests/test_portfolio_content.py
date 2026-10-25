@@ -56,8 +56,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.274")
-        self.assertTrue(changelog.startswith("## 1.3.274 - 2026-10-25"))
+        self.assertEqual(version, "1.3.275")
+        self.assertTrue(changelog.startswith("## 1.3.275 - 2026-10-25"))
         self.assertIn("ShaderTriage", changelog)
         self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
@@ -495,17 +495,19 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/csv-key-diff/v0.1.5/docs/demo.svg", html)
         self.assertFalse(any("csv-key-diff/releases/tag/v0.1.4" in href for href in hrefs))
 
-    def test_riftunpack_card_links_to_current_v106_binaries_and_checksum(self) -> None:
+    def test_riftunpack_card_links_to_current_v107_binaries_and_checksum(self) -> None:
         html, cards = read_cards()
         card = next(card for card in cards if card["name"] == "RiftUnpack")
         links = card["links"]
         assert isinstance(links, list)
         hrefs = {link["href"] for link in links}
-        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/tag/v1.0.6", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.6/RiftUnpack.exe", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.6/RiftUnpack-GUI.exe", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.6/SHA256SUMS.txt", hrefs)
-        self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/RiftUnpack/v1.0.6/docs/images/gui-screenshot.png", html)
+        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/tag/v1.0.7", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.7/RiftUnpack.exe", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.7/RiftUnpack-GUI.exe", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.7/SHA256SUMS.txt", hrefs)
+        self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/RiftUnpack/v1.0.7/docs/images/gui-screenshot.png", html)
+        self.assertFalse(any("RiftUnpack/releases/tag/v1.0.6" in href for href in hrefs))
+        self.assertNotIn("https://raw.githubusercontent.com/GhosTnever-lkm/RiftUnpack/v1.0.6/docs/images/gui-screenshot.png", html)
         self.assertFalse(any("RiftUnpack/releases/tag/v1.0.5" in href for href in hrefs))
         self.assertNotIn("https://raw.githubusercontent.com/GhosTnever-lkm/RiftUnpack/v1.0.4/docs/images/gui-screenshot.png", html)
         self.assertFalse(any("RiftUnpack/releases/tag/v1.0.4" in href for href in hrefs))
