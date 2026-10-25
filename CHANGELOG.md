@@ -1,3 +1,7 @@
+## 1.3.251 - 2026-10-25
+
+- Update AudioScribe Studio to the verified v0.1.9 release, ZIP, and SHA-256 sidecar; add a regression check.
+
 ## 1.3.250 - 2026-10-25
 
 - Update FrameForge to the verified v1.18.2 release, Windows archive, and SHA-256 sidecar; add a regression check.
