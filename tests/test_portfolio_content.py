@@ -56,13 +56,31 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.268")
-        self.assertTrue(changelog.startswith("## 1.3.268 - 2026-10-25"))
+        self.assertEqual(version, "1.3.269")
+        self.assertTrue(changelog.startswith("## 1.3.269 - 2026-10-25"))
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
         self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/bugbundle/v1.0.12/docs/bugbundle-preview.png", html)
         self.assertIn("https://github.com/GhosTnever-lkm/bugbundle/releases/download/v1.0.12/BugBundle-v1.0.12.zip", html)
+
+    def test_homeledger_links_to_current_v015_release_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "HomeLedger")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/homeledger/releases/tag/v0.1.5", hrefs)
+        self.assertTrue(any("Релиз v0.1.5" in link["text"] for link in links))
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/homeledger/releases/download/v0.1.5/HomeLedger-v0.1.5.zip",
+            hrefs,
+        )
+        self.assertIn(
+            "https://github.com/GhosTnever-lkm/homeledger/releases/download/v0.1.5/HomeLedger-v0.1.5.sha256",
+            hrefs,
+        )
+        self.assertFalse(any("homeledger/releases/" in href and "v0.1.4" in href for href in hrefs))
 
     def test_workshop_page_studio_links_to_verified_app_and_release_assets(self) -> None:
         _, cards = read_cards()
