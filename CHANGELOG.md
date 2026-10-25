@@ -1,3 +1,7 @@
+## 1.3.250 - 2026-10-25
+
+- Update FrameForge to the verified v1.18.2 release, Windows archive, and SHA-256 sidecar; add a regression check.
+
 ## 1.3.249 - 2026-10-25
 
 - Refresh RiftUnpack, Gamepad Lab, PingScope, and tracked-artifacts-check cards to their verified current releases and downloadable assets.
