@@ -1,3 +1,7 @@
+## 1.3.262 - 2026-10-25
+
+- Sync the featured Paradox Mod Quality Gate card to the verified v1.0.79 release.
+
 ## 1.3.261 - 2026-10-25
 
 - Sync ModRelease Studio v0.3.91 and ModRelease Gate v1.0.73 after verified releases; update featured-link assertions.
