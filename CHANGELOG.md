@@ -1,3 +1,7 @@
+## 1.3.265 - 2026-10-25
+
+- Update PantryPilot release and ZIP links to verified v0.1.4 and add a stale-link regression check.
+
 ## 1.3.264 - 2026-10-25
 
 - Sync Gamepad Lab release, ZIP, and SHA-256 links to verified v1.0.4 assets.
