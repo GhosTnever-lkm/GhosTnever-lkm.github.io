@@ -1,3 +1,7 @@
+## 1.3.267 - 2026-10-25
+
+- Sync HarborTrace release, ZIP, and SHA-256 links to verified v0.1.4 assets.
+
 ## 1.3.266 - 2026-10-25
 
 - Sync Clausewitz Log Doctor release, ZIP, and SHA-256 links to verified v0.2.1 assets.

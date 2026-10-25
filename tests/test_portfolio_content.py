@@ -56,8 +56,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.266")
-        self.assertTrue(changelog.startswith("## 1.3.266 - 2026-10-25"))
+        self.assertEqual(version, "1.3.267")
+        self.assertTrue(changelog.startswith("## 1.3.267 - 2026-10-25"))
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
@@ -299,10 +299,10 @@ class PortfolioContentTests(unittest.TestCase):
         links = card["links"]
         assert isinstance(links, list)
         hrefs = {link["href"] for link in links}
-        self.assertIn("https://github.com/GhosTnever-lkm/harbortrace/releases/tag/v0.1.3", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/harbortrace/releases/download/v0.1.3/HarborTrace-v0.1.3.zip", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/harbortrace/releases/download/v0.1.3/HarborTrace-v0.1.3.zip.sha256", hrefs)
-        self.assertFalse(any("harbortrace/releases/tag/v0.1.0" in href for href in hrefs))
+        self.assertIn("https://github.com/GhosTnever-lkm/harbortrace/releases/tag/v0.1.4", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/harbortrace/releases/download/v0.1.4/HarborTrace-v0.1.4.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/harbortrace/releases/download/v0.1.4/HarborTrace-v0.1.4.zip.sha256", hrefs)
+        self.assertFalse(any("harbortrace/releases/tag/v0.1.3" in href for href in hrefs))
 
     def test_shiftledger_links_to_its_current_release_and_archive(self) -> None:
         html, cards = read_cards()
