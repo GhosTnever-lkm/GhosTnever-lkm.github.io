@@ -338,6 +338,52 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/csv-key-diff/v0.1.5/docs/demo.svg", html)
         self.assertFalse(any("csv-key-diff/releases/tag/v0.1.4" in href for href in hrefs))
 
+    def test_riftunpack_card_links_to_current_v105_binaries(self) -> None:
+        html, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "RiftUnpack")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/tag/v1.0.5", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.5/RiftUnpack.exe", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/RiftUnpack/releases/download/v1.0.5/RiftUnpack-GUI.exe", hrefs)
+        self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/RiftUnpack/v1.0.5/docs/images/gui-screenshot.png", html)
+        self.assertNotIn("https://raw.githubusercontent.com/GhosTnever-lkm/RiftUnpack/v1.0.4/docs/images/gui-screenshot.png", html)
+        self.assertFalse(any("RiftUnpack/releases/tag/v1.0.4" in href for href in hrefs))
+
+    def test_gamepad_lab_card_links_to_current_v103_release_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "Gamepad Lab")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/tag/v1.0.3", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/download/v1.0.3/Gamepad-Lab-v1.0.3.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/download/v1.0.3/Gamepad-Lab-v1.0.3.zip.sha256", hrefs)
+        self.assertFalse(any("gamepad-lab/releases/tag/v1.0.2" in href for href in hrefs))
+
+    def test_pingscope_card_links_to_current_v024_windows_assets(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "PingScope")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/ping-scope/releases/tag/v0.2.4", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/ping-scope/releases/download/v0.2.4/PingScope-v0.2.4-windows-x64.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/ping-scope/releases/download/v0.2.4/PingScope-v0.2.4-windows-x64.zip.sha256", hrefs)
+        self.assertFalse(any("ping-scope/releases/tag/v0.2.3" in href for href in hrefs))
+
+    def test_tracked_artifacts_card_links_to_current_v014_wheel_and_checksum(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "tracked-artifacts-check")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/tag/v0.1.4", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/download/v0.1.4/tracked_artifacts_check-0.1.4-py3-none-any.whl", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/download/v0.1.4/SHA256SUMS.txt", hrefs)
+        self.assertFalse(any("tracked-artifacts-check/releases/tag/v0.1.2" in href for href in hrefs))
+
     def test_pages_workflow_checks_pull_requests_without_deploying_them(self) -> None:
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
         self.assertRegex(workflow, r"(?m)^  pull_request:")
