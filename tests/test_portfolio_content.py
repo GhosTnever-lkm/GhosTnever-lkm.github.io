@@ -56,12 +56,13 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.273")
-        self.assertTrue(changelog.startswith("## 1.3.273 - 2026-10-25"))
+        self.assertEqual(version, "1.3.274")
+        self.assertTrue(changelog.startswith("## 1.3.274 - 2026-10-25"))
         self.assertIn("ShaderTriage", changelog)
         self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
+        self.assertIn("Subtitle Timing Studio", changelog)
         html, _ = read_cards()
         self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/bugbundle/v1.0.12/docs/bugbundle-preview.png", html)
         self.assertIn("https://github.com/GhosTnever-lkm/bugbundle/releases/download/v1.0.12/BugBundle-v1.0.12.zip", html)
@@ -327,10 +328,10 @@ class PortfolioContentTests(unittest.TestCase):
         links = card["links"]
         assert isinstance(links, list)
         hrefs = {link["href"] for link in links}
-        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.7", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.7/Subtitle-Timing-Studio-1.0.7.zip", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.7/Subtitle-Timing-Studio-1.0.7.zip.sha256", hrefs)
-        self.assertFalse(any("subtitle-timing-studio/releases/tag/v1.0.6" in href for href in hrefs))
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/tag/v1.0.8", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.8/Subtitle-Timing-Studio-1.0.8.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/subtitle-timing-studio/releases/download/v1.0.8/Subtitle-Timing-Studio-1.0.8.zip.sha256", hrefs)
+        self.assertFalse(any("subtitle-timing-studio/releases/tag/v1.0.7" in href for href in hrefs))
     def test_captionbench_links_to_its_current_release_and_archive(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "CaptionBench")
