@@ -1,3 +1,7 @@
+## 1.3.263 - 2026-10-25
+
+- Sync Agent Run Lens and Asset Sieve release and download links to verified v1.0.2 and v0.1.7 releases.
+
 ## 1.3.262 - 2026-10-25
 
 - Sync the featured Paradox Mod Quality Gate card to the verified v1.0.79 release.
