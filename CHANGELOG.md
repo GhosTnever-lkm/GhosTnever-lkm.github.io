@@ -1,3 +1,7 @@
+## 1.3.278 - 2026-10-25
+
+- Sync tracked-artifacts-check to verified v0.1.5 wheel and checksum; include OpenSSH private-key detection in its portfolio description.
+
 ## 1.3.277 - 2026-10-25
 
 - Sync GhosTnever Codex Toolkit card to verified latest release v1.1.5; add a regression test for the current tag.

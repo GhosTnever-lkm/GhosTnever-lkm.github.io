@@ -65,8 +65,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.277")
-        self.assertTrue(changelog.startswith("## 1.3.277 - 2026-10-25"))
+        self.assertEqual(version, "1.3.278")
+        self.assertTrue(changelog.startswith("## 1.3.278 - 2026-10-25"))
         self.assertIn("ShaderTriage", changelog)
         self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
@@ -554,15 +554,16 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://github.com/GhosTnever-lkm/ping-scope/releases/download/v0.2.4/PingScope-v0.2.4-windows-x64.zip.sha256", hrefs)
         self.assertFalse(any("ping-scope/releases/tag/v0.2.3" in href for href in hrefs))
 
-    def test_tracked_artifacts_card_links_to_current_v014_wheel_and_checksum(self) -> None:
+    def test_tracked_artifacts_card_links_to_current_v015_wheel_and_checksum(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "tracked-artifacts-check")
         links = card["links"]
         assert isinstance(links, list)
         hrefs = {link["href"] for link in links}
-        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/tag/v0.1.4", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/download/v0.1.4/tracked_artifacts_check-0.1.4-py3-none-any.whl", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/download/v0.1.4/SHA256SUMS.txt", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/tag/v0.1.5", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/download/v0.1.5/tracked_artifacts_check-0.1.5-py3-none-any.whl", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/tracked-artifacts-check/releases/download/v0.1.5/SHA256SUMS.txt", hrefs)
+        self.assertFalse(any("tracked-artifacts-check/releases/tag/v0.1.4" in href for href in hrefs))
         self.assertFalse(any("tracked-artifacts-check/releases/tag/v0.1.2" in href for href in hrefs))
 
     def test_pages_workflow_checks_pull_requests_without_deploying_them(self) -> None:
