@@ -1,3 +1,7 @@
+## 1.3.258 - 2026-10-25
+
+- Update the BugBundle card preview and offline ZIP link to the verified v1.0.12 release.
+
 ## 1.3.257 - 2026-10-25
 
 - Update the RiftUnpack card to the verified v1.0.6 release and add its SHA-256 manifest link.
