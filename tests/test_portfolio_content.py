@@ -56,8 +56,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.262")
-        self.assertTrue(changelog.startswith("## 1.3.262 - 2026-10-25"))
+        self.assertEqual(version, "1.3.263")
+        self.assertTrue(changelog.startswith("## 1.3.263 - 2026-10-25"))
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
@@ -231,13 +231,24 @@ class PortfolioContentTests(unittest.TestCase):
         links = card["links"]
         assert isinstance(links, list)
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/asset-sieve/releases/tag/v0.1.6",
+            "https://github.com/GhosTnever-lkm/asset-sieve/releases/tag/v0.1.7",
             {link["href"] for link in links},
         )
         self.assertIn(
-            "https://github.com/GhosTnever-lkm/asset-sieve/releases/download/v0.1.6/asset_sieve-0.1.6-py3-none-any.whl",
+            "https://github.com/GhosTnever-lkm/asset-sieve/releases/download/v0.1.7/asset_sieve-0.1.7-py3-none-any.whl",
             {link["href"] for link in links},
         )
+        self.assertFalse(any("asset-sieve/releases/tag/v0.1.6" in link["href"] for link in links))
+
+    def test_agent_run_lens_links_to_its_published_release(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "Agent Run Lens")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/agent-run-lens/releases/tag/v1.0.2", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/agent-run-lens/releases/download/v1.0.2/Agent-Run-Lens-v1.0.2.zip", hrefs)
+        self.assertFalse(any("agent-run-lens/releases/tag/v1.0.1" in href for href in hrefs))
 
     def test_audioscribe_links_to_its_published_release_assets(self) -> None:
         _, cards = read_cards()
