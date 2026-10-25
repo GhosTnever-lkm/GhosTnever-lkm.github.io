@@ -56,16 +56,27 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.275")
-        self.assertTrue(changelog.startswith("## 1.3.275 - 2026-10-25"))
+        self.assertEqual(version, "1.3.276")
+        self.assertTrue(changelog.startswith("## 1.3.276 - 2026-10-25"))
         self.assertIn("ShaderTriage", changelog)
         self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         self.assertIn("Subtitle Timing Studio", changelog)
+        self.assertIn("CSV Compass", changelog)
         html, _ = read_cards()
         self.assertIn("https://raw.githubusercontent.com/GhosTnever-lkm/bugbundle/v1.0.12/docs/bugbundle-preview.png", html)
         self.assertIn("https://github.com/GhosTnever-lkm/bugbundle/releases/download/v1.0.12/BugBundle-v1.0.12.zip", html)
+
+    def test_csv_compass_card_links_to_current_release_and_archive(self) -> None:
+        html, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "CSV Compass")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/csv-compass/releases/tag/v0.1.3", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/csv-compass/archive/refs/tags/v0.1.3.zip", hrefs)
+        self.assertFalse(any("csv-compass/releases/" in href and "v0.1.1" in href for href in hrefs))
 
     def test_homeledger_links_to_current_v015_release_assets(self) -> None:
         _, cards = read_cards()

@@ -1,3 +1,7 @@
+## 1.3.276 - 2026-10-25
+
+- Sync CSV Compass release and source archive links to verified v0.1.3; describe preserved wide-row values and add regression coverage.
+
 ## 1.3.275 - 2026-10-25
 
 - Sync the RiftUnpack portfolio card to verified v1.0.7 release assets and link the actual CI workflow.
