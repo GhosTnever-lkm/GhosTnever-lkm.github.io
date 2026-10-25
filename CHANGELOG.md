@@ -1,3 +1,7 @@
+## 1.3.268 - 2026-10-25
+
+- Sync CaptionLint v1.0.5 release, ZIP, and SHA-256 links after verifying the published archive checksum.
+
 ## 1.3.267 - 2026-10-25
 
 - Sync HarborTrace release, ZIP, and SHA-256 links to verified v0.1.4 assets.
