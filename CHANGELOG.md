@@ -1,3 +1,7 @@
+## 1.3.275 - 2026-10-25
+
+- Sync the RiftUnpack portfolio card to verified v1.0.7 release assets and link the actual CI workflow.
+
 ## 1.3.274 - 2026-10-25
 
 - Sync Subtitle Timing Studio release, ZIP, and SHA-256 links to the verified v1.0.8 release; update regression coverage.
