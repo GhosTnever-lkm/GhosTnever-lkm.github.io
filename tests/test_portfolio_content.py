@@ -64,6 +64,17 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertIn("https://github.com/GhosTnever-lkm/frameforge/releases/download/v1.18.2/FrameForge-1.18.2-windows-x64.zip.sha256", hrefs)
         self.assertFalse(any("frameforge/releases/tag/v1.18.1" in href for href in hrefs))
 
+    def test_regexbench_card_links_to_current_release_archive_and_checksum(self) -> None:
+        _, cards = read_cards()
+        card = next(card for card in cards if card["name"] == "RegexBench")
+        links = card["links"]
+        assert isinstance(links, list)
+        hrefs = {link["href"] for link in links}
+        self.assertIn("https://github.com/GhosTnever-lkm/regexbench/releases/tag/v0.1.4", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/regexbench/releases/download/v0.1.4/RegexBench-v0.1.4.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/regexbench/releases/download/v0.1.4/RegexBench-v0.1.4.zip.sha256", hrefs)
+        self.assertFalse(any("regexbench/releases/tag/v0.1.3" in href for href in hrefs))
+
     def test_mod_threat_lens_cards_link_to_verified_v0111_release(self) -> None:
         html, cards = read_cards()
         matches = [card for card in cards if card["name"] == "Mod Threat Lens"]
