@@ -56,8 +56,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.263")
-        self.assertTrue(changelog.startswith("## 1.3.263 - 2026-10-25"))
+        self.assertEqual(version, "1.3.264")
+        self.assertTrue(changelog.startswith("## 1.3.264 - 2026-10-25"))
         self.assertIn("ContrastKit", changelog)
         self.assertIn("BugBundle", changelog)
         html, _ = read_cards()
@@ -437,16 +437,16 @@ class PortfolioContentTests(unittest.TestCase):
         self.assertNotIn("https://raw.githubusercontent.com/GhosTnever-lkm/RiftUnpack/v1.0.4/docs/images/gui-screenshot.png", html)
         self.assertFalse(any("RiftUnpack/releases/tag/v1.0.4" in href for href in hrefs))
 
-    def test_gamepad_lab_card_links_to_current_v103_release_assets(self) -> None:
+    def test_gamepad_lab_card_links_to_current_v104_release_assets(self) -> None:
         _, cards = read_cards()
         card = next(card for card in cards if card["name"] == "Gamepad Lab")
         links = card["links"]
         assert isinstance(links, list)
         hrefs = {link["href"] for link in links}
-        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/tag/v1.0.3", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/download/v1.0.3/Gamepad-Lab-v1.0.3.zip", hrefs)
-        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/download/v1.0.3/Gamepad-Lab-v1.0.3.zip.sha256", hrefs)
-        self.assertFalse(any("gamepad-lab/releases/tag/v1.0.2" in href for href in hrefs))
+        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/tag/v1.0.4", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/download/v1.0.4/Gamepad-Lab-v1.0.4.zip", hrefs)
+        self.assertIn("https://github.com/GhosTnever-lkm/gamepad-lab/releases/download/v1.0.4/Gamepad-Lab-v1.0.4.zip.sha256", hrefs)
+        self.assertFalse(any("gamepad-lab/releases/tag/v1.0.3" in href for href in hrefs))
 
     def test_pingscope_card_links_to_current_v024_windows_assets(self) -> None:
         _, cards = read_cards()

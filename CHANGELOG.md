@@ -1,3 +1,7 @@
+## 1.3.264 - 2026-10-25
+
+- Sync Gamepad Lab release, ZIP, and SHA-256 links to verified v1.0.4 assets.
+
 ## 1.3.263 - 2026-10-25
 
 - Sync Agent Run Lens and Asset Sieve release and download links to verified v1.0.2 and v0.1.7 releases.
