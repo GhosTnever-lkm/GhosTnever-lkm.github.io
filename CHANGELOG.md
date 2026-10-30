@@ -1,3 +1,7 @@
+## 1.3.282 - 2026-10-31
+
+- Add SQLite Schema Lens, its verified v0.1.0 release, wheel and checksum links.
+
 ## 1.3.281 - 2026-10-31
 
 - Add CSV Contract, its verified v0.1.0 release, wheel and checksum links to the project catalog.
