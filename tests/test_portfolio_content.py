@@ -65,8 +65,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.280")
-        self.assertTrue(changelog.startswith("## 1.3.280 - 2026-10-31"))
+        self.assertEqual(version, "1.3.281")
+        self.assertTrue(changelog.startswith("## 1.3.281 - 2026-10-31"))
         self.assertIn("ShaderTriage", changelog)
         self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
