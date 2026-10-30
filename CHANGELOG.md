@@ -1,3 +1,7 @@
+## 1.3.281 - 2026-10-31
+
+- Add CSV Contract, its verified v0.1.0 release, wheel and checksum links to the project catalog.
+
 ## 1.3.280 - 2026-10-31
 
 - Sync CalWeave release and ZIP links to verified v0.1.3 and add its SHA-256 sidecar link.
