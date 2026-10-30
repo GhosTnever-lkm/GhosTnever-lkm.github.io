@@ -1,3 +1,7 @@
+## 1.3.280 - 2026-10-31
+
+- Sync CalWeave release and ZIP links to verified v0.1.3 and add its SHA-256 sidecar link.
+
 ## 1.3.279 - 2026-10-25
 
 - Update the ModRelease Studio flagship preview, release, ZIP, and checksum links to verified v0.3.92; keep the featured-release regression current.
