@@ -65,8 +65,8 @@ class PortfolioContentTests(unittest.TestCase):
     def test_version_and_changelog_record_current_portfolio_release(self) -> None:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
-        self.assertEqual(version, "1.3.282")
-        self.assertTrue(changelog.startswith("## 1.3.282 - 2026-10-31"))
+        self.assertEqual(version, "1.3.283")
+        self.assertTrue(changelog.startswith("## 1.3.283 - 2026-11-03"))
         self.assertIn("ShaderTriage", changelog)
         self.assertIn("VOIDFALL", changelog)
         self.assertIn("ContrastKit", changelog)
@@ -597,6 +597,20 @@ class PortfolioContentTests(unittest.TestCase):
             "https://github.com/GhosTnever-lkm/diffshield-action/releases/tag/v1.0.5",
         )
         self.assertEqual(release["text"].strip(), "Релиз v1.0.5 ↗")
+
+    def test_catalog_text_has_no_replacement_question_marks(self) -> None:
+        html, _ = read_cards()
+        self.assertIsNone(re.search(r"\?{4,}", html), "Catalog contains replacement question marks")
+
+    def test_release_labels_match_their_linked_tags(self) -> None:
+        _, cards = read_cards()
+        for card in cards:
+            for link in card["links"]:
+                match = re.search(r"/releases/tag/(v[0-9][^/?#]*)$", link["href"])
+                label = re.search(r"\u0420\u0435\u043b\u0438\u0437 (v[0-9][^\s]*)", link["text"])
+                if match and label:
+                    with self.subTest(project=card["name"], href=link["href"]):
+                        self.assertEqual(label.group(1), match.group(1))
 
 
 if __name__ == "__main__":
