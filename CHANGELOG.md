@@ -1,3 +1,9 @@
+## 1.3.283 - 2026-11-03
+
+- Sync SQLite Schema Lens to the verified v0.1.1 release, wheel and checksums.
+- Restore readable Russian CSV Compass text and align Codex Toolkit and tracked-artifacts-check release labels with their links.
+- Add catalog checks for corrupted text and mismatched release labels.
+
 ## 1.3.282 - 2026-10-31
 
 - Add SQLite Schema Lens, its verified v0.1.0 release, wheel and checksum links.
